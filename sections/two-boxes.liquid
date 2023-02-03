@@ -1,0 +1,61 @@
+{{ 'mod-two-boxes.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mod-two-boxes.js' | asset_url }}" defer="defer"></script>
+
+<div class="section-two-boxes">
+    {% for block in section.blocks %}
+        {%- assign img_url = block.settings.image | img_url: 'master' -%}
+        <div class="box-single">
+            <img class="box-single__image" src="{{ img_url }}" alt="funkysnowboard {{ block.settings.title }}">
+            <div class="box-single__content">
+                <h5>{{ block.settings.title }}</h5>
+                <a href="{{ block.settings.cta_url }}">{{ block.settings.cta_text }}</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+{% schema %}
+  {
+    "name": "Two Boxes",
+    "max_blocks": 2,
+    "blocks": [
+      {
+        "type": "boxes",
+        "name": "Boxes",
+        "settings": [
+            {
+                "type": "image",
+                "id": "image",
+                "label": "Image"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            },
+            {
+                "type": "text",
+                "id": "cta_text",
+                "label": "CTA Text"
+            },
+            {
+                "type": "url",
+                "id": "cta_url",
+                "label": "CTA Url"
+            }
+        ]
+      }
+    ],
+    "presets": [
+        {
+            "name": "Two Boxes",
+            "blocks": [
+                {
+                "type": "boxes"
+                }
+            ]
+        }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,38 @@
+{{ 'mod-paragraph.css' | asset_url | stylesheet_tag }}
+
+<div class="section-paragraph">
+    <div class="boxed">
+        <div class="section-paragraph__content">
+            <div class="title-description">{{ section.settings.text }}</div>
+            <a class="section-paragraph__content__link" href="{{ section.settings.link_url }}">{{ section.settings.link_text }} {% include 'icon-eyes' %} </a>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Paragraph",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "text",
+            "id": "link_text",
+            "label": "Link text"
+        },
+        {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link url"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Paragraph"
+        }
+    ]
+  }
+{% endschema %}

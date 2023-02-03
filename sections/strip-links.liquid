@@ -1,0 +1,46 @@
+{{ 'mod-strip-links.css' | asset_url | stylesheet_tag }}
+
+<div class="section-strip-links">
+    <div class="boxed">
+        <div class="section-strip-links__content">
+            {% for block in section.blocks %}
+                <a href="{{ block.settings.url }}">{{ block.settings.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Strip Links",
+    "max_blocks": 2,
+    "blocks": [
+      {
+        "type": "links",
+        "name": "Links",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            },
+            {
+                "type": "url",
+                "id": "url",
+                "label": "Url"
+            }
+        ]
+      }
+    ],
+    "presets": [
+        {
+            "name": "Strip Links",
+            "blocks": [
+                {
+                "type": "links"
+                }
+            ]
+        }
+    ]
+  }
+{% endschema %}

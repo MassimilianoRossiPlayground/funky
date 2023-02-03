@@ -1,0 +1,13 @@
+.section-strip-links {
+    border-bottom: 2px solid #000;
+}
+.section-strip-links__content {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-strip-links__content a {
+    color: #000;
+    text-decoration: none;
+}
