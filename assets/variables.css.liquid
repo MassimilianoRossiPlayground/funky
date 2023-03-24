@@ -10,91 +10,173 @@
   --lightgreen: #cfff7c;
 }
 /*================ Sizing Variables ================*/
+.thin {
+  font-family: 'HelveticaNeue-Thin';
+}
+.medium {
+  font-family: 'HelveticaNeue-Medium';
+}
+.bold {
+  font-family: 'HelveticaNeue-Bold';
+}
+strong {
+  font-family: 'HelveticaNeue-Medium';
+}
 .boxed {
   max-width: 1170px;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .mega-title {
-  font-size: 180pt;
+  font-size: 180px;
   font-family: 'HelveticaNeue-Medium';
 }
 .title {
-  font-size: 80pt;
+  font-size: 80px;
   font-family: 'HelveticaNeue-Medium';
 }
 .title-description {
-  font-size: 36pt;
+  font-size: 36px;
   font-family: 'HelveticaNeue';
 }
 .title-click {
-  font-size: 24pt;
+  font-size: 24px;
   font-family: 'HelveticaNeue-Medium';
   text-decoration: underline;
 }
 .image-description {
-  font-size: 16pt;
+  font-size: 16px;
   font-family: 'HelveticaNeue';
 }
 .image-description--medium {
-  font-size: 16pt;
+  font-size: 16px;
   font-family: 'HelveticaNeue-Medium';
 }
 a {
   font-family: 'HelveticaNeue-Medium';
-  text-decoration: underline;
   transition-duration: 0.2s;
   color: #000;
+  text-decoration: none;
 }
 a:hover {
-  color: --pink;
+  background-color: var(--lightgreen);
   transition-duration: 0.2s;
-}
-a:visited {
-  font-family: 'HelveticaNeue-Bold';
   text-decoration: underline;
 }
+a.selected {
+  background-color: var(--lightgreen);
+  transition-duration: 0.2s;
+  text-decoration: underline;
+}
+.underline {
+  text-decoration: underline;
+}
+.span-link {
+    display: block;
+    text-transform: uppercase;
+    line-height: 0.7;
+    padding: 0 6px;
+    margin: 0 -6px;
+    width: fit-content;
+}
+
+
 a.disabled {
-  color: --grey;
+  color: var(--grey);
   pointer-events: none;
 }
 a.btn {
-  background: --black;
-  color: --white;
+  background: var(--black);
+  color: var(--white);
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid --black;
+  border: 1px solid var(--black);
   padding: 15px 20px;
 }
 a.btn:hover {
-  background: --pink;
-  color: --black;
-  border: 1px solid --pink;
+  background: var(--pink);
+  color: var(--black);
+  border: 1px solid var(--pink);
 }
 a.btn:visited {
-  background: --pink;
-  color: --black;
-  border: 1px solid --pink;
+  background: var(--pink);
+  color: var(--black);
+  border: 1px solid var(--pink);
 }
 a.btn.disabled {
-  background: --grey;
-  color: --greylight;
-  border: 1px solid --grey;
+  background: var(--grey);
+  color: var(--greylight);
+  border: 1px solid var(--grey);
 }
 .selection {
-  color: --black;
+  color: var(--black);
   font-size: 20pt;
   text-align: center;
   border: 1px solid transparent;
   padding: 15px 20px;
 }
 .selection:hover {
-  border: 1px solid --pink;
+  border: 1px solid var(--pink);
 }
 .selection:visited {
-  border: 1px solid --black;
+  border: 1px solid var(--black);
 }
-/*================ Footer Variables ================*/
+.unavailable {
+  text-decoration: line-through;
+  color: var(--greylight);
+}
+input {
+  outline: none;
+}
+input:focus {
+  border: 2px solid;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--grey);
+  opacity: 1; /* Firefox */
+  font-family: 'HelveticaNeue-Medium', sans-serif;
+  font-weight: 500;
+}
+  
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--grey);
+  font-family: 'HelveticaNeue-Medium', sans-serif;
+  font-weight: 500;
+}
+  
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--grey);
+  font-family: 'HelveticaNeue-Medium', sans-serif;
+  font-weight: 500;
+}
+.col-4 {
+  width: calc(100% / 3);
+}
+.col-6 {
+  width: 50%;
+}
+.col-12 {
+  width: 100%;
+}
+.col-6-mob {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .col-4,
+  .col-6 {
+    width: 100%;
+  } 
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+/*=======
+========= Footer Variables ================*/
 /*================ Z-Index ================*/
 /*================ SVG ================*/
 /*================ Drawers ================*/

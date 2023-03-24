@@ -1,0 +1,7 @@
+/* .template-cart div#PageContainer {
+    min-height: 100vh;
+} */
+.template-cart div#PageContainer,
+.template-cart main#MainContent {
+    min-height: calc(100vh - 312px);
+}

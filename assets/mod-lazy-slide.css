@@ -1,0 +1,23 @@
+.section-lazy-slide {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.lazy-slide-text {
+    display: flex;
+    animation: scrollTextLazy 600s infinite linear;
+    line-height: 1;
+}
+
+.lazy-slide-text span {
+    white-space: nowrap;
+    margin-right: 50px;
+}
+
+@keyframes scrollTextLazy {
+    from   { transform: translateX(0%); }
+    to { transform: translateX(-50%); }
+}
+
+@media screen and (max-width: 768px) {
+}

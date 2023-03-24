@@ -1,0 +1,27 @@
+.buttons {
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+}
+.buttons__btn {
+    text-align: center;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons__btn:first-child {
+    border-right: unset;
+}
+.buttons__btn.col-4:nth-child(2) {
+    border-right: unset;
+}
+.buttons__btn.selected {
+    background: var(--lightgreen);
+    text-decoration: underline;
+}
+.buttons__btn a {
+    padding: 20px;
+    display: block;
+    width: 100%;
+}

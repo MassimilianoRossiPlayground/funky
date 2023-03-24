@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="{{ 'search-form-mob.css' | asset_url }}" type="text/css">
+
+<div class="search-form-mob">
+
+    <form class="search-bar__form" action="{{ routes.search_url }}" method="get" role="search">
+
+      <div class="search-bar__actions">
+        <button type="button" class="search-bar__submit search-form__submit" type="submit" data-search-form-submit>
+          {% include 'icon-funky-search' %}
+        </button>
+      </div>
+
+      <div class="search-form__input-wrapper">
+        <input type="text"
+          placeholder="Search"
+          name="q"
+          value="{{ search.terms | escape }}"
+        >
+      </div>
+      
+    </form>
+
+</div>

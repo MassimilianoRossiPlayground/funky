@@ -1,0 +1,16 @@
+h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.template-page .page-container {
+    border-top: 2px solid #000;
+}
+.template-page footer.site-footer {
+    border-top: 2px solid #000;
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }  
+}

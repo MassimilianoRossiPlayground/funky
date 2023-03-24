@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="{{ 'modal-pdp.css' | asset_url }}" type="text/css">
+<script src="{{ 'modal-pdp.js' | asset_url }}" defer="defer"></script>
+
+<div class="pdp-modal hide">
+  <div class="pdp-modal__content">
+    
+        <div class="pdp-modal__data hide" data-modal="size-guide">
+            <span class="close-modal">{% include 'icon-close' %}</span>
+            <span>SIZE CHARTS</span>
+            <h4>{{product.title}}</h4>
+            <div class="buttons-size">
+                <div class="buttons-size__btn selected col-6" data-table="cm"><a>cm</a></div>
+                <div class="buttons-size__btn col-6" data-table="inches"><a>inches</a></div>
+            </div>
+            <div class="modal-size__images">
+                <div class="data-table" data-table="cm">
+                    {% include 'size-chart-cm', type: product.metafields.custom.size_chart %}
+                </div>
+                <div class="data-table hide" data-table="inches">
+                    {% include 'size-chart-inc', type: product.metafields.custom.size_chart %}
+                </div>
+                <div class="modal-size__images__img" data-type="{{product.metafields.custom.size_chart}}">
+                    <img type="shorts" src="https://cdn.shopify.com/s/files/1/0517/7412/8293/files/shorts2.svg?v=1679502929" alt="size chart">
+                    <img type="swim shorts" src="https://cdn.shopify.com/s/files/1/0517/7412/8293/files/shorts3.svg?v=1679502929" alt="size chart">
+                    <img type="trousers" src="https://cdn.shopify.com/s/files/1/0517/7412/8293/files/panta1.svg?v=1679503444" alt="size chart">
+                    <img type="yeti shirt" src="https://cdn.shopify.com/s/files/1/0517/7412/8293/files/camicia.svg?v=1679502929" alt="size chart">
+                    <img type="vest" src="https://cdn.shopify.com/s/files/1/0517/7412/8293/files/smani.svg?v=1679502929" alt="size chart">
+                    <img type="stick" src="https://cdn.shopify.com/s/files/1/0517/7412/8293/files/shirt.svg?v=1679502929" alt="size chart">
+                    <img type="tee" src="https://cdn.shopify.com/s/files/1/0517/7412/8293/files/tee.svg?v=1679567651" alt="size chart">
+                    <img type="crewneck" src="https://cdn.shopify.com/s/files/1/0517/7412/8293/files/felpa1.svg?v=1679564078" alt="size chart">
+                    <img type="hoodie" src="https://cdn.shopify.com/s/files/1/0517/7412/8293/files/felpa2.svg?v=1679564078" alt="size chart">
+                </div>
+            </div>
+            <img src="https://cdn.shopify.com/s/files/1/0517/7412/8293/files/Group_324.png?v=1678813003" alt="size chart">
+            <br/>
+            <span class="modal-size-alert">DO NOT BLEACH, DO NOT TUMBLE DRY, DO NOT DRY CLEAN, DO<br/>NOT IRON ON PRINTS, ALWAYS EAT PIZZA.</span>
+        </div>
+        <div class="pdp-modal__data hide" data-modal="more-info">
+            <span class="close-modal">{% include 'icon-close' %}</span>
+            <span>ASSISTENZA</span>
+            <h4>SPEDIZIONE</h4>
+            <div class="more-info__text">
+                <p>
+                    <strong>ELABORAZIONE DELL’ORDINE:</strong><br/>
+                    - Gli ordini conclusi entro le ore 10 dal lunedì al venerdì possono essere spedite il giorno stesso, il tempo di lavorazione standard è fino a (3) giorni lavorativi.<br/>
+                    - Non sono disponibili consegne nel fine settimana.<br/>
+                    - Se non diversamente specificato, tutti gli ordini vengono spediti utilizzando un servizio di terra standard (2-7 giorni lavorativi).
+                </p>
+                <p>
+                    <strong>COSTI SPEDIZIONE:</strong><br/>
+                    - ITALIA: 5,00 €, gratuita per gli acquisti superiori a 50 euro.<br/>
+                    - EUROPA : 10,00 €, gratuita per gli acquisti superiori a 79 euro.<br/>
+                    - EXTRA UE: 25,00 €, gratuita per gli acquisti oltre i 400 euro.
+                </p>
+                <p>    
+                    <strong>N.B.</strong><br/>
+                    - I tempi di consegna stimati non sono garantiti. Le condizioni meteorologiche ed altre circostanze possono variare il tempo di consegna.
+                </p>
+            </div>
+        </div>
+        <div class="pdp-modal__data hide" data-modal="made-italy">
+            <span class="close-modal">{% include 'icon-close' %}</span>
+            <span>MADE IN ITALY</span>
+            <h4>FUNKY SPRAY</h4>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="made-italy__boxes">
+                <div class="made-italy__boxes__single">
+                    <img src="https://via.placeholder.com/278x222" alt="MADE IN ITALY">
+                </div>
+                <div class="made-italy__boxes__single">
+                    <img src="https://via.placeholder.com/278x222" alt="MADE IN ITALY">
+                </div>
+                <div class="made-italy__boxes__single">
+                    <img src="https://via.placeholder.com/278x222" alt="MADE IN ITALY">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

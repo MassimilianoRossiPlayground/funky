@@ -1,0 +1,56 @@
+{{ 'mod-list-products.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mod-list-products.js' | asset_url }}" defer="defer"></script>
+
+<div class="section-list-products">
+    <div class="products-group">
+        {% for product_block in section.blocks %}
+            {% include 'product-card-grid', product: product_block.settings.product_id %}      
+        {% endfor %}
+    </div>
+    <div class="products-show-more">
+        <a href="{{ section.settings.link_url }}"><span class="span-link underline">{{ section.settings.link_text }}</span></a>
+    </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "List Products",
+    "max_blocks": 8,
+    "settings": [
+        {
+            "type": "text",
+            "id": "link_text",
+            "label": "Show more text"
+        },
+        {
+            "type": "url",
+            "id": "link_url",
+            "label": "Show more url"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "product_block",
+        "name": "Products",
+        "settings": [
+            {
+                "type": "product",
+                "id": "product_id",
+                "label": "Product"
+            }
+        ]
+      }
+    ],
+    "presets": [
+        {
+            "name": "List Products",
+            "blocks": [
+                {
+                "type": "product_block"
+                }
+            ]
+        }
+    ]
+  }
+{% endschema %}

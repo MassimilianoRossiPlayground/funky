@@ -1,24 +1,17 @@
-{% comment %}
-    Renders a pagination bar
+<link rel="stylesheet" href="{{ 'pagination.css' | asset_url }}" type="text/css">
 
-    Accepts:
-    - paginate: {Object} Paginate Liquid object (required)
-
-    Usage:
-    {% include 'pagination', paginate: paginate %}
-{% endcomment %}
 <ul class="list--inline pagination">
   {% unless paginate.previous.is_link %}
-    <li aria-hidden="true">
-      <button class="btn btn--tertiary btn--narrow" disabled>
-        {% include 'icon-arrow-left' %}
+    <li class="arrow-prev" aria-hidden="true">
+      <a class="btn btn--tertiary btn--narrow" disabled>
+        {% include 'icon-funky-arrow' %}
         <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
-      </button>
+      </a>
     </li>
     {% else %}
-    <li>
+    <li class="arrow-prev">
       <a href="{{ paginate.previous.url }}" class="btn btn--tertiary btn--narrow">
-        {% include 'icon-arrow-left' %}
+        {% include 'icon-funky-arrow' %}
         <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
       </a>
     </li>
@@ -27,16 +20,16 @@
     {{ 'general.pagination.current_page' | t: current: paginate.current_page, total: paginate.pages }}
   </li>
   {% unless paginate.next.is_link %}
-    <li aria-hidden="true">
-      <button class="btn btn--tertiary btn--narrow" disabled>
-        {% include 'icon-arrow-right' %}
+    <li class="arrow-next" aria-hidden="true">
+      <a class="btn btn--tertiary btn--narrow" disabled>
+        {% include 'icon-funky-arrow' %}
         <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
-      </button>
+      </a>
     </li>
   {% else %}
-    <li>
+    <li class="arrow-next">
       <a href="{{ paginate.next.url }}" class="btn btn--tertiary btn--narrow">
-        {% include 'icon-arrow-right' %}
+        {% include 'icon-funky-arrow' %}
         <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
       </a>
     </li>

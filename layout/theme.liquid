@@ -74,6 +74,7 @@
     }
   </script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css" />
   <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}" type="text/css" media="print" onload="this.media='all';onLoadStylesheet()">
   {{ 'mr_style.css' | asset_url | stylesheet_tag }}   
   <link rel="stylesheet" type="text/css" href="{{ 'custom-font.css' | asset_url }}"> 
@@ -167,16 +168,34 @@
 
   {{ content_for_header }}
 </head>
-
-<body class="template-{{ request.page_type | handle }}">
+{% assign page_handle = request.page_type | handle %}
+<body class="template-{{ page_handle }}">
 
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
-  {%- if settings.enable_ajax -%}
-    {% include 'cart-popup' %}
-  {%- endif -%}
-
   {% section 'header' %}
+
+  {% if page_handle == "collection" %}
+
+    <div class="collection-description-parallax"
+      <div class="page-width">
+        <div class="section-header">
+          {% if collection.description != blank %}
+            <div class="collection-description title-description">
+              {{ collection.description }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% include 'filter-bar', filter_collection: collection, current_tags:current_tags, origin: "outside" %}
+
+  {% elsif page_handle == "product" %}
+
+    {% include 'filter-bar', filter_collection: product.collections[0], current_tags:current_tags, origin: "outside" %}
+
+  {% endif %}
 
   <div class="page-container drawer-page-content" id="PageContainer">
 
@@ -191,6 +210,14 @@
     </div>
 
   </div>
+
+  {% if page_handle == "product" %}
+    {% include 'modal-pdp' %}
+    {% include 'modal-pdp-product-image' %}
+  {% endif %}
+
+  <script src="{{ 'cart-popup.js' | asset_url }}" defer="defer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.js" defer="defer"></script>
 
   <ul hidden>
     <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>

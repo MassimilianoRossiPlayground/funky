@@ -1,0 +1,23 @@
+.pagination {
+    padding-top: 0;
+    background: #f5f5f5;
+}
+li.arrow-prev svg {
+    transform: rotate(90deg);
+}
+li.arrow-next svg {
+    transform: rotate(-90deg);
+}
+button.btn.btn--tertiary.btn--narrow,
+a.btn.btn--tertiary.btn--narrow {
+    border: none;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: none;
+    border-bottom: none;
+}

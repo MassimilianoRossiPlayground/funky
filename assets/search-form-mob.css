@@ -1,0 +1,35 @@
+.search-form-mob {
+    margin: 4px 0;
+}
+.search-form-mob .search-form__input-wrapper {
+    border: 2px solid #000;
+    border-right: unset;
+    width: 100%;
+}
+.search-form-mob .search-form__input-wrapper input {
+    background: transparent;
+    padding: 9px 5px 9px 30px;
+    border: none;
+}
+.search-form-mob button.search-bar__submit.search-form__submit {
+    display: block;
+}
+.search-form-mob .search-bar__actions {
+    left: -10px;
+    right: unset;
+    top: 10px;
+}
+.search-form-mob .search-bar__actions svg {
+    width: 20px;
+    height: 19px;
+    display: block;
+}
+.search-form-mob form.search-bar__form {
+    max-width: 175px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-form-mob form.search-bar__form {
+        height: 40px;
+    }
+}

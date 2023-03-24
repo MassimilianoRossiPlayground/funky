@@ -1,8 +1,6 @@
 {{ 'mod-hero-banner.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'mod-hero-banner.js' | asset_url }}" defer="defer"></script>
 
-{%- assign img_url = section.settings.image | img_url: 'master' -%}
-
 {% if section.settings.transparent_header %}
     <script>
         var pagePontainer = document.querySelector(".page-container");
@@ -10,21 +8,27 @@
     </script>
 {% endif %}
 
-<div class="section-hero-banner section-hero-banner--test">
-  {% comment %} <video width="100%" autoplay muted loop>
-    <source src="https://cdn.shopify.com/s/files/1/0285/3706/1424/files/Hero_Silver_Compressed_ca6f19d4-686d-48b3-9070-bd9219756589.mp4?v=1623418559" type="video/mp4">
-    Your browser does not support the video tag.
-  </video> {% endcomment %}
-  <div class="overlay-dark"></div>
-  <img class="hero-banner__image"src="{{ img_url }}" alt="silverskin technology" width="100%">
-  <div class="hero-banner__content">
-    <h2>{{ section.settings.herotitle }}</h2>
-    <h4>{{ section.settings.herosubtitle }}</h4>
-    <div class="hero-banner-cta">
-      {% if section.settings.cta1text != blank %}<a class="banner-cta__link" href="{{ section.settings.cta1link }}">{{ section.settings.cta1text }}</a>{% endif %}
-      {% if section.settings.cta2text != blank %}<a class="banner-cta__link" href="{{ section.settings.cta2link }}">{{ section.settings.cta2text }}</a>{% endif %}
-    </div>
-  </div>
+{% assign video_desk = section.settings.video | video_tag: image_size: 'master', autoplay: true,  loop: true, muted: true, controls: false %}
+{% assign video_mob = section.settings.video_mob | video_tag: image_size: 'master', autoplay: true,  loop: true, muted: true, controls: false %}
+
+<div class="section-hero-banner">
+    <a href="{{section.settings.link}}">
+        {% if section.settings.video %}
+            <div class="only-desk hero-video-video--desk">{{video_desk}}</div>
+            <div class="only-mob hero-video-video--mob">{{video_mob}}</div>
+        {% else %}
+            <img class="only-desk hero-banner__image" src="{{ section.settings.image | img_url: 'master' }}" alt="funky hero" width="100%">
+            <img class="only-mob hero-banner__image" src="{{ section.settings.image_mob | img_url: 'master' }}" alt="funky hero" width="100%">
+        {% endif %}
+        <div class="hero-banner__content">
+            <div class="boxed">
+                <div class="hero-banner__content__boxed">
+                    <span class="span-link">{{ section.settings.left_text }}</span>
+                    <span class="medium span-link">{{ section.settings.right_text }}</span>
+                </div>
+            </div>
+        </div>
+    </a>
 </div>
 
 {% schema %}
@@ -37,39 +41,39 @@
             "label": "Transparent Header"
         },
         {
-            "type": "text",
-            "id": "herotitle",
-            "label": "Hero Title"
-        },
-        {
-            "type": "text",
-            "id": "herosubtitle",
-            "label": "Hero SubTitle"
-        },
-        {
             "type": "image_picker",
             "id": "image",
             "label": "Image"
         },
         {
-            "type": "text",
-            "id": "cta1text",
-            "label": "CTA 1 Text"
+            "type": "image_picker",
+            "id": "image_mob",
+            "label": "Image Mob"
+        },
+        {
+            "type": "video",
+            "id": "video",
+            "label": "Video"
+        },
+        {
+            "type": "video",
+            "id": "video_mob",
+            "label": "Video Mob"
         },
         {
             "type": "text",
-            "id": "cta1link",
-            "label": "CTA 1 Link"
+            "id": "left_text",
+            "label": "Left Text"
         },
         {
             "type": "text",
-            "id": "cta2text",
-            "label": "CTA 2 Text"
+            "id": "right_text",
+            "label": "Right Text"
         },
         {
-            "type": "text",
-            "id": "cta2link",
-            "label": "CTA 2 Link"
+            "type": "url",
+            "id": "link",
+            "label": "Link"
         }
     ],
     "presets": [

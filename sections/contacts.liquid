@@ -1,0 +1,77 @@
+{{ 'contacts.css' | asset_url | stylesheet_tag }}
+
+<div class="boxed">
+  <div class="contact-form">
+    {%- assign formId = 'ContactForm' -%}
+    {% form 'contact', id: formId %}
+      {% comment %} {% include 'form-status', form: form, form_id: formId %} {% endcomment %}
+
+      <div class="form-container">
+        <div class="col-6">
+          <div class="form-input">
+            <input type="text" id="{{ formId }}-name" name="contact-name" placeholder="NAME">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-input">
+            <input
+              type="email"
+              id="{{ formId }}-email"
+              name="contact-email"
+              autocorrect="off"
+              autocapitalize="off"
+              aria-required="true" 
+              placeholder="EMAIL"
+              {%- if form.errors contains 'email' -%}
+                class="input--error"
+                aria-invalid="true"
+                aria-describedby="{{ formId }}-email-error"
+              {%- endif -%}
+              >
+            {%- if form.errors contains 'email' -%}
+              <span id="{{ formId}}-email-error" class="input-error-message">
+                <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                {% include 'icon-error' %}
+                <span>Insert valid email.</span>
+              </span>
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-input">
+            <input type="text" id="{{ formId }}-subject" name="contact-subject" placeholder="SUBJECT">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-input">
+            <textarea rows="10" id="{{ formId }}-message" name="contact-message" placeholder="MESSAGE"></textarea>
+          </div>
+        </div>
+
+        <input type="hidden" id="hidden" name="contact-hidden" value="{{ section.settings.hidden_text }}">
+
+        <input type="submit" class="btn" value="SEND">
+
+      </div>
+
+    {% endform %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Contacts",
+    "settings": [
+      {
+          "type": "text",
+          "id": "hidden_text",
+          "label": "Hidden text input"
+      }
+    ],
+    "presets": [
+        {
+            "name": "Contacts"
+        }
+    ]
+  }
+{% endschema %}

@@ -2,30 +2,36 @@
 <script src="{{ 'mod-two-boxes.js' | asset_url }}" defer="defer"></script>
 
 <div class="section-two-boxes">
-    {% for block in section.blocks %}
-        {%- assign img_url = block.settings.image | img_url: 'master' -%}
-        <div class="box-single">
-            <img class="box-single__image" src="{{ img_url }}" alt="funkysnowboard {{ block.settings.title }}">
-            <div class="box-single__content">
-                <h5>{{ block.settings.title }}</h5>
-                <a href="{{ block.settings.cta_url }}">{{ block.settings.cta_text }}</a>
-            </div>
+    <div class="boxed">
+        <div class="boxes-group">
+            {% for block in section.blocks %}
+                {%- assign img_url = block.settings.image | img_url: 'master' -%}
+                <div class="box-cover">
+                    <a class="box-single" href="{{ block.settings.url }}">
+                        <img class="box-single__image" src="{{ img_url }}" alt="funkysnowboard {{ block.settings.title }}">
+                        <div class="box-single__content">
+                            <h5 class="box-single__content__title"><span class="span-link">{{ block.settings.title }}</span></h5>
+                            <h5><span class="span-link">{{ block.settings.slug }}</span></h5>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
         </div>
-    {% endfor %}
+    </div>
 </div>
 
 
 {% schema %}
   {
     "name": "Two Boxes",
-    "max_blocks": 2,
+    "max_blocks": 4,
     "blocks": [
       {
         "type": "boxes",
         "name": "Boxes",
         "settings": [
             {
-                "type": "image",
+                "type": "image_picker",
                 "id": "image",
                 "label": "Image"
             },
@@ -36,13 +42,13 @@
             },
             {
                 "type": "text",
-                "id": "cta_text",
-                "label": "CTA Text"
+                "id": "slug",
+                "label": "Slug"
             },
             {
                 "type": "url",
-                "id": "cta_url",
-                "label": "CTA Url"
+                "id": "url",
+                "label": "Url"
             }
         ]
       }

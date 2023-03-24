@@ -1,0 +1,21 @@
+.rich-text {
+    margin-bottom: 40px;
+}
+.rich-text p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }  
+    .rich-text {
+        margin-bottom: 20px;
+    }
+    .rich-text p {
+        margin-bottom: 14px;
+    }
+    .form-container {
+        margin-top: 40px;
+    }
+}

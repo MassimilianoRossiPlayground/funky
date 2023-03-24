@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="{{ 'filter-bar.css' | asset_url }}" type="text/css">
+
+<div class="filter-bar filter-bar--{{origin}}">
+  <div class="filter-bar__mob-bar">
+    <div class="filter-bar__mob-bar__breadcrumbs"><a href="/">home</a> > <span>{{ filter_collection.title | downcase }}</span> | <span class="collection-product-count">{{ 'collections.general.items_with_count' | t: count: filter_collection.products_count }}</span></div>
+    <div class="filter-bar__mob-bar__action">
+      <span>categories </span> 
+      <span class="plus">+</span>
+      <span class="dash hide">-</span>
+    </div>
+    <div class="filter-bar__mob-bar__curtag">
+      {% if current_tags == blank %}
+        <span class="span-link">all</span>
+      {% else %}
+        <span class="span-link">{{current_tags}}</span>
+      {% endif %}
+    </div>
+  </div>
+  <div class="filter-bar__breadcrumbs"><a href="/">home</a> > <span>{{ filter_collection.title | downcase }}</span> | <span class="collection-product-count">{{ 'collections.general.items_with_count' | t: count: filter_collection.products_count }}</span></div>
+  <div class="filter-bar__tags">
+    <a class="tag-all {% if current_tags == blank %} selected{% endif %}" href="{{ filter_collection.url }}"><span class="span-link">all</span></a>
+    {% for tag in filter_collection.all_tags limit: 10 %}
+
+      {% if tag != filter_collection.title %}
+        {% comment %} {%- assign new_url = tag | link_to_tag: tag | split: 'href="' | last | split: '"' | first -%} {% endcomment %}
+        {% assign tag_handle = tag | downcase %}
+        {%- assign new_url = filter_collection.url | append: "/" | append: tag_handle -%}
+        <a href="{{ new_url }}" class="tag-single {% if current_tags contains tag %}selected{% endif %}"><span class="span-link">{{ tag }}</span></a>
+      {% endif %}
+      
+    {% endfor %}
+  </div>
+</div>

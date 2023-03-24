@@ -1,0 +1,64 @@
+{{ 'buttons.css' | asset_url | stylesheet_tag }}
+
+{% if section.blocks.size == 3 %}
+  {% assign class_col = "col-4" %}
+{% elsif section.blocks.size == 2 %}
+  {% assign class_col = "col-6" %}
+{% else %}
+  {% assign class_col = "col-12" %}
+{% endif %}
+
+<div class="boxed">
+  <div class="buttons">
+    {% for button in section.blocks %}
+      {% if button.settings.btn_selected %}
+        {% assign class_btn = "selected" %}
+      {% else %}
+        {% assign class_btn = "" %}
+      {% endif %}  
+      <div class="buttons__btn {{class_btn}} {{class_col}}">
+        <a href="{{ button.settings.btn_link }}">{{ button.settings.btn_text }}</a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Buttons",
+    "max_blocks": 3,
+    "blocks": [
+      {
+        "type": "buttons",
+        "name": "Buttons",
+        "settings": [
+          {
+              "type": "text",
+              "id": "btn_text",
+              "label": "BTN Text"
+          },
+          {
+              "type": "url",
+              "id": "btn_link",
+              "label": "BTN Link"
+          },
+          {
+              "type": "checkbox",
+              "id": "btn_selected",
+              "label": "BTN Selected"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Buttons",
+        "blocks": [
+          {
+            "type": "buttons"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

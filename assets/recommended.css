@@ -1,0 +1,26 @@
+.product-recommendations__inner {
+    padding: 0;
+}
+.product-recommendations__inner .section-header {
+    padding: 0 20px;
+    margin: 0;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.recommended-products-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recommended-product-single {
+    width: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .recommended-product-single {
+        width: 100%;
+    }
+    
+}

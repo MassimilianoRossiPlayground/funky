@@ -3,14 +3,33 @@
     padding: 60px 0;
 }
 .section-paragraph__content .title-description p {
+    font-family: "HelveticaNeue";
     padding: 0 0 25px 0;
     margin: 0;
 }
-.section-paragraph__content__link {
-    text-align: center;
-    display: block;
+a.section-paragraph__content__link:hover {
+    background-color: unset;
+    transition-duration: unset;
 }
-.section-paragraph__content__link svg {
+a.section-paragraph__content__link:hover span {
+    background-color: var(--lightgreen);
+}
+a.section-paragraph__content__link {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.section-paragraph__content__link svg {
     margin-left: 8px;
 }
 
+@media screen and (max-width: 768px) {
+    .section-paragraph {
+        padding: 30px 0;
+        text-align: left;
+    }
+    .title-description {
+        font-size: 24px;
+    }
+}

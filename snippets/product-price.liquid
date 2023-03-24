@@ -64,26 +64,27 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.sale_price' | t }}</span>
       </dt>
       <dd>
-        <span class="price-item price-item--sale" data-sale-price>
-          {{ money_price }}
-        </span>
+        <s class="price-item price-item--regular" data-regular-price>
+          {{ compare_at_price | money }}
+        </s>
       </dd>
       <dt>
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.regular_price' | t }}</span>
       </dt>
       <dd>
-        <s class="price-item price-item--regular" data-regular-price>
-          {{ compare_at_price | money }}
-        </s>
+        <span class="price-item price-item--sale" data-sale-price>
+          {{ money_price }}
+        </span>
       </dd>
+
     </div>
     <div class="price__badges">
       <span class="price__badge price__badge--sale" aria-hidden="true">
         <span>{{ 'products.product.on_sale' | t }}</span>
       </span>
-      <span class="price__badge price__badge--sold-out">
+      {% comment %} <span class="price__badge price__badge--sold-out">
         <span>{{ 'products.product.sold_out' | t }}</span>
-      </span>
+      </span> {% endcomment %}
     </div>
   </div>
   <div class="price__unit">

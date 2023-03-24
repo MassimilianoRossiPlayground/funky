@@ -5,6 +5,18 @@
     position: relative;
 }
 
+.section-hero-banner .hero-banner__image.only-desk {
+    transform: scale(1.00);
+    transition-duration: 0.2s;
+}
+.section-hero-banner:hover .hero-banner__image.only-desk {
+    transform: scale(1.005);
+    transition-duration: 0.2s;
+    position: relative;
+    z-index: -1;
+    display: block;
+}
+
 .section-hero-banner video {
     width: 100%;
     height: auto;
@@ -17,66 +29,38 @@
     object-fit: cover;
     display: block;
 }
-
-.section-hero-banner .hero-banner__content {
-    max-width: 730px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-    z-index: 1;
+.hero-banner__image.only-desk {
+    min-height: 100vh;
+}
+.hero-banner__image.only-mob {
+    display: none;
 }
 
-.section-hero-banner svg {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%) rotate(-90deg);
-    color: #fff;
-    width: 35px;
-    height: 35px;
+.hero-banner__content {
+    padding: 20px 0;
+    border-bottom: 2px solid #000;
 }
-
-.section-hero-banner h1 {
-    color: #fff;
-    font-family: "barlow-bold-italic" !important;
-    font-size: 70px;
-}
-
-.section-hero-banner h4 {
-    color: #fff;
-    font-family: "barlow-medium" !important;
-    font-size: 18px;
-}
-
-.hero-banner-cta {
+.hero-banner__content__boxed {
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'HelveticaNeue';
 }
-
-.banner-cta__link {
-    padding: 10px;
-    border: 1px solid #fff;
-    width: 220px;
+.section-hero-banner a:hover span {
+    background: var(--lightgreen);
     display: block;
-    color: #fff;
-    font-family: 'barlow-semibold';
-    margin: 10px;
-    text-align: center;
-}
 
-.banner-cta__link:hover {
-    color: #fff;
 }
-
 
 @media screen and (max-width: 768px) {
     .hero-banner__image {
-        height: 90vh;
+        height: 70vh;
         object-position: 65%;
+    }
+    .hero-banner__image.only-mob {
+        display: block;
+    }
+    .hero-banner__image.only-desk {
+        display: none;
     }
 }
