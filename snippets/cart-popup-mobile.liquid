@@ -28,9 +28,11 @@
               {% assign maxItems = itemVariant.inventory_quantity %}
             {% endif %}
           {% endfor %}
-            <div class="cart-item-single" attr="{{productHandle}}">
+            <div class="cart-item-single" attr="{{productHandle}}" data-item-line="{{forloop.index}}">
               <div class="cart-item-single__image">
-                <img class="cart-image{% if item.image == null %} hide{% endif %}" src="{{ item | img_url: 'x190' }}" alt="{{ item.image.alt | escape }}"> 
+                <a href="{{item.url}}">
+                  <img class="cart-image{% if item.image == null %} hide{% endif %}" src="{{ item | img_url: 'x190' }}" alt="{{ item.image.alt | escape }}"> 
+                </a>
               </div>
               <div class="cart-item-single__content">
                 <div class="cart-item-title">
@@ -46,7 +48,7 @@
                         <span>{{ option.value }}</span>
                       {%- endfor -%}
                     </div>
-                    <div class="cart-item-info__option__price">
+                    <div class="cart-item-info__option__price" data-price-clean="{{item.original_price | money_without_currency}}">
                       {{ item.original_price | money }}
                     </div>
                   </div>
@@ -79,11 +81,17 @@
       <div class="cart-popup__checkout">
         <div class="cart-popup-subtotal">
           <span class="cart-popup-subtotal__title">TOTAL</span>
-          <span class="cart-popup-subtotal__price" data-cart-subtotal>{{ cart.total_price | money_with_currency }}</span>
+          <span class="cart-popup-subtotal__price" 
+                data-subtotal-clean="{{cart.total_price | money_without_currency}}" 
+                data-subtotal-currency_symbol="{{localization.country.currency.symbol}}" 
+                data-subtotal-currency_iso_code="{{localization.country.currency.iso_code}}" 
+                data-cart-subtotal>
+                {{ cart.total_price | money_with_currency }}
+          </span>
         </div>
         <div class="cart__submit-controls">
           <input type="submit" name="checkout" class="cart-submit" value="CHECK OUT">
-          <span>Spedizione gratuita in tutta Europa per ordini superiori a 50€. Ordini spediti entro 24h!</span>
+          <span>{{ 'cart.general.taxes_and_shipping_at_checkout' | t }}</span>
         </div>
       </div>
       {% endif %}

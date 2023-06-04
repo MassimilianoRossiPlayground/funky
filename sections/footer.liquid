@@ -130,7 +130,8 @@
             {%- case block.type -%}
               {%- when 'newsletter' -%}
                 
-                {% include 'newsletter', position: 'footer', form: form %}
+                <div class="btn-open-newsletter"><span>FUNKY FAMILY NEWSLETTER</span></div>
+                {% comment %} {% include 'newsletter', position: 'footer', form: form %} {% endcomment %}
 
               {%- when 'text' -%}
                 {%- if block.settings.text != blank -%}

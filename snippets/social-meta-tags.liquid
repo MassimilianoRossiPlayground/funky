@@ -8,6 +8,11 @@
   {%- capture og_image_secure_url_tags -%}<meta property="og:image:secure_url" content="https:{{ page_image | img_url: '1200x1200' }}">{%- endcapture -%}
 {% endif %}
 
+{% if page_title == "THE GUARDIAN - LIVIGNO" %}
+  <meta property="og:image" content="http://cdn.shopify.com/s/files/1/0517/7412/8293/files/guardian-mob.jpg?v=1680508303">
+  <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0517/7412/8293/files/guardian-mob.jpg?v=1680508303">
+{% endif %}
+
 {% comment %} Template specific overides {% endcomment %}
 {% if request.page_type == 'product' %}
   {%- assign og_type = 'product' -%}

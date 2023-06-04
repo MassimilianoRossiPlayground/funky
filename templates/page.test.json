@@ -1,0 +1,28 @@
+{
+  "sections": {
+    "58104eeb-9f35-4c3f-9896-4ebe449d795e": {
+      "type": "contacts",
+      "settings": {
+        "hidden_text": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "bc968b9e-f027-4344-9c59-ccdcc3406452": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<h1>h1 text<\/h1><h2>h2 text<\/h2><h3>h3 text<\/h3><h4>h4 text<\/h4><h5>h5 text<\/h5><h6>h6 text<\/h6><h6><\/h6><p>paragrafo test<\/p><p><strong>bold text<\/strong><\/p><p><strong>BOLD TEXT MAIUSCOLO<\/strong><\/p><p><strong>ULTRA TEE WHITE<\/strong><\/p><p><strong>ultra tee white<\/strong><\/p><p><a href=\"#\" title=\"#\">apparel link<\/a><\/p>",
+        "text_size": "medium"
+      }
+    }
+  },
+  "order": [
+    "58104eeb-9f35-4c3f-9896-4ebe449d795e",
+    "main",
+    "bc968b9e-f027-4344-9c59-ccdcc3406452"
+  ]
+}

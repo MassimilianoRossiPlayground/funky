@@ -25,7 +25,7 @@
     "pagination": {
       "previous": "Pagina precedente",
       "next": "Pagina successiva",
-      "current_page": "Pagina {{ current }} di {{ total }}"
+      "current_page": "{{ current }} \/ {{ total }}"
     },
     "password_page": {
       "opening_soon": "Prossima apertura",
@@ -72,10 +72,11 @@
       }
     },
     "newsletter_form": {
-      "newsletter_email": "Iscriviti alla nostra mailing list",
-      "email_placeholder": "Indirizzo email",
+      "newsletter_email": "Iscriviti alla nostra newsletter per essere il primo a ricevere promozioni senza senso!",
+      "newsletter_email_secondary": "Iscriviti alla nostra newsletter per essere il primo a ricevere promozioni senza senso!",
+      "email_placeholder": "EMAIL",
       "confirmation": "Grazie per l'iscrizione!",
-      "submit": "Iscriviti"
+      "submit": "SUBSCRIBE"
     },
     "filters": {
       "show_more": "Mostra di più",
@@ -163,10 +164,10 @@
       "remove": "Rimuovi",
       "subtotal": "Subtotale",
       "savings": "Stai risparmiando",
-      "taxes_and_shipping_at_checkout": "Imposte e spese di spedizione calcolate al momento del pagamento",
-      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\">spese di spedizione<\/a> calcolate al momento del pagamento",
-      "taxes_included_but_shipping_at_checkout": "Imposte incluse e spese di spedizione calcolate al momento del pagamento",
-      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\">Spedizione<\/a> calcolata al momento del pagamento.",
+      "taxes_and_shipping_at_checkout": "Spedizione gratuita in Italia per ordini superiori a 60€. Spediti in 24h!",
+      "taxes_and_shipping_policy_at_checkout_html": "Spedizione gratuita in Italia per ordini superiori a 60€. Spediti in 24h!",
+      "taxes_included_but_shipping_at_checkout": "Spedizione gratuita in Italia per ordini superiori a 60€. Spediti in 24h!",
+      "taxes_included_and_shipping_policy_html": "Spedizione gratuita in Italia per ordini superiori a 60€. Spediti in 24h!",
       "update": "Aggiornamento",
       "checkout": "Check-out",
       "empty": "Il tuo carrello è attualmente vuoto.",
@@ -184,7 +185,7 @@
       "qty": "Quantità",
       "regular_total": "Totale di listino",
       "remove": "Rimuovi {{ product }}",
-      "total": "Totale",
+      "total": "TOTALE",
       "update": "Aggiornamento"
     },
     "popup": {
@@ -217,18 +218,18 @@
     },
     "filters": {
       "title_tags": "Filtra per",
-      "all_tags": "Tutte i prodotti"
+      "all_tags": "All"
     }
   },
   "contact": {
     "form": {
       "name": "Nome",
       "email": "Email",
-      "phone": "Numero di telefono",
+      "phone": "Tel",
       "message": "Messaggio",
       "submit": "Invia",
-      "post_success": "Grazie per averci contattato. Risponderemo al più presto possibile.",
-      "error_heading": "Si prega di regolare il seguente:"
+      "post_success": "Grazie per averci contattato, ti risponderemo a breve! O forse no, boh, tu lo sai?!",
+      "error_heading": "Compila correttamente tutti i campi."
     }
   },
   "customer": {
@@ -374,12 +375,12 @@
   "products": {
     "product": {
       "regular_price": "Prezzo di listino",
-      "sold_out": "Esaurito",
+      "sold_out": "SOLD OUT!",
       "unavailable": "Non disponibile",
-      "on_sale": "In Offerta",
+      "on_sale": "NOW!",
       "sale_price": "Prezzo scontato",
       "quantity": "Quantità",
-      "add_to_cart": "Aggiungi al carrello",
+      "add_to_cart": "ADD TO CART",
       "loader_label": "Inserimento del prodotto nel carrello",
       "back_to_collection": "Torna a {{ title }}",
       "vendor": "Venditore",
@@ -418,6 +419,29 @@
       "pick_up_currently_unavailable": "Ritiro attualmente non disponibile",
       "pick_up_available_at_html": "Ritiro disponibile presso <strong>{{ location_name }}<\/strong>",
       "pick_up_unavailable_at_html": "Ritiro presso <strong>{{ location_name }}<\/strong> attualmente non disponibile"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "stock": {
+        "title": "SOLD OUT!",
+        "sold_out_label": "SOLD OUT!"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Iscriviti alla nostra newsletter per essere il primo a ricevere promozioni senza senso!"
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "out_of_stock": "SOLD OUT!"
+        }
+      }
+    },
+    "notices": {
+      "cart": {
+        "product_sold_out": "SOLD OUT!"
+      }
     }
   }
 }

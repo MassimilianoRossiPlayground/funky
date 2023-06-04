@@ -1,5 +1,5 @@
 <div class="site_newsletter">
-    {%- assign formId = 'Contact-' | append: position -%}
+    {%- assign formId = 'Contact-Newsletter' -%}
     {% form 'customer', id: formId, novalidate: 'novalidate' %}
     {%- if form.posted_successfully? -%}
         <p class="form-message form-message--success" tabindex="-1" data-form-status>
@@ -24,18 +24,26 @@
             aria-describedby="{{ formId }}-email-error"
             data-form-status
         {% endif %}>
+
+        {% if form.tags == "newsletter" %}
+            <span class="input-error-message site_newsletter-error">Email già registrata oppure invalida!</span>
+        {% endif %}
+
+        {% comment %} {% if form.errors contains 'email' %}
+            <span id="{{ formId }}-email-error" class="input-error-message">
+                <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                <span class="site_newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+            </span>
+        {% endif %} {% endcomment %}
+
+
         <span class="input-group__btn">
         <button type="submit" class="btn newsletter__submit" name="commit" >
             <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
         </button>
         </span>
     </div>
-    {% if form.errors contains 'email' %}
-        <span id="{{ formId }}-email-error" class="input-error-message">
-        <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
-        {% include 'icon-error' %}
-        <span class="site_newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
-        </span>
-    {% endif %}
+    <span class="form-newsletter-error-check hide">Check your email address</span>
+
     {% endform %}
 </div>

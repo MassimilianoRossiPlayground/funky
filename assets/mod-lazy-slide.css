@@ -5,7 +5,7 @@
 
 .lazy-slide-text {
     display: flex;
-    animation: scrollTextLazy 600s infinite linear;
+    animation: scrollTextLazy 60s infinite linear;
     line-height: 1;
 }
 

@@ -4,7 +4,29 @@
 <div class="section-list-products">
     <div class="products-group">
         {% for product_block in section.blocks %}
-            {% include 'product-card-grid', product: product_block.settings.product_id %}      
+
+            {% comment %} {% assign p_id = product_block.settings.product_id %}
+            {% assign p_variants = all_products[p_id].variants %} {% endcomment %}
+
+            {% include 'product-card-grid', product: product_block.settings.product_id %}
+            
+            {% comment %} <a class="products-single-card" href="{{ all_products[p_id].url }}">
+                <img class="products-single-card__image" src="{{ all_products[p_id].featured_image | img_url: '1024x' }}" alt="best seller silverskin">
+                <div class="products-single-card__content">
+                    <span class="products-single-card__content__price">{{ all_products[p_id].price | money }}</span>
+                    <div class="products-single-card__content__variants">
+                        {% for variant_check in all_products[p_id].variants %} 
+                            {% if variant_check.available %}
+                                {% assign class_variant = "available" %}
+                            {% else %}
+                                {% assign class_variant = "unavailable" %}
+                            {% endif %}
+                            <span class="{{ class_variant }}">{{ variant_check.title }}</span>
+                        {%- endfor -%}
+                    </div>
+                    <h5 class="products-single-card__content__title">{{ all_products[p_id].title }}</h5>
+                </div>
+            </a> {% endcomment %}
         {% endfor %}
     </div>
     <div class="products-show-more">

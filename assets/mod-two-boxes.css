@@ -1,6 +1,9 @@
 .section-two-boxes {
     margin: 0;
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 60px;
 }
 .boxes-group {
     display: flex;
@@ -10,7 +13,7 @@
     margin: 0 auto;
 }
 .box-cover {
-    width: calc(50% - 20px);
+    width: calc(37vw - 20px);
     text-decoration: none;
     border: 2px solid #000;
     margin-bottom: 30px;
@@ -52,11 +55,16 @@ a.box-single:hover .box-single__content h5 {
 }
 .box-single__content h5 {
     font-family: "HelveticaNeue-Medium";
+    font-weight: 500;
     margin: 0;
     text-transform: uppercase;
 }
 .box-single__content h5.box-single__content__title {
-    font-family: "HelveticaNeue"
+    font-family: "HelveticaNeue";
+    font-weight: 400;
+}
+.box-single__content__title .span-link {
+    font-family: "HelveticaNeue";
 }
 a.box-single:hover h5 span {
     background-color: var(--lightgreen);
@@ -66,6 +74,7 @@ a.box-single:hover h5 span {
 @media screen and (max-width: 1020px) {
     .box-cover {
         width: 100%;
+        margin-bottom: 20px;
     }
     .box-cover:nth-child(even) {
         margin-left: 0;
@@ -80,10 +89,18 @@ a.box-single:hover h5 span {
     }
 }
 
+@media screen and (min-width: 1575px ) {
+    .section-two-boxes .boxed {
+        max-width: 100%;
+    }
+}
 @media screen and (max-width: 768px) {
 
     .section-two-boxes {
-        padding: 40px 0;
+        padding-top: 40px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 40px;
     }
     .box-cover:last-child {
         margin-bottom: 0;

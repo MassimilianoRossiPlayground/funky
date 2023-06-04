@@ -1,0 +1,123 @@
+<div class="site_iscrizione">
+    {% comment %} {%- assign formId = 'Contact-iscrizione' -%} {% endcomment %}
+    {% comment %} {% form 'contact', id: formId %}
+        {%- if form.posted_successfully? -%}
+            <p class="form-message form-message--success" tabindex="-1" data-form-status>
+            Grazie per esserti iscritto!
+            </p>
+        {%- else -%}
+            <input type="hidden" name="contact[tags]" value="iscrizione">
+            <div class="input-group input-group--iscrizione {% if form.errors %} input-group--error{% endif %}">
+
+                <div class="input-single">
+                    <input type="text" 
+                        name="contact[first_name]" 
+                        id="{{ formId }}-first_name" 
+                        class="input-group__field iscrizione__input{% if form.errors contains 'first_name' %}input--error{% endif %}" 
+                        value="{{ form.first_name }}" 
+                        placeholder="NOME" 
+                        required >
+                </div>
+                <div class="input-single">
+                <input type="text" 
+                    name="contact[last_name]" 
+                    id="{{ formId }}-last_name" 
+                    class="input-group__field iscrizione__input{% if form.errors contains 'last_name' %}input--error{% endif %}" 
+                    value="{{ form.last_name }}" 
+                    placeholder="COGNOME" 
+                    required >
+                </div>
+                <div class="input-single">
+                    <input type="email" 
+                    name="contact[email]" 
+                    id="{{ formId }}-email" 
+                    class="input-group__field iscrizione__input {% if form.errors contains 'email' %}input--error{% endif %}" 
+                    value="{{ form.email }}" 
+                    placeholder="MAIL" 
+                    required >
+                </div>
+
+                <div class="input-single input-single--radio">
+                    <div class="form-select-radio">
+                        <label>CATEGORIA</label>
+                        <div class="form-select-radio__option">
+                            <input type="radio" id="{{ formId }}-categoria-skier" name="contact[categoria]" value="skier" required>
+                            <label for="{{ formId }}-categoria-skier"> SKIER</label>
+                        </div>
+                        <div class="form-select-radio__option">
+                            <input type="radio" id="{{ formId }}-categoria-snowboarder" name="contact[categoria]" value="snowboarder" required>
+                            <label for="{{ formId }}-categoria-snowboarder"> SNOWBOARDER</label>
+                        </div>
+                    </div>
+                </div>
+
+                {% if form.errors contains 'email' %}
+                    <span id="{{ formId }}-email-error" class="input-error-message">
+                    <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                    <span class="site_iscrizione-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                    </span>
+                {% endif %}
+
+                <span class="input-group__btn">
+                <button type="submit" class="btn iscrizione__submit" name="commit" >
+                    <span class="iscrizione__submit-text--large">ISCRIVIMI AL BANKED SLALOM</span>
+                </button>
+                </span>
+            </div>
+            <span class="form-iscrizione-error-check hide">Check your email address</span>
+
+        {%- endif -%}
+    {% endform %} {% endcomment %}
+
+
+        <div style="">
+            <div id="mc_embed_signup">
+                <form action="https://funkysnowboards.us14.list-manage.com/subscribe/post?u=89b8f3b616d76731322d64b73&amp;id=3f7ec8f484&amp;f_id=0046b6e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+                    <div id="mc_embed_signup_scroll">
+
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div> 
+
+                    <div class="input-group input-group--iscrizione">
+                        <div class="input-single">
+                            <input type="text" value="" name="FNAME" class="required" id="mce-FNAME" placeholder="NAME" required>
+                            <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+                        </div>
+
+                        <div class="input-single">
+                            <input type="text" value="" name="LNAME" class="required" id="mce-LNAME" placeholder="LASTNAME" required>
+                            <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
+                        </div>
+
+                        <div class="input-single">
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="EMAIL" required>
+                            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                        </div>
+
+                        <div class="input-single input-single--radio">
+                            <div class="form-select-radio">
+                                <label>CATEGORY</label>
+                                <div class="form-select-radio__option">
+                                    <input type="radio" value="SNOWBOARDER" name="CATEGORIA" id="mce-CATEGORIA-1" required>
+                                    <label for="mce-CATEGORIA-1"> SNOWBOARDER</label>
+                                </div>
+                                <div class="form-select-radio__option">
+                                    <input type="radio" value="SKIER" name="CATEGORIA" id="mce-CATEGORIA-0" required>
+                                    <label for="mce-CATEGORIA-0"> SKIER</label>
+                                </div>
+                            </div>
+                            <span id="mce-CATEGORIA-HELPERTEXT" class="helper_text"></span>
+                        </div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_89b8f3b616d76731322d64b73_3f7ec8f484" tabindex="-1" value=""></div>
+                        <div class="btn-container clear"><input class="button btn iscrizione__submit" type="submit" value="REGISTERED AT BANKED SLALOM" name="subscribe" id="mc-embedded-subscribe"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='CATEGORIA';ftypes[5]='radio';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
+
+        </div>
+</div>

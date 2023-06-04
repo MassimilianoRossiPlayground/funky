@@ -1,0 +1,197 @@
+.iscrizione-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #00000073;
+    z-index: 20;
+}
+.iscrizione-modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f5f5f5;
+    padding: 40px;
+    border: 1px solid #000;
+}
+.close-iscrizione-modal {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 100;
+    cursor: pointer;
+}
+.iscrizione-modal__content h4 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    line-height: 1;
+}
+.site_iscrizione {
+    margin-top: 40px;
+}
+.sup-title-iscrizione {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.close-modal-iscrizione {
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+.iscrizione-text {
+    margin: 80px 0 20px 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+}
+.iscrizione-text-sub {
+    margin: 20px 0 20px 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+}
+.input-group.input-group--iscrizione {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 860px;
+}
+.input-group.input-group--iscrizione .input-single {
+    width: 50%;
+    margin-bottom: 20px;
+}
+.input-group.input-group--iscrizione .input-single input[type="text"],
+.input-group.input-group--iscrizione .input-single input[type="email"] {
+    width: calc(100% - 60px);
+    background: #f5f5f5;
+    border-color: #000;
+}
+button.btn.iscrizione__submit {
+    width: 100%;
+    margin-top: 10px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: unset;
+}
+.iscrizione-modal__content input#Contact--email {
+    border: 2px solid #000;
+}
+
+.iscrizione-modal__content input#Contact--email:focus {
+    color: #000;
+    background-color: #fff;
+}
+.iscrizione-modal__content input#Contact--email:focus::placeholder,
+.iscrizione-modal__content input#Contact--email:focus::-webkit-input-placeholder,
+.iscrizione-modal__content input#Contact--email:focus:-moz-placeholder {
+    color: var(--grey2);
+}
+.iscrizione-modal__content input#Contact--email::placeholder {
+    color: var(--grey2);
+    opacity: 1; /* Firefox */
+}
+  
+.iscrizione-modal__content input#Contact--email:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: var(--grey2);
+}
+  
+.iscrizione-modal__content input#Contact--email::-ms-input-placeholder { /* Microsoft Edge */
+   color: var(--grey2);
+}
+
+span.site_iscrizione-error {
+    color: var(--pink);
+}
+.iscrizione-modal__content input#Contact-iscrizione-email {
+    background: #f5f5f5;
+    border: 2px solid #000;
+    outline: unset !important;
+}
+
+.input-group.input-group--iscrizione .input-single input[type=radio] {
+  border: 1px solid #000;
+  padding: 6px 6px 7px 7px;
+  -webkit-appearance: none;
+}
+
+.input-group.input-group--iscrizione .input-single input[type=radio]:checked {
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=) no-repeat center center;
+  background-size: 9px 9px;
+}
+
+.input-group.input-group--iscrizione .input-single input[type=radio]:focus {
+  outline-color: transparent;
+}
+.input-group.input-group--iscrizione span.input-group__btn {
+    width: calc(100% - 20px);
+}
+p.form-message.form-message--success {
+    width: calc(100% - 40px);
+}
+.btn-container.clear {
+    width: 100%;
+}
+input#mc-embedded-subscribe {
+    width: 100%;
+    background: #000;
+}
+div#mce-responses {
+    margin: 20px 0;
+}
+div#mce-success-response {
+    color: #008900;
+}
+
+@media screen and (max-width:991px) {
+    .input-group.input-group--iscrizione {
+        width: unset;
+    }
+    .iscrizione-modal__content {
+        width: 73%;
+    }
+    .iscrizione-text {
+        margin: 40px 0 20px;
+    }
+    .mobile-nav-wrapper__content .btn-open-iscrizione {
+        cursor: pointer;
+    }
+    .mobile-nav-wrapper__content .btn-open-iscrizione span {
+        border: 1px solid #000;
+        padding: 4px 10px;
+        display: block;
+        width: fit-content;
+        text-align: center;
+        font-size: 14px;
+        text-decoration: underline;
+        color: #000;
+        margin: 0 auto;
+    }
+    .input-group.input-group--iscrizione .input-single {
+        width: 100%;
+    } 
+    .iscrizione-modal__content h4 {
+        font-size: 25px;
+    }
+    .iscrizione-modal {
+        overflow: auto;
+    }
+    .input-group.input-group--iscrizione .input-single.input-single--radio {
+        width: 50%;
+    }
+    .site_iscrizione {
+        margin-top: 10px;
+    }
+    p.form-message.form-message--success {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    button.btn.iscrizione__submit {
+        font-size: 12px;
+    }
+}

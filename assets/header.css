@@ -5,8 +5,9 @@
 }
 p.announcement-bar__message {
     font-family: 'HelveticaNeue-Medium';
+    font-weight: 500;
     font-size: 14px;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 0;
     display: flex;
     animation: scrollText 33s infinite linear;
@@ -66,6 +67,8 @@ a.site-nav__link.site-nav__link--main,
 }
 .site-header__icons-wrapper .site-header__icon {
     padding: 17px 20px;
+    margin: 0;
+    cursor: pointer;
 }
 a.site-nav__link.site-nav__link--main:hover,
 .site-header__icons-wrapper .site-header__icon:hover,
@@ -112,6 +115,9 @@ svg.icon-close {
 .site-header__icons-wrapper .site-header__cart,
 .site-header__icons-wrapper .site-header__cart--mob {
     border-right: 2px solid #000;
+}
+a.site-header__icon.site-header__cart.open {
+    background: var(--lightgreen);
 }
 .site-header__logo-image img {
     min-width: 80px;
@@ -192,6 +198,18 @@ ul.disclosure__list {
     padding: 10px 0;
     border: 2px solid #000;
     width: 100%;
+    max-height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+ul.disclosure__list::-webkit-scrollbar {
+    width: 5px;
+}
+ul.disclosure__list::-webkit-scrollbar-track {
+    background-color: #f6f6f6;
+}
+ul.disclosure__list::-webkit-scrollbar-thumb {
+    background-color: #000;
 }
 li.disclosure__item a {
     padding: 10px 0;
@@ -214,7 +232,8 @@ li.disclosure__item a span {
 .header-selector-currency select {
     height: 53px;
     border: none;
-    font-family: HelveticaNeue-Medium;
+    font-family: 'HelveticaNeue-Medium';
+    font-weight: 500;
     text-transform: lowercase;
 }
 .btn-head .currency-selected,
@@ -237,9 +256,9 @@ li.disclosure__item a span {
     to { transform: translateX(-50%); }
 }
 
-@media screen and (max-width: 1145px) {
+@media screen and (max-width: 1191px) {
     a.site-nav__link.site-nav__link--main {
-        padding: 16.5px 11.5px;
+        padding: 16.5px 7.5px;
     }
 }
 
@@ -259,23 +278,11 @@ li.disclosure__item a span {
         width: 20px;
         height: 19px;
     }
-
-    nav.mobile-nav-wrapper .site_newsletter {
-        padding: 20px;
-    }
-    nav.mobile-nav-wrapper .input-group__field.newsletter__input {
-        width: 100%;
-    }
-    nav.mobile-nav-wrapper button.btn.newsletter__submit {
-        font-size: 12px;
-        width: 140px;
-        text-decoration: none;
-        line-height: 30px;
-    }
     .mobile-nav-btns {
         display: flex;
         justify-content: right;
-        padding: 20px;
+        padding: 25px 20px 20px 20px;
+        position: relative;
     }
     a.site-header__icon.site-header__account,
     button.btn--link.site-header__icon.site-header__search-toggle.js-drawer-open-top {
@@ -288,7 +295,6 @@ li.disclosure__item a span {
         border-left: 2px solid #000;
         border-top: 2px solid #000;
         border-bottom: 2px solid #000;
-        margin: 5px 0;
         display: block;
         color: #000;
         text-transform: lowercase;
@@ -299,7 +305,8 @@ li.disclosure__item a span {
         border-left: 2px solid #000;
         border-right: 2px solid #000;
         padding: 5px 17px;
-        height: 40px;
+        height: 44px;
+        margin: 0;
     }
     li.mobile-nav__item.border-bottom {
         border-bottom: 2px solid #000;
@@ -353,11 +360,6 @@ li.disclosure__item a span {
         font-family: 'HelveticaNeue-Medium', sans-serif;
         font-weight: 500;
         opacity: 1;
-    }
-    .search-form__input-wrapper input.search-form__input.search-bar__input:focus-visible,
-    .search-form__input-wrapper input.search-form__input.search-bar__input:focus {
-        border: none;
-        outline-width: 0;
     }
     .mobile-nav-tools {
         display: flex;
@@ -450,15 +452,16 @@ li.disclosure__item a span {
         margin: 0;
     }
     .site-header__menu {
-        padding: 8px 17px;
+        padding: 10px 18px;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 40px;
+        height: 44px;
+        margin: 0;
     }
     .mobile-nav-btns a.site-header__icon.site-header__cart,
     .mobile-nav-btns a.site-header__icon.site-header__cart--mob {
-        padding: 8px 16px;
+        padding: 10px 16px;
         position: relative;
         height: 20px;
     }
@@ -466,8 +469,8 @@ li.disclosure__item a span {
         z-index: 1;
     }
     .site-header__desk-nav {
-        padding-left: 15px;
-        padding-right: 20px;        
+        padding-left: 20px;
+        padding-right: 24px;      
     }
     .btn-head.header-selector-localization.header-selector-localization--desk {
         display: none;
@@ -479,8 +482,9 @@ li.disclosure__item a span {
         height: 19px;
     }
     .site-header__icons-wrapper .site-header__icon {
-        padding: 8px 17px;
+        padding: 10px 17px;
         height: 20px;
+        margin: 0;
     }
     .mobile-nav-localization {
         width: 100%;
@@ -499,6 +503,7 @@ li.disclosure__item a span {
         align-items: center;
         justify-content: space-between;
         font-family: 'HelveticaNeue-Medium';
+        font-weight: 500;
     }
     .mobile-nav-localization ul.disclosure__list {
         position: absolute;
@@ -595,7 +600,13 @@ li.disclosure__item a span {
 
     .mobile-nav-wrapper__content,
     .cart-popup-mobile__header {
-        padding-top: 47px;
+        padding-top: 38px;
+    }
+
+    .site-header__logo-image img {
+        width: 75px !important;
+        max-width: 75px !important;
+        min-width: 75px !important;
     }
     
 }

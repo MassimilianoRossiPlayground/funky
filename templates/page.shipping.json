@@ -1,0 +1,28 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "512e87fc-8dc9-44c8-b9be-e39023ee9e25": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "{{ page.metafields.custom.shipping_text | metafield_tag }}",
+        "text_size": "medium"
+      }
+    },
+    "23a73dc7-9635-44cd-a129-9061f61138ef": {
+      "type": "space",
+      "settings": {
+        "space_px": 300
+      }
+    }
+  },
+  "order": [
+    "main",
+    "512e87fc-8dc9-44c8-b9be-e39023ee9e25",
+    "23a73dc7-9635-44cd-a129-9061f61138ef"
+  ]
+}

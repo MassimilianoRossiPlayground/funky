@@ -858,15 +858,15 @@ slate.Variants = (function() {
       if (!history.replaceState || !variant) {
         return;
       }
-
-      var newurl =
-        window.location.protocol +
-        '//' +
-        window.location.host +
-        window.location.pathname +
-        '?variant=' +
-        variant.id;
-      window.history.replaceState({ path: newurl }, '', newurl);
+      // console.log("update history")
+      // var newurl =
+      //   window.location.protocol +
+      //   '//' +
+      //   window.location.host +
+      //   window.location.pathname +
+      //   '?variant=' +
+      //   variant.id;
+      // window.history.replaceState({ path: newurl }, '', newurl);
     },
 
     /**
@@ -1281,6 +1281,7 @@ this.Shopify.theme.PredictiveSearch = (function() {
     PRODUCT_TYPE: 'product_type',
     TAG: 'tag',
     TITLE: 'title',
+    BODY: 'body',
     VARIANTS_BARCODE: 'variants.barcode',
     VARIANTS_SKU: 'variants.sku',
     VARIANTS_TITLE: 'variants.title',
@@ -1376,6 +1377,7 @@ this.Shopify.theme.PredictiveSearchComponent = (function(PredictiveSearch) {
         unavailable_products: PredictiveSearch.UNAVAILABLE_PRODUCTS.LAST,
         fields: [
           PredictiveSearch.FIELDS.TITLE,
+          PredictiveSearch.FIELDS.BODY,
           PredictiveSearch.FIELDS.VENDOR,
           PredictiveSearch.FIELDS.PRODUCT_TYPE,
           PredictiveSearch.FIELDS.VARIANTS_TITLE
@@ -8194,10 +8196,11 @@ theme.Product = (function() {
 
           let productVariations = document.querySelector('.product-variant-grid')
 
-          if (productVariations.classList.contains("noselection")) {
-            console.log("seleziona variante!")
-            evt.preventDefault();
-            return false;
+          if (productVariations) {
+            if (productVariations.classList.contains("noselection")) {
+              evt.preventDefault();
+              return false;
+            }
           }
 
           if (this.addToCart.getAttribute('aria-disabled') === 'true') {
@@ -8297,8 +8300,17 @@ theme.Product = (function() {
             throw error;
           }
           self._hideErrorMessage();
-          self._setupCartPopup(json);
-          location.reload()
+          // self._setupCartPopup(json);
+
+          let reloadOpenCart = ""
+
+          if (location.search == "") {
+            reloadOpenCart = location.href + "?opencart=true";
+          } else {
+            reloadOpenCart = location.href + "&opencart=true";
+          }
+          location.assign(reloadOpenCart)
+          return;
         })
         .catch(function(error) {
           self.previouslyFocusedElement.focus();
@@ -8857,6 +8869,7 @@ theme.Product = (function() {
       var unitPrice = '';
 
       if (variant.compare_at_price > variant.price) {
+        console.log(variant.compare_at_price)
         regularLabel = theme.strings.regularPrice;
         regularPrice =
           theme.Currency.formatMoney(
@@ -9112,7 +9125,9 @@ theme.Product = (function() {
 })();
 
 theme.ProductRecommendations = (function() {
+  console.log("our ProductRecommendations")
   function ProductRecommendations(container) {
+    console.log("in ProductRecommendations")
     var baseUrl = container.dataset.baseUrl;
     var productId = container.dataset.productId;
     var recommendationsSectionUrl =

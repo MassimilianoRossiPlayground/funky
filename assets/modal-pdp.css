@@ -14,7 +14,7 @@
     transform: translate(-50%, -50%);
 }
 .pdp-modal__data {
-    background-color: #fff;
+    background-color: #f5f5f5;
     padding: 40px;
     border: 2px solid #000;
 }
@@ -102,6 +102,16 @@
     max-height: 400px;
     overflow-y: auto;
     font-size: 14px;
+    padding-right: 10px;
+}
+.more-info__text::-webkit-scrollbar {
+    width: 5px;
+}
+.more-info__text::-webkit-scrollbar-track {
+    background-color: #f6f6f6;
+}
+.more-info__text::-webkit-scrollbar-thumb {
+    background-color: #000;
 }
 .table-sizes tr.selected td {
     background-color: var(--lightgreen);
@@ -137,13 +147,29 @@
     display: block;
 }
 
+.pdp-modal__data .site_newsletter input#Contact--email {
+    border-bottom: 2px solid;
+    text-align: center;
+}
+.pdp-modal__data .site_newsletter {
+    padding: 40px 0;
+}
+.pdp-modal__data button.btn.newsletter__submit:hover {
+    background: var(--green);
+    color: #000;
+}
+.size-guide-content {
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 768px) {
     .modal-size__images {
         flex-direction: column;
         align-items: flex-start;
     }
     .table-sizes th, .table-sizes td {
-        min-width: 45px;
+        min-width: auto;
+        width: 25%;
     }
     .modal-size__images__img {
         padding: 0;
@@ -151,9 +177,37 @@
     }
     .pdp-modal__data {
         max-height: 80vh;
-        max-width: 85vw;
-        padding: 20px;
-        overflow-y: auto;
+        max-width: 100%;
         position: relative;
+        padding: 0;
+        overflow-y: scroll;
+    }
+    .data-table,
+    table.table-sizes.table-sizes--inc {
+        width: 100%;
+    }
+    .modal-size__images__img img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .size-guide-content {
+        margin-top: 115px;
+        padding: 20px;
+    }
+    .size-guide-head {
+        position: fixed;
+        background: #f5f5f5;
+        padding: 20px;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
+    }
+    .close-modal {
+        top: 20px;
+        right: 20px;
+    }
+    .pdp-modal__content {
+        width: 100%;
+        max-width: 90vw;
     }
 }

@@ -74,7 +74,7 @@
     {% endif %}
   {% endif %}
 
-  <header class="site-header{% if section.settings.align_logo == 'left' %} border-bottom logo--left{% else %} logo--center{% endif %}" role="banner">
+  <header class="site-header{% if section.settings.align_logo == 'left' %} logo--left{% else %} logo--center{% endif %}" role="banner">
     <div class="grid grid--no-gutters grid--table site-header__desk-nav">
 
       <div class="site-header__col1">
@@ -143,7 +143,7 @@
             <a class="site-header__icon site-header__cart">
               {% include 'icon-funky-cart' %}
               {% comment %} <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span> {% endcomment %}
-              <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
+              <div class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
                 <span data-cart-count>{{ cart.item_count }}</span>
                 <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
               </div>

@@ -4,7 +4,8 @@
 
 {%- assign max_height = 250 -%}
 
-{%- assign limit = 4 | times: 8 -%}
+{% comment %} {%- assign limit = 4 | times: 8 -%} {% endcomment %}
+{%- assign limit = 9999 -%}
 
 {% paginate collection.products by limit %}
 
@@ -30,7 +31,7 @@
         </div>
       {% endif %}
 
-      {%- if paginate.pages > 0 -%}
+      {%- if paginate.pages > 0 and limit < 9998 -%}
         {% include 'pagination', paginate: paginate %}
       {%- endif -%}
       

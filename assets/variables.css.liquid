@@ -5,22 +5,36 @@
   --greyverylight: #f6f6f6;
   --greylight: #D9D9D9;
   --grey: #dddcdc;
+  --grey2: #c1c1c1;
   --pink: #ff5cc5;
   --green: #cdffa0;
   --lightgreen: #cfff7c;
 }
 /*================ Sizing Variables ================*/
+body {
+  font-family: 'HelveticaNeue';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
 .thin {
   font-family: 'HelveticaNeue-Thin';
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
 }
 .medium {
   font-family: 'HelveticaNeue-Medium';
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
 }
 .bold {
   font-family: 'HelveticaNeue-Bold';
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
 }
 strong {
   font-family: 'HelveticaNeue-Medium';
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
 }
 .boxed {
   max-width: 1170px;
@@ -31,30 +45,44 @@ strong {
 .mega-title {
   font-size: 180px;
   font-family: 'HelveticaNeue-Medium';
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
 }
 .title {
   font-size: 80px;
   font-family: 'HelveticaNeue-Medium';
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
 }
 .title-description {
   font-size: 36px;
   font-family: 'HelveticaNeue';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 .title-click {
   font-size: 24px;
   font-family: 'HelveticaNeue-Medium';
+  font-weight: 500;
   text-decoration: underline;
+  -webkit-font-smoothing: antialiased;
 }
 .image-description {
   font-size: 16px;
   font-family: 'HelveticaNeue';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 .image-description--medium {
   font-size: 16px;
   font-family: 'HelveticaNeue-Medium';
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
 }
 a {
   font-family: 'HelveticaNeue-Medium';
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
   transition-duration: 0.2s;
   color: #000;
   text-decoration: none;
@@ -79,6 +107,7 @@ a.selected {
     padding: 0 6px;
     margin: 0 -6px;
     width: fit-content;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -124,7 +153,7 @@ a.btn.disabled {
 }
 .unavailable {
   text-decoration: line-through;
-  color: var(--greylight);
+  color: var(--grey2);
 }
 input {
   outline: none;
@@ -171,9 +200,15 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     width: 100%;
   } 
 }
+.flex-revert-row {
+  flex-direction: row-reverse;
+}
 
 .crossed {
   text-decoration: line-through;
+  color: var(--grey2);
+  font-family: HelveticaNeue-Medium;
+  font-weight: 500;
 }
 /*=======
 ========= Footer Variables ================*/

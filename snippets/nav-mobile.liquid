@@ -6,7 +6,7 @@
             </div>
             <a class="site-header__icon site-header__cart--mob">
                 {% include 'icon-funky-cart' %}
-                <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
+                <div class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
                 <span data-cart-count>{{ cart.item_count }}</span>
                 <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
                 </div>
@@ -52,7 +52,7 @@
                 </li>
 
                 {% for childlink in link.links %}
-                    <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+                    <li class="mobile-nav__item{% unless forloop.last %} {% endunless %}">
                     {% if childlink.links != blank %}
                         {% capture grandchild_list_handle %}{{ childlink.handle }}-{{ outerLoopIndex }}-{{ forloop.index }}{% endcapture %}
                         <button type="button" class="btn--link js-toggle-submenu mobile-nav__link mobile-nav__sublist-link" data-target="{{ grandchild_list_handle }}" aria-expanded="false">
@@ -81,7 +81,7 @@
                             </div>
                         </li>
                         {% for grandchildlink in childlink.links %}
-                            <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+                            <li class="mobile-nav__item{% unless forloop.last %}{% endunless %}">
                             <a href="{{ grandchildlink.url }}"
                                 class="mobile-nav__sublist-link"
                                 {% if grandchildlink.current %} aria-current="page"{% endif %}
@@ -144,7 +144,8 @@
             </div>
         </div>
 
-        {% include 'newsletter', position: 'header-mob', form: form %}
+        <div class="btn-open-newsletter"><span>FUNKY FAMILY NEWSLETTER</span></div>
+
     </div>
 
 </nav>

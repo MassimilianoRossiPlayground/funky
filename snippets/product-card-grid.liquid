@@ -11,8 +11,8 @@
     <div class="products-single-card__content">
         <div class="products-single-card__content__price">
             {% if product.compare_at_price %}
-                <span class="crossed">{{ product.price | money }}</span> - 
-                <span>{{ product.compare_at_price | money }}</span>   
+                <span class="crossed">{{ product.compare_at_price | money }}</span> 
+                <span>{{ product.price | money }}</span>   
             {% else %}
                 <span>{{ product.price | money }}</span>
             {% endif %}
@@ -21,7 +21,7 @@
 
         {% if product.has_only_default_variant %}
             {% for variant in product.variants %}
-                {% if variant.inventory_quantity > 0 %}
+                {% if variant.inventory_quantity > 0 or variant.inventory_policy == 'continue' or variant.inventory_management == 'shopify' %}
                     {% assign soldout = false %}
                 {% endif %}
             {% endfor %}
@@ -40,7 +40,7 @@
         {% endif %}
         
         </div>
-        <h5 class="products-single-card__content__title medium"><span class="span-link">{{ product.title }}</span></h5>
+        <h5 class="products-single-card__content__title medium"><span class="span-link medium">{{ product.title }}</span></h5>
     </div>
     {% if soldout %}
         <span class="products-single-card__label products-single-card__label--soldout">sold out!</span>

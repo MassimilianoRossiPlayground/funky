@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "68ea2d3c-1e7a-4970-82ba-5edc530c4dd0": {
+      "type": "buttons",
+      "blocks": {
+        "dc446454-38d4-4fe2-9478-bd09a81399f0": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "contatta funky",
+            "btn_link": "shopify:\/\/pages\/contacts",
+            "btn_selected": true,
+            "blank": false,
+            "modal": false
+          }
+        },
+        "7f5c64e5-d5ba-400a-91b8-a14fa0a844f9": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "contatta store milano",
+            "btn_link": "shopify:\/\/pages\/contact-milano-store",
+            "btn_selected": false,
+            "blank": false,
+            "modal": false
+          }
+        }
+      },
+      "block_order": [
+        "dc446454-38d4-4fe2-9478-bd09a81399f0",
+        "7f5c64e5-d5ba-400a-91b8-a14fa0a844f9"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "8c466269-c0db-41aa-856d-73835b59637a": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>Volete condividere con noi le vostre idee ed esperienze riguardanti lo snowboard? Volete anche solo farci sapere cosa ne pensate di Barbara D'urso o quali sono le vostre ricette preferite? Ecco non fatelo qua, scriveteci solo per cose serie gente, che qua stiamo cercando di lavorare. A meno che non si tratti di video di gattini, per quelli abbiamo sempre tempo.<\/p><p>Mail: <a href=\"mailto:info@funkysnowboards.com\" title=\"mailto:info@funkysnowboards.com\">info@funkysnowboards.com<\/a><\/p>",
+        "text_size": "medium"
+      }
+    },
+    "cad68afa-7499-45e4-9653-eae9613d82a7": {
+      "type": "contacts",
+      "disabled": true,
+      "settings": {
+        "hidden_text": "contact funky"
+      }
+    },
+    "e5717ab5-bacd-4c52-ab13-23c4f0bd6a9c": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>SE PROPRIO DOVETE POTETE ANCHE TROVARCI A QUESTI INDIRIZZO:<\/p><p>Via Molino delle Armi, 15<\/p><p>20123  Milano MI<\/p><p>Phone: +39 375 586 1889<\/p><p><\/p>",
+        "text_size": "medium"
+      }
+    }
+  },
+  "order": [
+    "68ea2d3c-1e7a-4970-82ba-5edc530c4dd0",
+    "main",
+    "8c466269-c0db-41aa-856d-73835b59637a",
+    "cad68afa-7499-45e4-9653-eae9613d82a7",
+    "e5717ab5-bacd-4c52-ab13-23c4f0bd6a9c"
+  ]
+}

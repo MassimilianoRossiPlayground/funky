@@ -8,6 +8,7 @@
       dash: '.dash',
       filterBarOutside: '.filter-bar--outside',
       filterBarInternal: '.filter-bar--internal',
+      collectionDescription: '.collection-description',
     };
   
     let body = document.querySelector(selectors.body);
@@ -17,8 +18,14 @@
     let dash = document.querySelectorAll(selectors.dash);
     let filterBarOutside = document.querySelector(selectors.filterBarOutside);
     let filterBarInternal = document.querySelector(selectors.filterBarInternal);
+    let collectionDescription = document.querySelector(selectors.collectionDescription);
     let positionFromTop = window.pageYOffset;
-    let offsetTopCheck = 200;
+    let collectionDescriptionHeight = 0
+
+    if (collectionDescription) {
+      collectionDescriptionHeight = collectionDescription.offsetHeight
+    }
+    let offsetTopCheck = parseInt(collectionDescriptionHeight) + 70;
 
     if ( body.classList.contains("template-product")) {
       offsetTopCheck = 50;

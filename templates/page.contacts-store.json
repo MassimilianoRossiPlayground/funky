@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "327f6df3-5362-4f66-844a-c45ec32feb43": {
+      "type": "buttons",
+      "blocks": {
+        "template--16004899143845__327f6df3-5362-4f66-844a-c45ec32feb43-1677420095bda97a5f-0": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "contact funky",
+            "btn_link": "shopify:\/\/pages\/contacts",
+            "btn_selected": false,
+            "blank": false,
+            "modal": false
+          }
+        },
+        "aae47f97-469b-4e20-82d8-4b22fae78ed7": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "contact milano store",
+            "btn_link": "shopify:\/\/pages\/contact-milano-store",
+            "btn_selected": true,
+            "blank": false,
+            "modal": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16004899143845__327f6df3-5362-4f66-844a-c45ec32feb43-1677420095bda97a5f-0",
+        "aae47f97-469b-4e20-82d8-4b22fae78ed7"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "8c466269-c0db-41aa-856d-73835b59637a": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>Volete condividere con noi le vostre idee ed esperienze riguardanti lo snowboard? Volete anche solo farci sapere cosa ne pensate di Barbara D'urso o quali sono le vostre ricette preferite? Ecco non fatelo qua, scriveteci solo per cose serie gente, che qua stiamo cercando di lavorare. A meno che non si tratti di video di gattini, per quelli abbiamo sempre tempo.<\/p><p>Mail: <a href=\"mailto:info@funkysnowboards.com\" title=\"mailto:info@funkysnowboards.com\">info@funkysnowboards.com<\/a><\/p>",
+        "text_size": "medium"
+      }
+    },
+    "cad68afa-7499-45e4-9653-eae9613d82a7": {
+      "type": "contacts",
+      "disabled": true,
+      "settings": {
+        "hidden_text": "store milano"
+      }
+    },
+    "e5717ab5-bacd-4c52-ab13-23c4f0bd6a9c": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>SE PROPRIO DOVETE POTETE ANCHE TROVARCI A QUESTI INDIRIZZO:<\/p><p>Corso di Porta Ticinese, 70<\/p><p>20143  Milano MI<\/p><p>Phone: +39 375 586 1889<\/p><p><\/p>",
+        "text_size": "medium"
+      }
+    }
+  },
+  "order": [
+    "327f6df3-5362-4f66-844a-c45ec32feb43",
+    "main",
+    "8c466269-c0db-41aa-856d-73835b59637a",
+    "cad68afa-7499-45e4-9653-eae9613d82a7",
+    "e5717ab5-bacd-4c52-ab13-23c4f0bd6a9c"
+  ]
+}

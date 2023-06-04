@@ -1,0 +1,85 @@
+.section-two-boxes-slider {
+    margin: 0;
+    padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 60px;
+}
+.two-boxes-slider {
+    display: flex;
+    flex-wrap: wrap;
+}
+.two-boxes-slider__text__content {
+    padding-top: 20px;
+    padding-right: 30px;
+}
+.flex-revert-row .two-boxes-slider__text__content {
+    padding-left: 30px;
+}
+.two-boxes-slider__slider__content {
+    padding: 30px;
+    position: relative;
+}
+.two-boxes-slider__slider .swiper-button-next svg, 
+.two-boxes-slider__slider .swiper-button-prev svg {
+    fill: #000;
+    filter: brightness(0);
+    width: 15px;
+}
+.two-boxes-slider__slider .swiper-button-prev:after, 
+.two-boxes-slider__slider .swiper-button-next:after {
+    content: none;
+}
+
+.two-boxes-slider__slider .swiper-button-next {
+    right: 0px;
+    left: auto;
+}
+.two-boxes-slider__slider .swiper-button-prev {
+    left: 0px;
+    right: auto;
+}
+
+.two-boxes-slider__slider span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #000;
+}
+.two-boxes-slider__slider .swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+}
+.two-boxes-slider__slider span.swiper-pagination-bullet {
+    border-radius: 0;
+    margin: 0 5px;
+    height: 6px;
+    width: 6px;
+}
+.two-boxes-slider__slider .swiper-pagination {
+    left: 50%;
+    bottom: 0;
+    transform: translateZ(0) translate(-50%);
+}
+
+
+@media screen and (max-width: 768px) {
+    .section-two-boxes-slider .boxed {
+        padding: 0;
+    }
+    .two-boxes-slider__text {
+        padding: 0 20px;
+    }
+    .two-boxes-slider__slider__content {
+        padding: 0;
+    }
+    .two-boxes-slider__slider .swiper-button-next,
+    .two-boxes-slider__slider .swiper-button-prev {
+        display: none;
+    }
+    .two-boxes-slider__slider .swiper-pagination {
+        bottom: -30px;
+    }
+    .flex-revert-row .two-boxes-slider__text__content {
+        padding-left: 0;
+    }
+    .two-boxes-slider__text__content {
+        padding-bottom: 30px;
+    }
+}

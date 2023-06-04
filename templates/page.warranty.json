@@ -1,0 +1,28 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "bc968b9e-f027-4344-9c59-ccdcc3406452": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>Tutti i prodotti realizzati da Funky hanno una garanzia di due (2) anni a partire dalla data di acquisto presso un rivenditore autorizzato.<\/p><p>- La garanzia copre SOLO i difetti di materiali e di produzione.<\/p><p>- La garanzia NON copre:<\/p><ul><li>Danni estetici come graffi, ammaccature o normale usura. <\/li><li>Uso improprio su superfici diverse da neve<\/li><li>Ammaccature o scheggiature del top-sheet <\/li><li>Schiarimento delle grafiche dovute all’esposizione solare<\/li><li>Ossidazione del bordo<\/li><li>Danni causati da un montaggio improprio degli attacchi<\/li><li>Danni causati da qualsiasi cosa diversa da difetti nei materiali o nella lavorazione.<\/li><\/ul><p>La garanzia è valida solo per l’acquirente originale ed è nulla se il prodotto è stato acquistato da un’altra persona o presso un rivenditore non autorizzato.<\/p><p>Nel caso in cui serva sia un servizio coperta da garanzia, è necessario fornire una copia della ricevuta originale. <\/p><p>Se non può essere fornita la prova d’acquisto, Funky utilizzerà la data di fabbricazione come inizio del periodo di garanzia.  <\/p><p>Il danno verrà analizzato dal nostro laboratorio per valutare se rientra nelle condizioni coperte da garanzia. I prodotti saranno riparati o sostituiti se saranno riconosciuti difettosi nei materiali o nella lavorazione.<\/p><p>Nel caso in cui non sia più disponibile una sostituzione esatta del prodotto (modello, dimensione e\/o colore), sostituiremo il prodotto la più simile corrispondenza. <\/p><p><strong>RESTITUZIONE DI UN PRODOTTO COPERTA DALLA GARANZIA<\/strong><\/p><p>- I resi per prodotti coperti dalla garanzia possono essere processati solo in presenza di una copia della prova di acquisto originale che dimostri che essa sia avvenuta nel periodo di tempo riconosciuto dalla garanzia e che voi siate l’acquirente originale. <\/p><p>- Prodotto acquistato da un rivenditore : il prodotto deve essere restituito al punto di acquisto. Il rivenditore procederà quindi alla richiesta di garanzia presso Funky  a vostro nome. <\/p><p>- Prodotto Acquistato da funkysnowboards.com : tutte le richieste relative alla garanzia devono essere indirizzate alla fattura dell’ordine.<\/p><p>- Prima di procedere con la spedizione del prodotto in restituzione per garanzia scriveteci all’indirizzo info@funkysnowboards.com descrivendo il problema e allegate immagini del prodotto in questione.<\/p><p>- Se la restituzione in garanzia viene spedita senza previa comunicazione all’indirizzo e-mail info@funkysnowboards.com, non saremo in grado di elaborare la tua richiesta di restituzione della garanzia.<\/p><p>- La sostituzione esatta del prodotto dipende dalla disponibilità dei prodotti al momento della richiesta. <\/p><p>*Il consumatore è responsabile delle spese di trasporto per le<br\/>restituzioni in garanzia.<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "ce8f2d78-09e6-4098-9901-d1478db661f3": {
+      "type": "space",
+      "settings": {
+        "space_px": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bc968b9e-f027-4344-9c59-ccdcc3406452",
+    "ce8f2d78-09e6-4098-9901-d1478db661f3"
+  ]
+}

@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.shopify.com" crossorigin>
   <link rel="preconnect" href="https://monorail-edge.shopifysvc.com">
 
+  <script src="https://consent.cookiefirst.com/sites/funkysnowboards.com-13c50f5e-e087-44ef-aa3c-31990c8133ba/consent.js"></script>
+
   {% comment %} {%- assign header_font = settings.type_header_font -%}
   {%- assign base_font = settings.type_base_font -%} {% endcomment %}
   {% comment %} {%- assign base_font_bolder = base_font | font_modify: 'weight', 'bolder' -%}
@@ -216,8 +218,13 @@
     {% include 'modal-pdp-product-image' %}
   {% endif %}
 
+  {% include 'modal-newsletter' %}
+  {% include 'modal-iscrizione' %}
+
   <script src="{{ 'cart-popup.js' | asset_url }}" defer="defer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.js" defer="defer"></script>
+
+  <script src="{{ 'mod-two-boxes-slider.js' | asset_url }}" defer="defer"></script>
 
   <ul hidden>
     <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>

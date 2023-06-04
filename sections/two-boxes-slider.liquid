@@ -1,0 +1,89 @@
+{{ 'mod-two-boxes-slider.css' | asset_url | stylesheet_tag }}
+
+
+<div class="section-two-boxes-slider"  style="{% if section.settings.padding_top %}padding-top:{{section.settings.padding_top}}px;{% endif %} {% if section.settings.padding_bottom %}padding-bottom:{{section.settings.padding_bottom}}px;{% endif %}">
+    <div class="boxed">
+        <div class="two-boxes-slider {% if section.settings.text_left != true %}flex-revert-row{% endif %}">
+
+            <div class="two-boxes-slider__text col-6">
+                <div class="two-boxes-slider__text__content">
+                    {{ section.settings.text }}
+                </div>
+            </div>
+
+            <div class="two-boxes-slider__slider col-6">
+                <div class="two-boxes-slider__slider__content">
+                    <div class="sliders-box">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                {% for block in section.blocks %}
+                                    {%- assign img_url = block.settings.image | img_url: 'master' -%}
+                                    <div class="swiper-slide">
+                                        <img class="box-single-slide" src="{{ img_url }}" alt="funkysnowboard">
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">{% include 'icon-chevron-right' %}</div>
+                        <div class="swiper-button-prev">{% include 'icon-chevron-left' %}</div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Two Boxes Slider",
+    "max_blocks": 99,
+    "settings": [
+        {
+            "type": "number",
+            "id": "padding_top",
+            "label": "Padding TOP"
+        },
+        {
+            "type": "number",
+            "id": "padding_bottom",
+            "label": "Padding BOTTOM"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "checkbox",
+            "id": "text_left",
+            "label": "Text on the left"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "slides",
+        "name": "Slides",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            }
+        ]
+      }
+    ],
+    "presets": [
+        {
+            "name": "Two Boxes Slider",
+            "blocks": [
+                {
+                "type": "slides"
+                }
+            ]
+        }
+    ]
+  }
+{% endschema %}

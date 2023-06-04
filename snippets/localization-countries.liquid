@@ -11,7 +11,8 @@
           {% for country in localization.available_countries %}
             <li class="disclosure__item" tabindex="-1">
               <a href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
-                <span>{{ country.currency.iso_code | lowercase }} {{ country.currency.symbol }}</span>
+                <span>{{ country.iso_code }} {{ country.currency.symbol }}</span>
+                {% comment %} <span>{{ country.iso_code }} {{ country.currency.iso_code | lowercase }} {{ country.currency.symbol }}</span> {% endcomment %}
               </a>
             </li>
           {% endfor %}

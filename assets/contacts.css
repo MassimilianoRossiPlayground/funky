@@ -33,11 +33,16 @@ textarea#ContactForm-message:focus {
     padding-right: 20px;
 }
 input.btn {
-    margin: 40px 0;
+    margin: 0 0 40px 0;
     width: 100%;
     background: #000;
     font-family: 'HelveticaNeue-Medium', sans-serif;
     font-weight: 500;
+}
+.alert-message-sent {
+    font-size: 12px;
+    display: block;
+    margin-bottom: -20px;
 }
 
 @media screen and (max-width: 768px) {

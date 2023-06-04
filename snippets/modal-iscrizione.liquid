@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="{{ 'modal-iscrizione.css' | asset_url }}" type="text/css">
+<script src="{{ 'modal-iscrizione.js' | asset_url }}" defer="defer"></script>
+
+<div class="iscrizione-modal hide">
+  <div class="iscrizione-modal__content">
+        <span class="close-modal-iscrizione">{% include 'icon-close' %}</span>
+        <span class="sup-title-iscrizione">ISCRIZIONE</span>
+        <h4>THE GUARDIAN - BANKED SLALOM</h4>
+        <span class="sup-title-iscrizione">Non valida per Quarter Pipe Battle</span>
+
+        {% include 'iscrizione' %}
+        <span class="iscrizione-text-sub">Iscrivendoti confermi di aver letto le nostre <a href="/policies/privacy-policy" target="_blank">Privacy Policy</a></span>
+    </div>
+</div>

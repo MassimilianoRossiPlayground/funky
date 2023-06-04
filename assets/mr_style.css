@@ -1,5 +1,6 @@
 body {
     font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 400;
     margin: 0;
     background: #F5F5F5;
 }
@@ -11,6 +12,17 @@ h5 {
 }
 ul.page-width.list-view-items {
     list-style: none;
+}
+.template-search .main-content,
+.template-captcha .main-content {
+    display: block;
+    min-height: 74vh;
+}
+.template-index footer.site-footer {
+    border-top: unset;
+}
+.border-bottom {
+    border-bottom: 2px solid #000;
 }
 
 /* START - PRODUCT CARD */
@@ -49,6 +61,8 @@ img.products-single-card__image {
     transition-duration: 0.2s;
     z-index: 0;
     position: relative;
+    min-height: 240px;
+    object-fit: contain;
 }
 a.products-single-card:hover img.products-single-card__image {
     transform: scale(1.05);
@@ -65,9 +79,11 @@ a.products-single-card:hover img.products-single-card__image {
 }
 .products-single-card__content__price {
     font-family: 'HelveticaNeue';
+    font-weight: 400;
 }
 .products-single-card__content__variants {
     font-family: 'HelveticaNeue';
+    font-weight: 400;
     text-transform: uppercase;
 }
 .products-single-card__content__variants span {
@@ -98,6 +114,25 @@ span.products-single-card__label.products-single-card__label--soldout {
 /* END - PRODUCT CARD */
 
 
+#cookiefirst-root.cookiefirst-root [data-cookiefirst-button="primary"],
+#cookiefirst-root.cookiefirst-root [data-cookiefirst-button="secondary"] {
+    background-color: #000 !important;
+    border-color: #000 !important;
+    color: #fff !important;
+    font-size: 12px;
+}
+#cookiefirst-root.cookiefirst-root [data-cookiefirst-button="primary"]:hover,
+#cookiefirst-root.cookiefirst-root [data-cookiefirst-button="secondary"]:hover {
+    background-color: #fff !important;
+    border-color: #000 !important;
+    color: #000 !important;
+}
+.cookiefirst-root span.cf1f8N.cf1uIq {
+    display: none !important;
+}
+.cfAdwL.cf7ddU {
+    font-size: 12px;
+}
 
 @media screen and (max-width: 768px) {
     .only-mob {
@@ -115,5 +150,10 @@ span.products-single-card__label.products-single-card__label--soldout {
         width: calc(50% - 0px);
         border-right: none;
     }
-
+    .products-single-card__content__variants {
+        margin: 5px 0px 0;
+    }
+    .products-single-card__content__price {
+        width: 100%;
+    }
 }

@@ -1,0 +1,57 @@
+{
+  "sections": {
+    "9066b2ff-f527-42b2-9305-9d566a1110a7": {
+      "type": "buttons",
+      "blocks": {
+        "template--16005177049253__9066b2ff-f527-42b2-9305-9d566a1110a7-1677420716239b01e8-0": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "term & conditions",
+            "btn_link": "shopify:\/\/pages\/terms-conditions",
+            "btn_selected": false
+          }
+        },
+        "b5bb7d9e-4816-4bd0-b522-8d98e3e83b8a": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "privacy policy",
+            "btn_link": "#",
+            "btn_selected": false
+          }
+        },
+        "08f98f42-4dd8-45a1-84b0-d545ef09f79f": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "cookies",
+            "btn_link": "shopify:\/\/pages\/cookie-policy",
+            "btn_selected": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16005177049253__9066b2ff-f527-42b2-9305-9d566a1110a7-1677420716239b01e8-0",
+        "b5bb7d9e-4816-4bd0-b522-8d98e3e83b8a",
+        "08f98f42-4dd8-45a1-84b0-d545ef09f79f"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "bc968b9e-f027-4344-9c59-ccdcc3406452": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>I cookie sono brevi frammenti di testo (lettere e\/o numeri) che permettono al server web di memorizzare sul client (il browser) informazioni da riutilizzare nel corso della medesima visita al sito (cookie di sessione) o in seguito, anche a distanza di giorni (cookie persistenti). I cookie vengono memorizzati, in base alle preferenze dell’utente, dal singolo browser sullo specifico dispositivo utilizzato (computer, tablet, smartphone).<br\/><br\/>Tecnologie similari, come, ad esempio, web beacon, GIF trasparenti e tutte le forme di storage locale introdotte con HTML5, sono utilizzabili per raccogliere informazioni sul comportamento dell’utente e sull’utilizzo dei servizi.<br\/>Nel seguito di questo documento faremo riferimento ai cookie e a tutte le tecnologie similari utilizzando semplicemente il termine “cookie”.<br\/><br\/>Visitando questo sito si possono ricevere cookie sia dal sito visitato (“proprietari”), sia da siti gestiti da altre organizzazioni (“terze parti”). La presenza di questi ultimi comporta la trasmissione di cookie da e verso i siti gestiti dalle suddette terze parti. La gestione delle informazioni raccolte da “terze parti” è disciplinata dalle relative informative cui si prega di fare riferimento. Per garantire una maggiore trasparenza e comodità, si riportano nella tabella, a fianco di ciascuna “terza parte”, gli indirizzi web delle diverse informative e delle modalità per la gestione dei cookie.<br\/><br\/>In base alle caratteristiche e all’utilizzo dei cookie possiamo distinguere diverse categorie:<br\/>Cookie Tecnici: Sono quelli utilizzati al solo fine di effettuare la trasmissione di una comunicazione su una rete di comunicazione elettronica, o nella misura strettamente necessaria al fornitore di un servizio della società dell’informazione esplicitamente richiesto dall’abbonato o dall’utente a erogare tale servizio. Essi non vengono utilizzati per scopi ulteriori e sono normalmente installati direttamente dal titolare o gestore del sito web.<\/p><p>GESTIONE DEI COOKIE<\/p><p>L’utente può decidere se accettare o meno i cookie anche utilizzando le impostazioni del proprio browser.<\/p><p>La disabilitazione dei cookie “terze parti” non pregiudica in alcun modo la navigabilità.<\/p><p>L’impostazione può essere definita in modo specifico per i diversi siti e applicazioni web. Inoltre i migliori browser consentono di definire impostazioni diverse per i cookie “proprietari” e per quelli di “terze parti”.<\/p><p> <\/p><p>Per ulteriori informazioni sui cookie, vedere <a href=\"http:\/\/www.allaboutcookies.org\/\">www.allaboutcookies.org\/<\/a><br\/><\/p>",
+        "text_size": "medium"
+      }
+    }
+  },
+  "order": [
+    "9066b2ff-f527-42b2-9305-9d566a1110a7",
+    "main",
+    "bc968b9e-f027-4344-9c59-ccdcc3406452"
+  ]
+}

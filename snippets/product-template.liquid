@@ -1,0 +1,285 @@
+<link rel="stylesheet" href="{{ 'product.css' | asset_url }}" type="text/css">
+<script src="{{ 'product.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'filter-bar.js' | asset_url }}" defer="defer"></script>
+
+{% if product.collections[0] %}
+  {% include 'filter-bar', filter_collection: product.collections[0], current_tags:current_tags, origin: "internal" %}
+{% endif %}
+
+{% assign section_id = ""%}
+<div class="product-template__container page-width-product"
+  id="ProductSection-product-template"
+  data-section-id="product-template"
+  data-section-type="product"
+  data-enable-history-state="true"
+  data-ajax-enabled="{{ settings.enable_ajax }}"
+>
+  {% comment %}
+    Get first variant, or deep linked one
+  {% endcomment %}
+  {%- assign current_variant = product.selected_or_first_available_variant -%}
+  {%- assign product_image_zoom_size = '1024x1024' -%}
+  {%- assign product_image_scale = '2' -%}
+  {% comment %} {%- assign enable_image_zoom = section.settings.enable_image_zoom -%} {% endcomment %}
+  {%- assign compare_at_price = current_variant.compare_at_price -%}
+  {%- assign price = current_variant.price -%}
+
+  <div class="product-single-pdp">
+
+    <div class="product-single-pdp__mob-images">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          {% for media in product.media %}
+            {%- assign img_url = media | img_url: '1024x' -%}
+            {%- assign img_url__attr = media | img_url-%}
+            <div class="swiper-slide" 
+              attr-img-url="{{img_url__attr}}" 
+              attr-num="{{ forloop.index0 }}" >
+              <img src="{{ img_url }}" alt="{{ product.title }}">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="swiper-button-next">{% include 'icon-chevron-right' %}</div>
+      <div class="swiper-button-prev">{% include 'icon-chevron-left' %}</div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="product-single-pdp__description">
+      <div class="product-single-pdp__description__content">
+        <span class="description-label">DETAILS</span>
+        <h1 class="product-single__title">{{ product.title }}</h1>
+        <div class="product-single__description">{{ product.description }}</div>
+      </div>    
+    </div>
+
+    <div class="product-single-pdp__images">
+    
+      <div class="product-single-pdp__desk-images">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            {% for media in product.media %}
+              {%- assign img_url = media | img_url: '1024x' -%}
+              {%- assign img_url__attr = media | img_url -%}
+              <div class="swiper-slide" 
+                attr-img-url="{{img_url__attr}}" 
+                attr-num="{{ forloop.index0 }}" >
+                <img src="{{ img_url }}" alt="{{ product.title }}">
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="swiper-button-next">{% include 'icon-chevron-right' %}</div>
+        <div class="swiper-button-prev">{% include 'icon-chevron-left' %}</div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+    <div class="product-single-pdp__info">
+
+      <div class="product-single__meta">
+
+        <div class="product__price">
+          {% include 'product-price', variant: current_variant, show_vendor: false %}
+        </div>
+
+        {% comment %} <script>window.performance.mark('debut:product:title_visible');</script> {% endcomment %}
+
+        {% comment %} {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+          <div class="product__policies rte" data-product-policies>
+            {%- if shop.taxes_included -%}
+              {{ 'products.product.include_taxes' | t }}
+            {%- endif -%}
+            {%- if shop.shipping_policy.body != blank -%}
+              {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+            {%- endif -%}
+          </div>
+        {%- endif -%} {% endcomment %}
+
+        {% comment %} {% capture "form_classes" -%}
+          product-form product-form-product-template
+          {%- if section.settings.enable_payment_button and product.has_only_default_variant %} product-form--payment-button-no-variants {%- endif -%}
+          {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
+        {%- endcapture %} {% endcomment %}
+
+        {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+          {% unless product.has_only_default_variant %}
+            <div class="product-form__controls-group">
+              {% for option in product.options_with_values %}
+                <div class="selector-wrapper js product-form__item">
+
+                  <select class="single-option-selector single-option-selector-product-template product-form__input"
+                    id="SingleOptionSelector-{{ forloop.index0 }}"
+                    data-index="option{{ forloop.index }}"
+                  >
+                    {% for value in option.values %}
+                      <option value="{{ value | escape }}">{{ value }}</option>
+                    {% endfor %}
+                  </select>
+
+                  {% if product.variants.size == 2 %}
+                    {% assign class_two_variants = "two-variants" %}
+                  {% else %}
+                    {% assign class_two_variants = "" %}
+                  {% endif %}
+
+                  <div class="product-variant-grid noselection {{class_two_variants}}">
+                    {% for variant in product.variants %}
+                        <span class="product-option {%- if variant.available == false %} soldout{% endif %}" 
+                              variant-id="{{ variant.id }}" 
+                              attr-img="{{ variant.image | img_url: small }}" 
+                              value="{{ variant.title | escape }}"
+                              data-qty="{{ variant.inventory_quantity }}"
+                              >
+                              {{ variant.title }}
+                        </span>
+                    {% endfor %}
+                  </div>
+                </div>
+              {% endfor %}
+
+              {% if product.metafields.custom.size_chart %}
+                <a class="modal-open-js size-guide-link" data-modal="size-guide">Size Guide</a>
+              {% endif %}
+              
+            </div>
+          {% endunless %}
+
+          <select name="id" id="ProductSelect-product-template" class="product-form__variants no-js">
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}">
+                {{ variant.title }}  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+              </option>
+            {% endfor %}
+          </select>
+
+          {% comment %} {% if section.settings.show_quantity_selector %}
+            <div class="product-form__controls-group">
+              <div class="product-form__item">
+                <label for="Quantity-product-template">{{ 'products.product.quantity' | t }}</label>
+                <input type="number" id="Quantity-product-template"
+                  name="quantity" value="1" min="1" pattern="[0-9]*"
+                  class="product-form__input product-form__input--quantity" data-quantity-input
+                >
+              </div>
+            </div>
+          {% endif %} {% endcomment %}
+
+            {% unless current_variant.available %}
+              <div class="product-left-message">
+                <a class="modal-open-js newsletter-link" data-modal="newsletter"><span class="span-link">Hey! Rimani aggiornato</span></a>
+              </div>
+            {% else %}
+              <div class="product-select-message">
+                <span>Hey seleziona prima una taglia!</span>
+              </div>
+              <div class="product-few-message">
+                <span>Hey! Only <span data-qty></span> left!</span>
+              </div>
+            {% endunless %}
+{% comment %} <span>Notify me when available!</span> {% endcomment %}
+    {% comment %} <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"
+            data-error-message-wrapper
+            role="alert"
+          > {% endcomment %}
+          <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden"
+            data-error-message-wrapper
+            role="alert"
+          >
+            <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+            {% include 'icon-error' %}
+            <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
+          </div>
+{% comment %} <div class="product-form__controls-group product-form__controls-group--submit disabled">
+            <div class="product-form__item product-form__item--submit
+              {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
+              {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
+            > {% endcomment %}
+          <div class="product-form__controls-group product-form__controls-group--submit disabled">
+            <div class="product-form__item product-form__item--submit 
+              {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
+            >
+              <button type="submit" name="add"
+                {% unless current_variant.available %} aria-disabled="true"{% endunless %}
+                aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+                class="btn product-form__cart-submit {% unless current_variant.available %} all-soldout{% endunless %}"
+                {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
+                data-add-to-cart>
+                <span data-add-to-cart-text>
+                  {% unless current_variant.available %}
+                    {{ 'products.product.sold_out' | t }}
+                  {% else %}
+                    {{ 'products.product.add_to_cart' | t }}
+                  {% endunless %}
+                </span>
+                <span data-loader></span>
+              </button>
+              {% comment %} {% if section.settings.enable_payment_button %}
+                {{ form | payment_button }}
+              {% endif %} {% endcomment %}
+            </div>
+          </div>
+        {% endform %}
+
+          <div class="label-text">
+            {{label_text}}
+          </div>
+
+          {% if more_info %}
+            <a class="modal-open-js more-info-link" data-modal="more-info"><span class="span-link">MORE INFO</span></a>
+          {% endif %}
+
+        </div>
+
+        {%- comment -%}
+          Live region for announcing updated price and availability to screen readers
+        {%- endcomment -%}
+        <p class="visually-hidden" data-product-status
+          aria-live="polite"
+          role="status"
+        ></p>
+
+        {%- comment -%}
+          Live region for announcing that the product form has been submitted and the
+          product is in the process being added to the cart
+        {%- endcomment -%}
+        <p class="visually-hidden" data-loader-status
+          aria-live="assertive"
+          role="alert"
+          aria-hidden="true"
+        >{{ 'products.product.loader_label' | t }}</p>
+
+        <div
+          class="product-single__store-availability-container"
+          data-store-availability-container
+          data-product-title="{{ product.title | escape }}"
+          data-has-only-default-variant="{{ product.has_only_default_variant }}"
+          data-base-url="{{ shop.url }}{{ routes.root_url }}"
+        >
+        </div>
+
+        {% comment %} {% if section.settings.show_share_buttons %}
+          {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
+        {% endif %} {% endcomment %}
+
+    </div>
+
+    <div class="product-single-pdp__mob-title">
+      <span class="description-label">DETAILS</span>
+      <h1 class="product-single__title">{{ product.title }}</h1>
+      <div class="product-single__description">{{ product.description }}</div>
+    </div>
+
+  </div>
+</div>
+
+{% unless product == empty %}
+  <script type="application/json" id="ProductJson-product-template">
+    {{ product | json }}
+  </script>
+  <script type="application/json" id="ModelJson-product-template">
+    {{ product.media | where: 'media_type', 'model' | json }}
+  </script>
+{% endunless %}
+

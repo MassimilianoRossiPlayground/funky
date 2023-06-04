@@ -73,6 +73,7 @@
     },
     "newsletter_form": {
       "newsletter_email": "Subscribe to our mailing list",
+      "newsletter_email_secondary": "Subscribe to our mailing list",
       "email_placeholder": "Email address",
       "confirmation": "Thanks for subscribing!",
       "submit": "Subscribe"
@@ -163,10 +164,10 @@
       "remove": "Remove",
       "subtotal": "Subtotal",
       "savings": "You're saving",
-      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
-      "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
+      "taxes_and_shipping_at_checkout": "Free shipping in Europe for order over 80€. Shipping in 24h!",
+      "taxes_and_shipping_policy_at_checkout_html": "Free shipping in Europe for order over 80€. Shipping in 24h!",
+      "taxes_included_but_shipping_at_checkout": "Free shipping in Europe for order over 80€. Shipping in 24h!",
+      "taxes_included_and_shipping_policy_html": "Free shipping in Europe for order over 80€. Shipping in 24h!",
       "update": "Update",
       "checkout": "Check out",
       "empty": "Your cart is currently empty.",
@@ -184,7 +185,7 @@
       "qty": "Qty",
       "regular_total": "Regular total",
       "remove": "Remove {{ product }}",
-      "total": "Total",
+      "total": "TOTAL",
       "update": "Update"
     },
     "popup": {
@@ -224,11 +225,11 @@
     "form": {
       "name": "Name",
       "email": "Email",
-      "phone": "Phone Number",
+      "phone": "Phone",
       "message": "Message",
       "submit": "Send",
-      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
-      "error_heading": "Please adjust the following:"
+      "post_success": "Thanks for contacting us, we will reply soon! Or maybe not, who knows?!",
+      "error_heading": "Fill in all fields correctly."
     }
   },
   "customer": {

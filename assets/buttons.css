@@ -25,3 +25,15 @@
     display: block;
     width: 100%;
 }
+.buttons__btn.col-12 {
+    border: 2px solid #000;
+}
+.buttons__btn.bnt-black,
+.buttons__btn.bnt-black:hover {
+    background: #000;
+}
+.buttons__btn.bnt-black a,
+.buttons__btn.bnt-black:hover a {
+    background: #000;
+    color: #fff;
+}

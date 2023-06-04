@@ -16,8 +16,8 @@
       {% else %}
         {% assign class_btn = "" %}
       {% endif %}  
-      <div class="buttons__btn {{class_btn}} {{class_col}}">
-        <a href="{{ button.settings.btn_link }}">{{ button.settings.btn_text }}</a>
+      <div class="buttons__btn {{class_btn}} {{class_col}} {% if button.settings.btn_black %}bnt-black{% endif %}">
+        <a class="buttons__btn__link-js" {% if button.settings.blank %}target="_blank"{% endif %} {% if button.settings.modal %} href="#modal" {% else %} href="{{ button.settings.btn_link }}" {% endif %}>{{ button.settings.btn_text }}</a>
       </div>
     {% endfor %}
   </div>
@@ -46,6 +46,21 @@
               "type": "checkbox",
               "id": "btn_selected",
               "label": "BTN Selected"
+          },
+          {
+              "type": "checkbox",
+              "id": "blank",
+              "label": "Open in a new window"
+          },
+          {
+              "type": "checkbox",
+              "id": "modal",
+              "label": "Modal Button"
+          },
+          {
+              "type": "checkbox",
+              "id": "btn_black",
+              "label": "Button Black"
           }
         ]
       }

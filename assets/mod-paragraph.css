@@ -1,9 +1,9 @@
 .section-paragraph {
-    border-bottom: 2px solid #000;
     padding: 60px 0;
 }
 .section-paragraph__content .title-description p {
     font-family: "HelveticaNeue";
+    font-weight: 400;
     padding: 0 0 25px 0;
     margin: 0;
 }

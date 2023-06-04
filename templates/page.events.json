@@ -1,0 +1,241 @@
+{
+  "sections": {
+    "28c5c9f3-7a4f-4812-a914-5bfdd1d0b1a1": {
+      "type": "hero-banner",
+      "settings": {
+        "transparent_header": true,
+        "image": "shopify:\/\/shop_images\/guardian-banner.jpg",
+        "image_mob": "shopify:\/\/shop_images\/guardian-mob.jpg",
+        "left_text": "",
+        "right_text": "",
+        "link": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "b7e2afa8-8aa3-4ff0-b27b-7949c6c8fce3": {
+      "type": "buttons",
+      "blocks": {
+        "template--18503070351684__b7e2afa8-8aa3-4ff0-b27b-7949c6c8fce3-1680362319bb506406-0": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "ISCRIZIONE GARA",
+            "btn_link": "",
+            "btn_selected": true,
+            "blank": false,
+            "modal": true
+          }
+        },
+        "e26593c8-6259-4abb-a4a3-3c40b0580e18": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "TICKET AFTER PARTY",
+            "btn_link": "shopify:\/\/products\/the-guardian",
+            "btn_selected": true,
+            "blank": true,
+            "modal": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18503070351684__b7e2afa8-8aa3-4ff0-b27b-7949c6c8fce3-1680362319bb506406-0",
+        "e26593c8-6259-4abb-a4a3-3c40b0580e18"
+      ],
+      "settings": {}
+    },
+    "7a76794b-9217-4ea3-97d4-5f28ec55b171": {
+      "type": "lazy-slide",
+      "settings": {
+        "text": "DOMENICA 23 APRILE",
+        "font_size": 29,
+        "font_size_mob": 16,
+        "padding": 20,
+        "padding_mob": 20,
+        "border_top": "yes",
+        "border_bottom": "yes"
+      }
+    },
+    "bc968b9e-f027-4344-9c59-ccdcc3406452": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "Mottolino Snowpark",
+        "text": "<ul><li><strong>10.30 Apertura iscrizioni e training<\/strong><br\/>Iscrizioni on-line già attive<br\/><br\/><\/li><li><strong>11.30 Gara Parallel Banked Slalom<\/strong><br\/>Parallelo ad eliminazione diretta <br\/><br\/><\/li><li><strong>14.00 Training Quarter Pipe Battle<\/strong><br\/>Iscrizioni in loco<br\/><br\/><\/li><li><strong>14.45 Jam Session Quarter Pipe Battle <\/strong><br\/>Cash prize 1.500€<\/li><\/ul><p><\/p><p>All day music, beer, drinks and food<br\/><\/p>",
+        "text_size": "medium"
+      }
+    },
+    "6b15cae5-b356-49fe-af7b-2c06276c8682": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "Marcos Pub",
+        "text": "<ul><li><strong>20.00 Cena e highlights della giornata<\/strong><br\/>Prenotare la cena è fortemente consigliato<br\/><br\/><\/li><li><strong>21.30 Premiazioni<\/strong><br\/>Parallel Banked Slalom e Quarter Pipe Battle<\/li><\/ul>",
+        "text_size": "medium"
+      }
+    },
+    "b3c08196-6c77-4ac4-a7eb-db4f50553377": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "Miky’s club",
+        "text": "<ul><li><strong>23.00 Funky After Party with Explosive LineUp<\/strong><br\/>Online pre-sale o ticket in cassa<\/li><\/ul>",
+        "text_size": "medium"
+      }
+    },
+    "c629649f-0b05-4bdd-9505-370997f34eb5": {
+      "type": "lazy-slide",
+      "disabled": true,
+      "settings": {
+        "text": "DESCRIZIONE",
+        "font_size": 29,
+        "font_size_mob": 16,
+        "padding": 20,
+        "padding_mob": 20,
+        "border_top": "yes",
+        "border_bottom": "yes"
+      }
+    },
+    "cd2e927b-9b4e-4f0f-8e7c-47877f872426": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<h2>DOMENICA 23 APRILE, LIVIGNO <br\/>LO SPIRITO DELLA MONTAGNA HA BISOGNO DI VOI. L'ANELLO DI UN NUOVO GUARDIANO. E LA FESTA DI NON FINIRE FINCHÈ NON È FINITA!<\/h2>",
+        "text_size": "medium"
+      }
+    },
+    "ac8ed2de-a8cb-4355-be83-ceecbc94ddb8": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>Inutile nasconderlo, se non lo sai sei un becco, ma ogni anno ad Aprile si scrive la storia del contest di snowboard più Epico (ne ha scritto pure Omero che era cieco, e meglio che non abbia visto tutto) e una festa atomica (al CERN stanno ancora cercando di misurarne le onde che propaga nell’Iperspazio).<br\/><br\/>Quindi bando alle ciance, la corsa alla conquista dell’anello è ufficialmente RI-APERTA! Domatori e Circensi, Belve, cavalli di razza e tigri, è tornato il momento di andare a LIVIGNO per chiudere la stagione come solo noi sappiamo fare!<br\/><\/p>",
+        "text_size": "medium"
+      }
+    },
+    "79b3cd2b-ae70-45b4-9681-a0998b29c267": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "Le Gare",
+        "text": "<p>Il <strong>banked slalom<\/strong> del guardiano sarà un parallelo ad eliminazione diretta, ciò significa che ci saranno due percorsi con paraboliche e tranelli identici, che nella parte finale si uniranno in un'unica via verso la gloria. Il primo che taglia il traguardo passa il turno e così via fino a quando ne rimarrà SOLO UNO che vincerà il famigerato anello. Iscrizioni aperte a tutti, Snowboarder e skier saranno in due categorie differenti. Iscrizioni gratuita, potete farla sul posto oppure on-line (iscriviamo massimo 200 rider quindi se volete assicurarvi il pettorale* consigliamo vivamente di portarvi avanti e iscrivervi ora).<br\/><br\/><\/p>",
+        "text_size": "medium"
+      }
+    },
+    "c1dc41da-2b1f-4b16-bb30-0bb5a464915f": {
+      "type": "buttons",
+      "blocks": {
+        "template--18503070351684__c1dc41da-2b1f-4b16-bb30-0bb5a464915f-1680362319bb506406-0": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "ISCRIZIONE GARA",
+            "btn_link": "",
+            "btn_selected": true,
+            "blank": false,
+            "modal": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18503070351684__c1dc41da-2b1f-4b16-bb30-0bb5a464915f-1680362319bb506406-0"
+      ],
+      "settings": {}
+    },
+    "39dc33d6-f6fa-45c1-9c15-1db36a3f28a8": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p><strong>*IL PETTORALE SI PUÒ RITIRARE ENTRO LE 11.00 DI DOMENICA 23 ALLO STAND FUNKY<\/strong><\/p>",
+        "text_size": "medium"
+      }
+    },
+    "6ec7a704-7d57-4e55-aa46-cc45ac49bb11": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>Il <strong>Quarter Pipe Battle<\/strong> è un cash prize contest (1.500€ mica banane) dove i migliori rider si sfideranno in una jam session su un course composto da una spina seguita da un quarter pipe. (Iscrizione esclusivamente in loco).<br\/><br\/><strong>Premi Quarter Pipe Battle<\/strong><br\/>Best rider man 500€<br\/>Best rider woman 500€<br\/>Best grom 100€<br\/>Best trick 200€<br\/>Biggets air 200€<\/p><p><\/p>",
+        "text_size": "medium"
+      }
+    },
+    "029a6b94-6cce-4c1b-b6c7-36b414f12ef7": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "La Musica",
+        "text": "<p>Come sempre FUNKY e sinonimo di Qualità. Aspettatevi un safari tra i migliori generi ballerini sciogli chiappe, grazie a una Line up che come sempre sembra un abito su misura di alta sartoria. La nuova vostra musica preferita sarà selezionate dalle migliori menti del globo terracqueo e per l’occasione abbiamo fatto volare degli aerei e salpare dei vaporetti. È con immenso piacere che vi faremo gustare le perle di laguna del selector veneziano <strong>2Tempi<\/strong> (moniker di Giulio Villano) e la bombe dell’iberico <strong>OG Juan<\/strong> organizzatore di eventi della capitale Spagnola, più gustoso di un patanegra di spessore sul pan tomate. Il tutto sempre condito e intermezzato dal nostro <strong>FUNKY PANDEMONIO DOCG<\/strong> (Elio, Danny & Rino). Naturalmente non sarebbe una Festa Funky se non ci fossero le sorprese per cui lasciatevi qualche neurone per processare quello che ancora non sapete.<br\/><br\/>Dalle <strong>11.00 <\/strong>alle<strong> 16.00<\/strong> saremo setappati in park al Mottolino, con un Soundsystem sismico.<br\/><br\/>Dalle <strong>23.00<\/strong> attacchiamo al Miky’s con una selecta infernale fatta da ospiti illustri che ci guideranno a fari spenti fino a notte inoltrata. Abbandonate ogni speranza voi che entrate.<br\/><br\/><strong>Line up<\/strong><br\/>FUNKY PANDEMONIO<br\/>2TEMPI (FlexyHauss)<br\/>OG JUAN (Tombolo)<br\/>SPECIAL GUEST (Monster)<br\/>FATINE & METEORITI<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "97941a33-c1c5-46a4-925b-8f7e6aee0e47": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "After Party al Miky's",
+        "text": "<p>Ingresso solo con ticket, abbiamo solo 200 posti early bird che si possono comprare on-line al prezzo di 15€, altrimenti tutti gli altri possono prendere il ticket all’ingresso fino al raggiungimento della massima capienza, il prezzo in cassa sarà di 20€.<br\/>Quindi se vuoi essere sicuro di entrare e sei abbastanza furbo da spendere meno ;) prendi il ticket!<br\/><\/p>",
+        "text_size": "medium"
+      }
+    },
+    "c214e972-475d-48ba-929e-87aed1afa5a0": {
+      "type": "buttons",
+      "blocks": {
+        "template--18503070351684__c214e972-475d-48ba-929e-87aed1afa5a0-1680362319bb506406-0": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "TICKET AFTER PARTY",
+            "btn_link": "shopify:\/\/products\/the-guardian",
+            "btn_selected": true,
+            "blank": true,
+            "modal": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18503070351684__c214e972-475d-48ba-929e-87aed1afa5a0-1680362319bb506406-0"
+      ],
+      "settings": {}
+    },
+    "7f1e7baf-55e9-4c20-bc27-e3ee3bb0efd1": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "Accomodation",
+        "text": "<p>Se non sapete dove dormire chiedete ai nostri amici di snowave che vi aiuteranno con vari pacchetti. <a href=\"https:\/\/www.snowave.it\/tour\/funky-the-guardian-livigno\/\" target=\"_blank\" title=\"https:\/\/www.snowave.it\/tour\/funky-the-guardian-livigno\/\">More Info<\/a><br\/>Per info dirette contattate Darietto Salsi +39 347 393 4826<br\/><br\/>Per altre info chiedete a Funky Snowboards (tanto non vi risponderemo… o si? boh, tu lo sai?)<\/p><p>info@funkysnowboards.com  <br\/><br\/>CI VEDIAMO SU!<br\/><br\/>BACI BACIOTTI,<br\/><br\/>FUNKY FAM<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "3af4a1cf-91e6-47c4-bfc6-3d87491fc216": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>Supported by:<\/p><p>Monster Energy, Union Bindings, Livigno, Mottolino Fun Mountain<\/p>",
+        "text_size": "medium"
+      }
+    }
+  },
+  "order": [
+    "28c5c9f3-7a4f-4812-a914-5bfdd1d0b1a1",
+    "main",
+    "b7e2afa8-8aa3-4ff0-b27b-7949c6c8fce3",
+    "7a76794b-9217-4ea3-97d4-5f28ec55b171",
+    "bc968b9e-f027-4344-9c59-ccdcc3406452",
+    "6b15cae5-b356-49fe-af7b-2c06276c8682",
+    "b3c08196-6c77-4ac4-a7eb-db4f50553377",
+    "c629649f-0b05-4bdd-9505-370997f34eb5",
+    "cd2e927b-9b4e-4f0f-8e7c-47877f872426",
+    "ac8ed2de-a8cb-4355-be83-ceecbc94ddb8",
+    "79b3cd2b-ae70-45b4-9681-a0998b29c267",
+    "c1dc41da-2b1f-4b16-bb30-0bb5a464915f",
+    "39dc33d6-f6fa-45c1-9c15-1db36a3f28a8",
+    "6ec7a704-7d57-4e55-aa46-cc45ac49bb11",
+    "029a6b94-6cce-4c1b-b6c7-36b414f12ef7",
+    "97941a33-c1c5-46a4-925b-8f7e6aee0e47",
+    "c214e972-475d-48ba-929e-87aed1afa5a0",
+    "7f1e7baf-55e9-4c20-bc27-e3ee3bb0efd1",
+    "3af4a1cf-91e6-47c4-bfc6-3d87491fc216"
+  ]
+}

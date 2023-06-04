@@ -5,3 +5,6 @@
 .template-cart main#MainContent {
     min-height: calc(100vh - 312px);
 }
+ul.product-details {
+    list-style: none;
+}

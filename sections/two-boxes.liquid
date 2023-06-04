@@ -1,18 +1,20 @@
 {{ 'mod-two-boxes.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'mod-two-boxes.js' | asset_url }}" defer="defer"></script>
 
-<div class="section-two-boxes">
+<div class="section-two-boxes" {% if section.settings.padding_top %} style="padding-top: {{section.settings.padding_top}}px" {% endif %}>
     <div class="boxed">
         <div class="boxes-group">
             {% for block in section.blocks %}
                 {%- assign img_url = block.settings.image | img_url: 'master' -%}
                 <div class="box-cover">
-                    <a class="box-single" href="{{ block.settings.url }}">
+                    <a class="box-single" {% if block.settings.url %}href="{{ block.settings.url }}"{% endif %}>
                         <img class="box-single__image" src="{{ img_url }}" alt="funkysnowboard {{ block.settings.title }}">
-                        <div class="box-single__content">
-                            <h5 class="box-single__content__title"><span class="span-link">{{ block.settings.title }}</span></h5>
-                            <h5><span class="span-link">{{ block.settings.slug }}</span></h5>
-                        </div>
+                        {% if block.settings.title != blank %}
+                            <div class="box-single__content">
+                                <h5 class="box-single__content__title"><span class="span-link">{{ block.settings.title }}</span></h5>
+                                <h5><span class="span-link">{{ block.settings.slug }}</span></h5>
+                            </div>
+                        {% endif %}
                     </a>
                 </div>
             {% endfor %}
@@ -25,6 +27,13 @@
   {
     "name": "Two Boxes",
     "max_blocks": 4,
+    "settings": [
+        {
+            "type": "number",
+            "id": "padding_top",
+            "label": "Padding TOP"
+        }
+    ],
     "blocks": [
       {
         "type": "boxes",

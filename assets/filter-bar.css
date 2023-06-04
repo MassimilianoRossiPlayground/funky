@@ -17,8 +17,13 @@
     align-items: center;
     font-size: 16px;
     font-family: "HelveticaNeue";
+    font-weight: 400;
+}
+.filter-bar__breadcrumbs a.breadcrumb-home {
+    margin-left: 0px;
 }
 .filter-bar__breadcrumbs a {
+    margin-left: 5px;
     margin-right: 5px;
     display: block;
     text-decoration: none;
@@ -43,6 +48,7 @@
     display: flex;
     font-size: 16px;
     font-family: "HelveticaNeue-Medium";
+    font-weight: 500;
 }
 .filter-bar__tags a {
     margin-right: 30px;
@@ -72,7 +78,7 @@
 }
 .filter-bar.filter-bar--outside {
     position: fixed;
-    top: 98px;
+    top: 99px;
     z-index: 15;
 }
 .filters-toolbar__item-child {
@@ -99,6 +105,9 @@
 
 @media screen and (max-width: 768px) {
 
+    .filter-bar.filter-bar--outside {
+        top: 91px;
+    }
     .filter-bar {
         position: relative;
         flex-direction: column;
@@ -106,8 +115,7 @@
         align-items: flex-start;
         height: 50px;
         transition-duration: 0.3s;
-        width: 93vw;
-        padding: 20px 15px;
+        padding: 20px 0;
     }
     .filter-bar.open {
         height: unset;
@@ -130,6 +138,9 @@
     a.tag-all {
         margin-bottom: 10px;
     }
+    a.tag-all span  {
+        margin-left: 20px;
+    }
     a.tag-single:hover,
     a.tag-all:hover {
         background-color: unset;
@@ -142,7 +153,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         width: 100%;
     }
     .filter-bar .tag-single,
@@ -157,7 +168,9 @@
     }
     .filter-bar__mob-bar__action {
         font-family: "HelveticaNeue-Medium";
+        font-weight: 500;
         cursor: pointer;
+        margin-left: 20px;
     }
     .filter-bar__mob-bar__action,
     .filter-bar a {
@@ -168,6 +181,7 @@
         text-transform: lowercase;
     }
     .filter-bar__mob-bar__breadcrumbs {
+        margin-left: 20px;
         margin-bottom: 10px;
         width: 100%;
     }
@@ -176,9 +190,27 @@
     }
     .filter-bar__mob-bar__curtag {
         font-family: "HelveticaNeue-Medium";
+        font-weight: 500;
+        margin-right: 20px;
     }
     .filter-bar__mob-bar__curtag .span-link {
         background-color: var(--lightgreen);
         text-decoration: underline;
+    }
+    .filter-bar__mob-bar.filter-bar__mob-bar--product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .filter-bar__mob-bar.filter-bar__mob-bar--product .filter-bar__mob-bar__breadcrumbs {
+        width: unset;
+    } 
+    a.tag-single-mob span.span-link {
+        text-transform: uppercase;
+        background: var(--lightgreen);
+        text-decoration: underline;
+    }
+    a.tag-single span {
+        margin-left: 20px;
     }
 }

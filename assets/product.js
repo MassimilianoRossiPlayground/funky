@@ -14,6 +14,9 @@
       desk_swiperPdpNavigatioNext: '.product-single-pdp__desk-images .swiper-button-next',
       desk_swiperPdpNavigatioPrev: '.product-single-pdp__desk-images .swiper-button-prev',
 
+      desk_swiperPdpSlides: '.product-single-pdp__desk-images .swiper-slide',
+      desk_swiperPdpSlidesMob: '.product-single-pdp__mob-images .swiper-slide',
+
       desk_swiperPdpImages: '.product-single-pdp__desk-images .swiper-container img',
       desk_swiperPdpImagesMob: '.product-single-pdp__mob-images .swiper-container img',
 
@@ -25,6 +28,8 @@
       productForm:'form[data-product-form]',
       shopifyPaymentButton: '.shopify-payment-button',
       selectionMessage: '.product-select-message',
+      fewMessage: '.product-few-message',
+      fewMessageQty: '.product-few-message span[data-qty]',
       singleOptionSelector: '.single-option-selector',
 
       modalOpens: '.modal-open-js',
@@ -36,6 +41,13 @@
       pdpModalImage: '.pdp-modal-product-image',
       pdpModalImageImg: '.pdp-modal-product-image img',
       pdpModalImageClose: '.close-modal-image',
+
+      headCartDesk: '.site-header__cart',
+      cartPopup: '.cart-popup',
+      navMobileContainer: '.nav-mobile-container',
+      cartPopupMobContainer: '.cart-popup-mob-container',
+
+      btOpenNewsletter: 'footer .btn-open-newsletter',
     };
 
     let bodyTemplate = document.querySelector(selectors.bodyTemplate)
@@ -47,6 +59,8 @@
     let desk_swiperPdpPagination = document.querySelector(selectors.desk_swiperPdpPagination)
     let desk_swiperPdpNavigatioNext = document.querySelector(selectors.desk_swiperPdpNavigatioNext)
     let desk_swiperPdpNavigatioPrev = document.querySelector(selectors.desk_swiperPdpNavigatioPrev)
+    let desk_swiperPdpSlides = document.querySelectorAll(selectors.desk_swiperPdpSlides)
+    let desk_swiperPdpSlidesMob = document.querySelectorAll(selectors.desk_swiperPdpSlidesMob)
     let desk_swiperPdpImages = document.querySelectorAll(selectors.desk_swiperPdpImages)
     let desk_swiperPdpImagesMob = document.querySelectorAll(selectors.desk_swiperPdpImagesMob)
     let productOptions__select = document.querySelector(selectors.productOptions__select)
@@ -57,6 +71,8 @@
     let productForm = document.querySelector(selectors.productForm)
     let shopifyPaymentButton = document.querySelector(selectors.shopifyPaymentButton)
     let selectionMessage = document.querySelector(selectors.selectionMessage)
+    let fewMessage = document.querySelector(selectors.fewMessage)
+    let fewMessageQty = document.querySelector(selectors.fewMessageQty)
     let singleOptionSelector = document.querySelector(selectors.singleOptionSelector)
     let modalOpens = document.querySelectorAll(selectors.modalOpens)
     let pdpModal = document.querySelector(selectors.pdpModal)
@@ -66,9 +82,30 @@
     let pdpModalImage = document.querySelector(selectors.pdpModalImage)
     let pdpModalImageImg = document.querySelector(selectors.pdpModalImageImg)
     let pdpModalImageClose = document.querySelector(selectors.pdpModalImageClose)
+    let headCartDesk = document.querySelector(selectors.headCartDesk)
+    let cartPopup = document.querySelector(selectors.cartPopup)
+    let navMobileContainer = document.querySelector(selectors.navMobileContainer)
+    let cartPopupMobContainer = document.querySelector(selectors.cartPopupMobContainer)
+    let btOpenNewsletter = document.querySelector(selectors.btOpenNewsletter)
 
 
     window.addEventListener("load", (event) => {
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        let paramOpenCart = urlParams.get('opencart')
+        if (paramOpenCart == "true") {
+          setTimeout(function(){
+            if (window.innerWidth > 768 ) {
+              cartPopup.classList.add("open")  
+              headCartDesk.classList.add("open") 
+            } else {
+              navMobileContainer.classList.add("open")  
+              cartPopupMobContainer.classList.add("open")  
+              headCartDesk.classList.add("open") 
+            }
+          }, 500);
+        }
 
         if (shopifyPaymentButton) {
           shopifyPaymentButton.setAttribute('disabled', true)
@@ -102,6 +139,14 @@
         productOptions__group.forEach(function(productOption__single) {
           productOption__single.addEventListener("click", function(){
 
+            let dataQty = productOption__single.getAttribute("data-qty")
+            console.log(dataQty)
+            if (Number(dataQty) < 4) {
+              console.log("minore di 4")
+              fewMessageQty.innerHTML = dataQty
+              fewMessage.classList.add("show")
+              setTimeout(function(){fewMessage.classList.remove("show")}, 2000)
+            }
             productOptions.classList.remove("noselection")
             if (shopifyPaymentButton) {
               shopifyPaymentButton.setAttribute('disabled', false)
@@ -127,11 +172,25 @@
 
             })
 
+            let variantImage = productOption__single.getAttribute("attr-img")
+
+            if (variantImage) {
+              desk_swiperPdpSlides.forEach(desk_swiperPdpSlide => {
+                let desk_swiperPdpImages_url = desk_swiperPdpSlide.getAttribute("attr-img-url")
+                let desk_swiperPdpImages_index = desk_swiperPdpSlide.getAttribute("attr-num")
+                if (desk_swiperPdpImages_url.includes(variantImage)) {
+                  swiper_pdp_desk.slideTo(desk_swiperPdpImages_index)
+                  swiper_pdp_desk.update()
+                  swiper_pdp_mob.slideTo(desk_swiperPdpImages_index)
+                  swiper_pdp_mob.update()
+                }
+              })
+            }
+
           })
         })
         if (productOptions__group.length == 1) {
           productOptions__group.forEach(function(productOption__single__simulate) {
-            console.log("click")
             productOption__single__simulate.click()
           })
         }
@@ -168,15 +227,21 @@
       modalOpen.addEventListener("click", function(){
 
         let dataModal = modalOpen.getAttribute("data-modal")
-        let pdpModalContent = pdpModal.querySelector(".pdp-modal__data[data-modal='"+dataModal+"']")
 
-        pdpModal.classList.remove("hide")
+        if (dataModal == "newsletter") {
+          btOpenNewsletter.click()
+        } else {
 
-        pdpModalDatas.forEach(function(pdpModalData) {
-          pdpModalData.classList.add("hide")
-        })
-
-        pdpModalContent.classList.remove("hide")
+          let pdpModalContent = pdpModal.querySelector(".pdp-modal__data[data-modal='"+dataModal+"']")
+  
+          pdpModal.classList.remove("hide")
+  
+          pdpModalDatas.forEach(function(pdpModalData) {
+            pdpModalData.classList.add("hide")
+          })
+  
+          pdpModalContent.classList.remove("hide")
+        }
 
       })
     })

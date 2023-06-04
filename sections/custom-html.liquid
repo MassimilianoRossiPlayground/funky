@@ -1,0 +1,39 @@
+<div class="section-custom-html">
+  <div class="boxed">
+    {{section.settings.text}}
+  </div>
+</div>
+
+{% if section.settings.iframe_mob_height %}
+<style>
+    @media screen and (max-width: 768px) {
+      .section-custom-html iframe {
+        height: {{section.settings.iframe_mob_height}}px;
+      }
+    }
+</style>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Custom html",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "number",
+        "id": "iframe_mob_height",
+        "label": "Mobile Iframe Height",
+        "default": 300
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom html"
+      }
+    ]
+  }
+{% endschema %}
