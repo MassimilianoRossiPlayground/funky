@@ -2,7 +2,7 @@
 
 <div class="boxed rich-text">
   {% if section.settings.section_title != blank %}
-    <div class="rich-text__title">
+    <div class="rich-text__title" style="text-align:{{section.settings.heading_position}};">
       <h2 class="h3">{{ section.settings.section_title | escape }}</h2>
     </div>
   {% endif %}
@@ -10,8 +10,6 @@
     <div class="rich-text__content">{{ section.settings.text }}</div>
   {% endif %}
 </div>
-
-
 
 {% schema %}
 {
@@ -116,6 +114,26 @@
         "zh-CN": "介绍您的品牌",
         "zh-TW": "描述您的品牌"
       }
+    },
+    {
+      "type": "select",
+      "id": "heading_position",
+      "label": "Heading position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
     },
     {
       "type": "richtext",

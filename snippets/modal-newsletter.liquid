@@ -1,11 +1,10 @@
 <link rel="stylesheet" href="{{ 'modal-newsletter.css' | asset_url }}" type="text/css">
 <script src="{{ 'modal-newsletter.js' | asset_url }}" defer="defer"></script>
 
-<div class="newsletter-modal hide">
+<div class="newsletter-modal hide" attr-open-onload="{{ settings.enable_newsletter_on_load }}">
   <div class="newsletter-modal__content">
         <span class="close-modal-newsletter">{% include 'icon-close' %}</span>
-        <span class="sup-title-newsletter">FUNKY FAMILY</span>
-        <h4>NEWSLETTER</h4>
+        <span class="sup-title-newsletter">FUNKY FAMILY NEWSLETTER</span>
         <span class="newsletter-text">{{ 'general.newsletter_form.newsletter_email' | t }}</span>
         {% include 'newsletter' %}
         <span class="newsletter-text-sub">{{ 'general.newsletter_form.newsletter_email_secondary' | t }} <a href="/policies/privacy-policy">Privacy Policy</a></span>

@@ -47,10 +47,10 @@
 
       <a class="tag-all {% if current_tags == blank %} selected{% endif %}" href="{{ filter_collection.url }}"><span class="span-link">all</span></a>
 
-      {% assign tags_list_sort = "tees,sweats,shirts & jackets,bottoms,headwear,socks" | split: "," %}
+      {% assign tags_list_sort = "tees,sweats,tops,bottoms,headwear,socks,accessories" | split: "," %}
 
       {% if collection_title == "apparel" %}
-        {% assign tags_list_sort = "tees,sweats,shirts & jackets,bottoms,headwear,socks" | split: "," %}
+        {% assign tags_list_sort = "tees,sweats,tops,bottoms,headwear,socks,accessories" | split: "," %}
       {% else %}
         {% assign tags_list_sort = filter_collection.all_tags %}
       {% endif %}

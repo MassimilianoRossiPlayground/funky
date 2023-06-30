@@ -19,7 +19,9 @@
     let paramOpenNewsletterPosted = urlParams.get('customer_posted')
     let paramOpenNewsletterError = urlParams.get('contact[tags]')
 
-    if (sessionStorage.getItem("openNewsletter") !== "close") {
+    let modalNewsletterOpenOnLOad = modalNewsletter.getAttribute("attr-open-onload")
+
+    if ((sessionStorage.getItem("openNewsletter") !== "close") && (modalNewsletterOpenOnLOad == "true") ){
       modalNewsletter.classList.remove("hide")
     }
 

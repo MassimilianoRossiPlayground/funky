@@ -8,22 +8,35 @@
     {%- endif -%}
     <input type="hidden" name="contact[tags]" value="newsletter">
     <div class="input-group input-group--newsletter {% if form.errors %} input-group--error{% endif %}">
-        <input type="email"
-        name="contact[email]"
-        id="{{ formId }}-email"
-        class="input-group__field newsletter__input{% if form.errors %} input--error{% endif %}"
-        value="{{ form.email }}"
-        placeholder="MAIL"
-        aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
-        aria-required="true"
-        required
-        autocorrect="off"
-        autocapitalize="off"
-        {% if form.errors %}
-            aria-invalid="true"
-            aria-describedby="{{ formId }}-email-error"
-            data-form-status
-        {% endif %}>
+
+        <div class="input-container">
+
+            <div class="col-6">
+                <input type="email"
+                name="contact[email]"
+                id="{{ formId }}-email"
+                class="input-group__field newsletter__input{% if form.errors %} input--error{% endif %}"
+                value="{{ form.email }}"
+                placeholder="EMAIL"
+                aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                aria-required="true"
+                required
+                autocorrect="off"
+                autocapitalize="off"
+                {% if form.errors %}
+                    aria-invalid="true"
+                    aria-describedby="{{ formId }}-email-error"
+                    data-form-status
+                {% endif %}>
+            </div>
+            <div class="col-6">
+                <span class="input-group__btn">
+                    <button type="submit" class="btn newsletter__submit" name="commit" >
+                        <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+                    </button>
+                </span>
+            </div>
+        </div>
 
         {% if form.tags == "newsletter" %}
             <span class="input-error-message site_newsletter-error">Email già registrata oppure invalida!</span>
@@ -35,13 +48,12 @@
                 <span class="site_newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
             </span>
         {% endif %} {% endcomment %}
+        {% comment %} <div class="form-input privacy">
+            <input id="privacy-newsletter" type="checkbox" name="customer[privacy]" required="">
+            <label for="privacy-newsletter" style="font-weight:normal">Confermo di aver preso visione della <a href="/policies/privacy-policy">Privacy Policy</a></label>
+        </div> {% endcomment %}
 
 
-        <span class="input-group__btn">
-        <button type="submit" class="btn newsletter__submit" name="commit" >
-            <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
-        </button>
-        </span>
     </div>
     <span class="form-newsletter-error-check hide">Check your email address</span>
 

@@ -1,20 +1,14 @@
 .newsletter-modal {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #00000073;
-    z-index: 20;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 500px;
 }
 .newsletter-modal__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #f5f5f5;
-    padding: 40px;
-    border: 1px solid #000;
+    background: #cfff7c;
+    padding: 30px 25px;
+    border: 2px solid #000;
 }
 .close-newsletter-modal {
     position: absolute;
@@ -31,6 +25,7 @@
 .sup-title-newsletter {
     font-size: 16px;
     margin-bottom: 10px;
+    font-family: "HelveticaNeue-Medium";
 }
 .close-modal-newsletter {
     position: absolute;
@@ -38,27 +33,40 @@
     cursor: pointer;
 }
 .newsletter-text {
-    margin: 80px 0 20px 0;
-    text-align: center;
-    width: 100%;
-    display: block;
-    font-size: 16px;
-}
-.newsletter-text-sub {
-    margin: 20px 0 20px 0;
-    text-align: center;
+    margin: 20px 0 10px;
+    text-align: left;
     width: 100%;
     display: block;
     font-size: 14px;
 }
+.newsletter-text-sub {
+    margin: 10px 0 0 0;
+    text-align: left;
+    width: 100%;
+    display: block;
+    font-size: 12px;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .input-group.input-group--newsletter {
     display: flex;
     flex-direction: column;
-    width: 860px;
+}
+.input-group.input-group--newsletter .form-input.privacy {
+    margin: 5px 0 0;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.input-group.input-group--newsletter .form-input.privacy label {
+    margin-left: 5px;
 }
 button.btn.newsletter__submit {
     width: 100%;
-    margin-top: 10px;
     background: #000;
     color: #fff;
     text-decoration: none;
@@ -96,19 +104,25 @@ span.site_newsletter-error {
 }
 .newsletter-modal__content input#Contact-Newsletter-email {
     background: #f5f5f5;
-    border: 2px solid #000;
+    border: 1px solid #000;
     outline: unset !important;
 }
 
 @media screen and (max-width:991px) {
+    .newsletter-modal {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
     .input-group.input-group--newsletter {
         width: unset;
     }
-    .newsletter-modal__content {
-        width: 73%;
-    }
-    .newsletter-text {
-        margin: 40px 0 20px;
+    .newsletter-modal__content input#Contact-Newsletter-email {
+        height: 24px;
     }
     .mobile-nav-wrapper__content .btn-open-newsletter {
         cursor: pointer;

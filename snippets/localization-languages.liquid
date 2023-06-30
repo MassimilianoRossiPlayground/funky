@@ -2,16 +2,34 @@
   <localization-form>
     {% form 'localization' %}
       <div class="disclosure btn-languages">
-        <div class="disclosure__button" aria-expanded="false" aria-controls="LanguageList">
-          {{ localization.language.iso_code | lowercase }}
+
+        {% if localization.language.iso_code == "it" %}
+          {% assign iso_code_loc = "ita" %}
+        {% elsif localization.language.iso_code == "en" %}
+          {% assign iso_code_loc = "eng" %}
+        {% else %}
+          {% assign iso_code_loc = localization.language.iso_code %}
+        {% endif %}
+
+        <div class="disclosure__button" aria-expanded="false" aria-controls="LanguageList" data-lang="{{ localization.language.iso_code }}">
+          {{ iso_code_loc | lowercase }}
           {% include 'icon-funky-arrow-down' %}
         </div>
 
         <ul id="LanguageList" role="list" class="disclosure__list" hidden>
           {% for language in localization.available_languages %}
+
+            {% if language.iso_code == "it" %}
+              {% assign iso_code = "ita" %}
+            {% elsif language.iso_code == "en" %}
+              {% assign iso_code = "eng" %}
+            {% else %}
+              {% assign iso_code = language.iso_code %}
+            {% endif %}
+
             <li class="disclosure__item" tabindex="-1">
               <a href="#"{% if language.iso_code == localization.language.iso_code %} aria-current="true"{% endif %} hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}" data-value="{{ language.iso_code }}">
-                <span>{{ language.iso_code | lowercase }}</span>
+                <span>{{ iso_code | lowercase }}</span>
               </a>
             </li>
           {% endfor %}
