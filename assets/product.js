@@ -142,7 +142,6 @@
             let dataQty = productOption__single.getAttribute("data-qty")
             console.log(dataQty)
             if (Number(dataQty) < 4) {
-              console.log("minore di 4")
               fewMessageQty.innerHTML = dataQty
               fewMessage.classList.add("show")
               setTimeout(function(){fewMessage.classList.remove("show")}, 2000)
@@ -268,9 +267,8 @@
     desk_swiperPdpImages.forEach(desk_swiperPdpImage => {
 
       desk_swiperPdpImage.addEventListener("click", function() {
-        console.log("open image")
         pdpModalImageImg.setAttribute("src", "")
-        let imageSrc = desk_swiperPdpImage.getAttribute("src")
+        let imageSrc = desk_swiperPdpImage.getAttribute("data-image-zoom")
         pdpModalImageImg.setAttribute("src", imageSrc)
   
         pdpModalImage.classList.remove("hide")
@@ -281,7 +279,6 @@
     desk_swiperPdpImagesMob.forEach(desk_swiperPdpImageMob => {
 
       desk_swiperPdpImageMob.addEventListener("click", function() {
-        console.log("open image")
         pdpModalImageImg.setAttribute("src", "")
         let imageSrc = desk_swiperPdpImageMob.getAttribute("src")
         pdpModalImageImg.setAttribute("src", imageSrc)

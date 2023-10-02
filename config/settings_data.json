@@ -4,6 +4,7 @@
     "social_instagram_link": "https:\/\/www.instagram.com\/funkysnowboards\/",
     "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCj7a7DokEyQgiJ8gOEXDoOg",
     "favicon": "shopify:\/\/shop_images\/logo.png",
+    "enable_newsletter_on_load": true,
     "sections": {
       "header": {
         "type": "header",
@@ -15,7 +16,7 @@
           "main_linklist": "main-menu",
           "message": true,
           "home_page_only": false,
-          "message_text": "☺ NUOVO SITO UFFICIALE FUNKY SNOWBOARDS ☺",
+          "message_text": "☺ NUOVO SITO UFFICIALE FUNKY ☺",
           "message_link": "",
           "color_bg": "#d9d9d9",
           "color_text": "#000000"
@@ -34,7 +35,6 @@
       },
       "feature-columns": {
         "type": "feature-columns",
-        "disabled": true,
         "blocks": {
           "feature-columns-0": {
             "type": "text_block",
@@ -72,6 +72,7 @@
           "feature-columns-1",
           "feature-columns-2"
         ],
+        "disabled": true,
         "settings": {
           "title": "",
           "align_text": "left"
@@ -91,7 +92,6 @@
       },
       "quotes": {
         "type": "quotes",
-        "disabled": true,
         "blocks": {
           "quotes-0": {
             "type": "quote",
@@ -120,13 +120,13 @@
           "quotes-1",
           "quotes-2"
         ],
+        "disabled": true,
         "settings": {
           "title": ""
         }
       },
       "image-bar": {
         "type": "image-bar",
-        "disabled": true,
         "blocks": {
           "image-bar-0": {
             "type": "image",
@@ -158,6 +158,7 @@
           "image-bar-1",
           "image-bar-2"
         ],
+        "disabled": true,
         "settings": {
           "section_height": "medium"
         }
@@ -197,7 +198,8 @@
         "settings": {
           "text": "<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO LABORIS NISI UT ALIQUIP EX EA COMMODO CONSEQUAT.<\/p>",
           "link_text": "I’M CURIOUS",
-          "link_url": "#"
+          "link_url": "#",
+          "border_bottom": false
         }
       },
       "64260836-a058-4853-b837-b33b9c95bc66": {
@@ -208,21 +210,23 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/extrapositiva-banner.jpg",
               "title": "EXTRAPOSITIVA",
-              "slug": "OUT NOW",
+              "slug": "CHECK IT OUT",
               "url": "shopify:\/\/collections\/apparel"
             }
           },
           "9775d68a-e73e-4e00-84ff-3d64da3515db": {
             "type": "boxes",
+            "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/guardian-5.jpg",
-              "title": "THE GUARDIAN 8° ED.",
-              "slug": "23 APRILE",
-              "url": "https:\/\/www.funkysnowboards.com\/pages\/the-guardian-livigno"
+              "image": "shopify:\/\/shop_images\/funky-donuts-rodeo-blevio-como.jpg",
+              "title": "FUNKY DONUTS RODEO",
+              "slug": "22 LUGLIO",
+              "url": "shopify:\/\/blogs\/eventi\/funky-donuts-rodeo"
             }
           },
           "116d69a4-ee2f-4f75-9144-522a704aac72": {
             "type": "boxes",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/ELIOULLE.jpg",
               "title": "FUNKY",
@@ -269,61 +273,61 @@
           "254b60cd-8478-430a-8766-d2dd618ac260": {
             "type": "product_block",
             "settings": {
-              "product_id": "funky-walker-tee-stone"
-            }
-          },
-          "b56dfeed-6017-4170-8aa7-b7674311f3af": {
-            "type": "product_block",
-            "settings": {
-              "product_id": "funky-walker-socks-raw"
-            }
-          },
-          "0f4c9add-0e0f-453e-80a7-41640bbb4f3c": {
-            "type": "product_block",
-            "settings": {
-              "product_id": "funky-walker-tee-white"
+              "product_id": "funky-propro-hoodie-sand"
             }
           },
           "5e9d49b4-974b-4e40-b7c6-b99222db4778": {
             "type": "product_block",
             "settings": {
-              "product_id": "funky-walker-dad-cap"
+              "product_id": "funky-short-beanie-purple"
             }
           },
-          "f0870271-1f1a-4cdd-9c0f-17ac837fb0db": {
+          "0f4c9add-0e0f-453e-80a7-41640bbb4f3c": {
             "type": "product_block",
             "settings": {
-              "product_id": "funky-yeti-outdoot-hat"
+              "product_id": "funky-good-tee-white"
+            }
+          },
+          "b56dfeed-6017-4170-8aa7-b7674311f3af": {
+            "type": "product_block",
+            "settings": {
+              "product_id": "ciao-socks-liliac"
             }
           },
           "0351c488-088c-4734-8a6a-e1c57d6c3296": {
             "type": "product_block",
             "settings": {
-              "product_id": "funky-menevado-tee-liliac"
+              "product_id": "funky-yeti-shirt-khaki"
             }
           },
-          "ff26041f-f8e9-4171-9a49-ed51b8f4df69": {
+          "f0870271-1f1a-4cdd-9c0f-17ac837fb0db": {
             "type": "product_block",
             "settings": {
-              "product_id": "funky-hammock"
+              "product_id": "funky-yeti-vest-khaki"
             }
           },
           "4aaec4ba-b648-43c8-b348-57b7965c1bd3": {
             "type": "product_block",
             "settings": {
-              "product_id": "funky-menevado-crewneck-black"
+              "product_id": "funky-yeti-shorts-khaki"
+            }
+          },
+          "ff26041f-f8e9-4171-9a49-ed51b8f4df69": {
+            "type": "product_block",
+            "settings": {
+              "product_id": "funky-yeti-outdoot-hat"
             }
           }
         },
         "block_order": [
           "254b60cd-8478-430a-8766-d2dd618ac260",
-          "b56dfeed-6017-4170-8aa7-b7674311f3af",
-          "0f4c9add-0e0f-453e-80a7-41640bbb4f3c",
           "5e9d49b4-974b-4e40-b7c6-b99222db4778",
-          "f0870271-1f1a-4cdd-9c0f-17ac837fb0db",
+          "0f4c9add-0e0f-453e-80a7-41640bbb4f3c",
+          "b56dfeed-6017-4170-8aa7-b7674311f3af",
           "0351c488-088c-4734-8a6a-e1c57d6c3296",
-          "ff26041f-f8e9-4171-9a49-ed51b8f4df69",
-          "4aaec4ba-b648-43c8-b348-57b7965c1bd3"
+          "f0870271-1f1a-4cdd-9c0f-17ac837fb0db",
+          "4aaec4ba-b648-43c8-b348-57b7965c1bd3",
+          "ff26041f-f8e9-4171-9a49-ed51b8f4df69"
         ],
         "settings": {
           "link_text": "I WANT MORE",
@@ -336,7 +340,8 @@
         "settings": {
           "text": "<p>ANNI 80, UN GRUPPO DI RAGAZZI CON UNA PASSIONE INCREDIBILE PER I BOARD SPORTS, UN LABORATORIO, UNO STEREO E UNA MUSICASSETTA PIENA DI TRACCE FUNKY. A RITMO DI MUSICA I RAGAZZI SPERIMENTANO, COSTRUISCONO E PROGETTANO TAVOLE DI OGNI TIPO MARCHIANDOLE FUNKY.<\/p>",
           "link_text": "",
-          "link_url": "#"
+          "link_url": "#",
+          "border_bottom": false
         }
       },
       "eedc153c-6987-4b91-9d59-89ee8eac8ae7": {
@@ -353,7 +358,6 @@
       },
       "19f59317-a549-457e-8615-cc35d3ac2661": {
         "type": "strip-links",
-        "disabled": true,
         "blocks": {
           "19f59317-a549-457e-8615-cc35d3ac2661-16755167487f3e8c7c-0": {
             "type": "links",
@@ -374,6 +378,7 @@
           "19f59317-a549-457e-8615-cc35d3ac2661-16755167487f3e8c7c-0",
           "3bc0a0eb-41fc-4254-aee1-705fa5c532f5"
         ],
+        "disabled": true,
         "settings": {}
       },
       "1caaa0f2-7503-4b55-bdb1-76801228be6a": {
@@ -392,7 +397,6 @@
       },
       "b7c49f94-fa27-494e-a5cb-9ffdd32323b3": {
         "type": "two-boxes",
-        "disabled": true,
         "blocks": {
           "b7c49f94-fa27-494e-a5cb-9ffdd32323b3-1675517929422ef2c0-0": {
             "type": "boxes",
@@ -441,6 +445,7 @@
           "0f42e117-3ea0-4bbf-9afb-94d034585cfe",
           "3a704eb1-fec2-466c-9ec4-a47931f9c90b"
         ],
+        "disabled": true,
         "settings": {}
       },
       "product-recommendations": {
@@ -506,7 +511,14 @@
       "eedc153c-6987-4b91-9d59-89ee8eac8ae7",
       "19f59317-a549-457e-8615-cc35d3ac2661",
       "1caaa0f2-7503-4b55-bdb1-76801228be6a"
-    ]
+    ],
+    "blocks": {
+      "14159691304313693114": {
+        "type": "shopify:\/\/apps\/pixel-conversions-api-facebook\/blocks\/app-embed\/e244883f-9001-4b7d-b3e2-a64012fd8879",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "presets": {
     "Default": {

@@ -72,11 +72,11 @@
       "one_result_found": "1 result found"
     },
     "newsletter_form": {
-      "newsletter_email": "Subscribe to our mailing list",
-      "newsletter_email_secondary": "Subscribe to our mailing list",
+      "newsletter_email": "Join the Funky Family and get a 15% discount on your first order!",
+      "newsletter_email_secondary": "I agree on receiving e-mail about crazy promotional infos on Funky products (it happens rarely but it happens)",
       "email_placeholder": "Email address",
-      "confirmation": "Thanks for subscribing!",
-      "submit": "Subscribe"
+      "confirmation": "Thanks for subscribing, check your mail box for the discount code!",
+      "submit": "JOIN US"
     },
     "filters": {
       "show_more": "Show More",

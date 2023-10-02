@@ -4,18 +4,353 @@
       "type": "main-page",
       "settings": {}
     },
+    "12630755-214c-454c-b8ad-59c79fd265a0": {
+      "type": "paragraph",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text": "",
+        "link_text": "",
+        "link_url": "",
+        "border_bottom": false
+      }
+    },
     "bc968b9e-f027-4344-9c59-ccdcc3406452": {
       "type": "rich-text",
       "settings": {
         "full_width": false,
-        "section_title": "",
-        "text": "<p><strong>ELABORAZIONE DELL’ORDINE<br\/><\/strong>– Gli ordini conclusi entro le ore 10 dal lunedì al venerdì possono essere spedite il giorno stesso, il tempo di lavorazione standard è fino a (3) giorni lavorativi.<br\/>– Non sono disponibili consegne nel fine settimana.<br\/>– Se non diversamente specificato, tutti gli ordini vengono spediti utilizzando un servizio di terra standard (2-7 giorni lavorativi).<\/p><p><strong>COSTI<br\/><\/strong>La spedizione in Italia costa 5 euro ed è gratuita per gli acquisti superiori a 50 euro.<br\/>– La spedizione in Europa (Italia esclusa) costa 10 euro, ed è gratuita per gli acquisti superiori a 50 euro.<br\/>– La spedizione al di fuori dell’Europa costa 20 euro, ed è gratuita per gli acquisti oltre i 400 euro.<\/p><p><strong>N.B.<\/strong><br\/>– I giorni di arrivo stimati non sono garantiti. Le condizioni metereologiche ed altre circostanze possono fare variare il tempo di consegna.<\/p>",
+        "section_title": "Anni 80, Como, un gruppo di ragazzi con una passione incredibile per gli sport estremi, un laboratorio, uno stereo e una musicassetta piena di tracce funky.",
+        "text": "",
         "text_size": "medium"
+      }
+    },
+    "cb14a1e8-8fc4-48bd-832c-548c3cf06b4c": {
+      "type": "two-boxes-slider",
+      "blocks": {
+        "8759402e-3dc7-456b-89df-55843a440f07": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-10-2012_001.jpg"
+          }
+        },
+        "f064a8b9-0501-4f88-bdae-a1d70980e964": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-10-2012_004.jpg"
+          }
+        },
+        "template--16004898816165__cb14a1e8-8fc4-48bd-832c-548c3cf06b4c-1685443243799bfb55-0": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/996954_10201840555007803_418008487_n.jpg"
+          }
+        },
+        "7b7a7d53-dffe-4918-92b9-4ca93450bed8": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-27-2012_040.jpg"
+          }
+        },
+        "fa33f5be-bb8e-4e2a-a909-8e11a23cce50": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-10-2012_002.jpg"
+          }
+        },
+        "a0f45836-9dd6-484b-842d-0509214e2d2e": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/todd.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "8759402e-3dc7-456b-89df-55843a440f07",
+        "f064a8b9-0501-4f88-bdae-a1d70980e964",
+        "template--16004898816165__cb14a1e8-8fc4-48bd-832c-548c3cf06b4c-1685443243799bfb55-0",
+        "7b7a7d53-dffe-4918-92b9-4ca93450bed8",
+        "fa33f5be-bb8e-4e2a-a909-8e11a23cce50",
+        "a0f45836-9dd6-484b-842d-0509214e2d2e"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "text": "<p>A ritmo di musica i ragazzi sperimentano, costruiscono e progettano tavole di ogni tipo marchiandole Funky. Questa scena rappresenta il primo passo del lungo percorso che ha reso Funky uno dei marchi di riferimento per il mondo di snowboard, skateboard, windsurf e surf. Il primo snowboard costruito da Lucio Longoni (Godfather di Funky) viene chiamato Preistoria, una tavola interamente in legno lunga 120 cm, con una punta rialzata e un marchio a fuoco con il nome del modello. Da quel giorno Funky inizia un periodo di incessante sviluppo tecnologico che riesce a portare le sue tavole sui podi dello snowboard mondiale. In pochi anni il brand Italiano diventa uno dei principali marchi di snowboard europei ampliando la propria clientela anche oltre oceano, ma purtroppo gli anni di grande gloria durano poco. <\/p>",
+        "text_left": false
+      }
+    },
+    "680cd296-546d-41f0-b096-6e78b539d165": {
+      "type": "two-boxes-slider",
+      "blocks": {
+        "8ee83dc5-8335-468f-aadb-66cd0b7b4d65": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-27-2012_030.jpg"
+          }
+        },
+        "69714799-9752-4ab8-9f48-f6b0831b0986": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-27-2012_024.jpg"
+          }
+        },
+        "template--16004898816165__680cd296-546d-41f0-b096-6e78b539d165-1685443243799bfb55-0": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7fa26e9ab977354159ca22c87cb6b6a3.jpg"
+          }
+        },
+        "f5124e68-a343-42ce-a030-9ff190f86d18": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-27-2012_017.jpg"
+          }
+        },
+        "c705d4f3-c53f-4cf2-818d-c1aceaab9534": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-10-2012_003.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "8ee83dc5-8335-468f-aadb-66cd0b7b4d65",
+        "69714799-9752-4ab8-9f48-f6b0831b0986",
+        "template--16004898816165__680cd296-546d-41f0-b096-6e78b539d165-1685443243799bfb55-0",
+        "f5124e68-a343-42ce-a030-9ff190f86d18",
+        "c705d4f3-c53f-4cf2-818d-c1aceaab9534"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "text": "<p>Durante la produzione di un grosso lotto di tavole, destinate al mercato americano, un alluvione distrugge gran parte dei macchinari e il 50% delle tavole pronte per essere consegnate viene ridotto a poco più di un cumulo di legna bagnata. Funky si spegne con la stessa velocità con cui era diventata grande, e quel laboratorio pieno di idee a malincuore é costretto a chiudere i battenti. Ma le grandi idee non possono rimanere nella polvere…<\/p>",
+        "text_left": true
+      }
+    },
+    "b6a8c4c0-b433-4722-b21c-26143a4d52a7": {
+      "type": "two-boxes-slider",
+      "blocks": {
+        "template--16004898816165__b6a8c4c0-b433-4722-b21c-26143a4d52a7-1685443243799bfb55-0": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-10-2012_001.jpg"
+          }
+        },
+        "492d1a59-14ba-40c4-aaaf-06a76c534c86": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-27-2012_040.jpg"
+          }
+        },
+        "a4f23cff-25c3-45db-8b7d-2a9e29022d12": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-10-2012_003.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--16004898816165__b6a8c4c0-b433-4722-b21c-26143a4d52a7-1685443243799bfb55-0",
+        "492d1a59-14ba-40c4-aaaf-06a76c534c86",
+        "a4f23cff-25c3-45db-8b7d-2a9e29022d12"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "text": "<h4><strong>Dopo 15 anni vogliamo riproporre il brand storico mantenendo intatta la filosofia originale. Amicizia, passione e innovazione sono colonne portanti che contraddistinguono lo spirito Funky, assieme ovviamente ad un po’ di sana cazzonaggine.<\/strong><\/h4><p>Nonostante quest’ultimo aspetto, quando si tratta di tavole facciamo sul serio, i prodotti che offriamo sono il frutto di un lavoro di progettazione minuzioso, seguito da una ricerca dei migliori materiali e tecnologie, in seguito lavorati artigianalmente nella Funky factory. Gli atleti del nostro team poi non se ne stanno certo zitti quando c’è da cambiare qualcosa che reputano sia migliorabile, e quindi sono parte fondamentale nel processo di sviluppo di ogni modello di tavola Funky.<\/p>",
+        "text_left": false
+      }
+    },
+    "63f7d783-bd42-459d-bf0c-51e07f635e31": {
+      "type": "lazy-slide",
+      "settings": {
+        "text": "FUNKIN' AROUND SINCE 1982",
+        "font_size": 60,
+        "font_size_mob": 25,
+        "padding": 30,
+        "padding_mob": 40,
+        "border_top": "no",
+        "border_bottom": "no"
+      }
+    },
+    "0adaffcb-03e4-4713-aa3f-f898da4bf043": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "section_title": "Dopo 15 anni vogliamo riproporre il brand storico mantenendo intatta la filosofia originale. Amicizia, passione e innovazione sono colonne portanti che contraddistinguono lo spirito Funky, assieme ovviamente ad un po’ di sana cazzonaggine.",
+        "text": "<h4><\/h4><p>Nonostante quest’ultimo aspetto, quando si tratta di tavole facciamo sul serio, i prodotti che offriamo sono il frutto di un lavoro di progettazione minuzioso, seguito da una ricerca dei migliori materiali e tecnologie, in seguito lavorati artigianalmente nella Funky factory. Gli atleti del nostro team poi non se ne stanno certo zitti quando c’è da cambiare qualcosa che reputano sia migliorabile, e quindi sono parte fondamentale nel processo di sviluppo di ogni modello di tavola Funky.<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "d771deae-e98b-4ee1-bf62-6dc467e440ab": {
+      "type": "video",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-10-2012_001.jpg",
+        "image_position": "center center",
+        "video_link": "https:\/\/www.youtube.com\/watch?v=Owvq1AWgh1Y&ab_channel=FunkySnowboards",
+        "show_overlay": true,
+        "style": "background",
+        "height": "medium",
+        "video_title": "",
+        "text_size": "medium"
+      }
+    },
+    "9a209484-4c88-44f6-b1a9-02fc4c788d1a": {
+      "type": "space",
+      "settings": {
+        "space_px": 15
+      }
+    },
+    "9e11cf31-a90a-4e7a-bb80-c4dc39f23462": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "template--16004898816165__9e11cf31-a90a-4e7a-bb80-c4dc39f23462-1685375869dc0c245e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-10-2012_003.jpg",
+            "alignment": "center top",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16004898816165__9e11cf31-a90a-4e7a-bb80-c4dc39f23462-1685375869dc0c245e-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-27-2012_024.jpg",
+            "alignment": "center top",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "12dd7a09-35da-478b-a5c9-4750910ceaab": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7fa26e9ab977354159ca22c87cb6b6a3.jpg",
+            "alignment": "center center",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "344c9a50-c255-4d65-bc4b-e5d6e12e665d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-27-2012_017.jpg",
+            "alignment": "center center",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "363901a3-b6e7-4fb0-a426-23772b28f374": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-27-2012_030.jpg",
+            "alignment": "center center",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "285e8b42-ddd3-406b-80f0-b0fc3e1d9305": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/996954_10201840555007803_418008487_n.jpg",
+            "alignment": "center center",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16004898816165__9e11cf31-a90a-4e7a-bb80-c4dc39f23462-1685375869dc0c245e-0",
+        "template--16004898816165__9e11cf31-a90a-4e7a-bb80-c4dc39f23462-1685375869dc0c245e-1",
+        "12dd7a09-35da-478b-a5c9-4750910ceaab",
+        "344c9a50-c255-4d65-bc4b-e5d6e12e665d",
+        "363901a3-b6e7-4fb0-a426-23772b28f374",
+        "285e8b42-ddd3-406b-80f0-b0fc3e1d9305"
+      ],
+      "settings": {
+        "slideshow_height": "adapt",
+        "text_size": "medium",
+        "text_alignment": "center top",
+        "show_overlay": false,
+        "autorotate": false,
+        "autorotate_speed": 5
+      }
+    },
+    "6bdbf9f6-093c-4de3-8d99-644411ce3f68": {
+      "type": "two-boxes-slider",
+      "disabled": true,
+      "blocks": {
+        "template--16004898816165__6bdbf9f6-093c-4de3-8d99-644411ce3f68-168537693461e43934-0": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-27-2012_030.jpg"
+          }
+        },
+        "4b256398-40a3-4a19-b344-57bfe14addab": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-27-2012_017.jpg"
+          }
+        },
+        "2d46bc24-3e6b-48dd-a63e-7480b7c88ba5": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7fa26e9ab977354159ca22c87cb6b6a3.jpg"
+          }
+        },
+        "f71c23b4-d45f-452a-8f9e-f28add2ab675": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-27-2012_024.jpg"
+          }
+        },
+        "12f89e84-90b4-4537-b5c6-188486f19c0a": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11-10-2012_003.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--16004898816165__6bdbf9f6-093c-4de3-8d99-644411ce3f68-168537693461e43934-0",
+        "4b256398-40a3-4a19-b344-57bfe14addab",
+        "2d46bc24-3e6b-48dd-a63e-7480b7c88ba5",
+        "f71c23b4-d45f-452a-8f9e-f28add2ab675",
+        "12f89e84-90b4-4537-b5c6-188486f19c0a"
+      ],
+      "settings": {
+        "text": "",
+        "text_left": false
       }
     }
   },
   "order": [
     "main",
-    "bc968b9e-f027-4344-9c59-ccdcc3406452"
+    "12630755-214c-454c-b8ad-59c79fd265a0",
+    "bc968b9e-f027-4344-9c59-ccdcc3406452",
+    "cb14a1e8-8fc4-48bd-832c-548c3cf06b4c",
+    "680cd296-546d-41f0-b096-6e78b539d165",
+    "b6a8c4c0-b433-4722-b21c-26143a4d52a7",
+    "63f7d783-bd42-459d-bf0c-51e07f635e31",
+    "0adaffcb-03e4-4713-aa3f-f898da4bf043",
+    "d771deae-e98b-4ee1-bf62-6dc467e440ab",
+    "9a209484-4c88-44f6-b1a9-02fc4c788d1a",
+    "9e11cf31-a90a-4e7a-bb80-c4dc39f23462",
+    "6bdbf9f6-093c-4de3-8d99-644411ce3f68"
   ]
 }

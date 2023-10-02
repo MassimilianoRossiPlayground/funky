@@ -1,0 +1,438 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "12630755-214c-454c-b8ad-59c79fd265a0": {
+      "type": "paragraph",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text": "",
+        "link_text": "",
+        "link_url": "",
+        "border_bottom": false
+      }
+    },
+    "bc968b9e-f027-4344-9c59-ccdcc3406452": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "heading_position": "left",
+        "text": "<p>ANNI 80, COMO, UN GRUPPO DI RAGAZZI CON UNA PASSIONE INCREDIBILE PER GLI SPORT ESTREMI, UN LABORATORIO, UNO STEREO E UNA MUSICASSETTA PIENA DI TRACCE FUNKY. A RITMO DI MUSICA I RAGAZZI SPERIMENTANO, COSTRUISCONO E PROGETTANO TAVOLE DI OGNI TIPO MARCHIANDOLE FUNKY.<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "92591e81-ab96-424a-b85b-aead2cbc2a41": {
+      "type": "strip-links",
+      "blocks": {
+        "template--19298910830916__92591e81-ab96-424a-b85b-aead2cbc2a41-1689687769b1fb39a7-0": {
+          "type": "links",
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19298910830916__92591e81-ab96-424a-b85b-aead2cbc2a41-1689687769b1fb39a7-0"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "5dacde3c-8949-4ad6-981f-3276b84f4c5c": {
+      "type": "hero-banner",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify:\/\/shop_images\/televisore3_prova1.gif",
+        "left_text": "",
+        "right_text": "",
+        "link": ""
+      }
+    },
+    "ff121352-8cf9-4839-93bd-305b94831dcb": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "heading_position": "left",
+        "text": "<p>Questa scena rappresenta il primo passo del lungo percorso che ha reso Funky uno dei marchi di riferimento per il mondo di snowboard, skateboard, windsurf e surf. Il primo snowboard costruito da Lucio Longoni (Godfather di Funky) viene chiamato Preistoria, una tavola interamente in legno lunga 120 cm, con una punta rialzata e un marchio a fuoco con il nome del modello. Da quel giorno Funky inizia un periodo di incessante sviluppo tecnologico che riesce a portare le sue tavole sui podi dello snowboard mondiale. In pochi anni il brand Italiano diventa uno dei principali marchi di snowboard europei ampliando la propria clientela anche oltre oceano, ma purtroppo gli anni di grande gloria durano poco. Durante la produzione di un grosso lotto di tavole, destinate al mercato americano, un alluvione distrugge gran parte dei macchinari e il 50% delle tavole pronte per essere consegnate viene ridotto a poco più di un cumulo di legna bagnata. <\/p>",
+        "text_size": "medium"
+      }
+    },
+    "4d4495e5-e65f-4bf7-a86b-601b5d789df9": {
+      "type": "two-boxes",
+      "blocks": {
+        "template--19298910830916__4d4495e5-e65f-4bf7-a86b-601b5d789df9-16896879983213a6b7-0": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/prova1.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "85dc27a7-2b11-43b1-8f70-24c8f364c05d": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/prova2.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19298910830916__4d4495e5-e65f-4bf7-a86b-601b5d789df9-16896879983213a6b7-0",
+        "85dc27a7-2b11-43b1-8f70-24c8f364c05d"
+      ],
+      "settings": {}
+    },
+    "0cdbee18-b6e2-458c-88ab-931c604fccff": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "heading_position": "left",
+        "text": "<p>Durante la produzione di un grosso lotto di tavole, destinate al mercato americano, un alluvione distrugge gran parte dei macchinari e il 50% delle tavole pronte per essere consegnate viene ridotto a poco più di un cumulo di legna bagnata. Funky si spegne con la stessa velocità con cui era diventata grande, e quel laboratorio pieno di idee a malincuore é costretto a chiudere i battenti. Ma le grandi idee non possono rimanere nella polvere. Dopo 15 anni vogliamo riproporre il brand storico mantenendo intatta la filosofia originale. Amicizia, passione e innovazione sono colonne portanti che contraddistinguono lo spirito Funky, assieme ovviamente ad un po’ di sana cazzonaggine. Nonostante quest’ultimo aspetto, quando si tratta di tavole facciamo sul serio, i prodotti che offriamo sono il frutto di un lavoro di progettazione minuzioso, seguito da una ricerca dei migliori materiali e tecnologie, in seguito lavorati artigianalmente nella Funky factory. Gli atleti del nostro team poi non se ne stanno certo zitti quando c’è da cambiare qualcosa che reputano sia migliorabile, e quindi sono parte fondamentale nel processo di sviluppo di ogni modello di tavola Funky.<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "ef62426b-660a-4dcf-8e30-173180b7475e": {
+      "type": "two-boxes",
+      "blocks": {
+        "template--19298910830916__ef62426b-660a-4dcf-8e30-173180b7475e-16896901967ea8e195-0": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/prova4.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "0c7afdd3-8e23-4af5-afd1-794889019f62": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/prova3.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19298910830916__ef62426b-660a-4dcf-8e30-173180b7475e-16896901967ea8e195-0",
+        "0c7afdd3-8e23-4af5-afd1-794889019f62"
+      ],
+      "settings": {}
+    },
+    "96e16bf9-f8b0-4ccd-9de4-ed4cba61e4e2": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "FUNKY OGGI",
+        "heading_position": "left",
+        "text": "<p>TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA <\/p>",
+        "text_size": "medium"
+      }
+    },
+    "e0fd0b77-2314-4cde-b2fe-8a534cb38c4e": {
+      "type": "hero-banner",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify:\/\/shop_images\/hero3_2-min.gif",
+        "left_text": "",
+        "right_text": "",
+        "link": ""
+      }
+    },
+    "80db7dc3-2ade-4b6e-b9f8-ae707d05b4ae": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "heading_position": "left",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "fe3eaefa-8629-4bc5-86ca-cb9e3f45bd2a": {
+      "type": "two-boxes",
+      "blocks": {
+        "template--19298910830916__fe3eaefa-8629-4bc5-86ca-cb9e3f45bd2a-16896922873bd9d2c2-0": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1794564.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "1383177c-a9d4-470f-b906-3cb3b5d6fae8": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1794566.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "24fcfdfd-4c9e-4b9c-a76f-0caaba2fb417": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1794567.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "91f53104-cd41-49b1-bf32-5d2d382c3180": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1794565.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19298910830916__fe3eaefa-8629-4bc5-86ca-cb9e3f45bd2a-16896922873bd9d2c2-0",
+        "1383177c-a9d4-470f-b906-3cb3b5d6fae8",
+        "24fcfdfd-4c9e-4b9c-a76f-0caaba2fb417",
+        "91f53104-cd41-49b1-bf32-5d2d382c3180"
+      ],
+      "settings": {}
+    },
+    "b02f0afb-66e5-43bb-a51b-b004a6cfd42c": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "FUNKY FACTORY",
+        "heading_position": "left",
+        "text": "<p>NON PENSATE CHE LE TAVOLE FUNKY SIANO COME LE CONIGLIETTE DI PLAYBOY, BIONDONE PLATINATE CON LE TETTE RIFATTE, CHE FANNO UNA GRAN SCENA MA CHE SE POI CI ESCI A CENA OLTRE CHE DI LIPOFILLER E SBIANCAMENTO ANALE NON CI PUOI PARLARE.<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "9d1a38c6-1a46-4941-8e58-bb71411db2a9": {
+      "type": "hero-banner",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify:\/\/shop_images\/hero4.jpg",
+        "left_text": "",
+        "right_text": "",
+        "link": ""
+      }
+    },
+    "2fb9bb61-d6ae-45e8-b468-b02d7b6017dd": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "heading_position": "left",
+        "text": "<p>Le nostre tavole oltre ad essere fighe sono pure piene di contenuti. Sono un concentrato di passione, qualità e lavoro artigianale. Sono infatti il frutto di una ricerca e di una produzione che per la maggior parte di queste bellezze è 100% made in Italy. La magia avviene nel nostro Laboratorio Brianzolo, dove le sapienti mani dei nostri artigiani, avvalendosi in ogni fase degli atleti del Team, utilizzano le migliori materie prime reperibili sul mercato per creare i gioielli della linea Funky. E come per tutte le cose preziose, lo fanno dedicandogli tutto il tempo necessario, altro che poltrone e sofà artigiani della qualità.<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "b15a4c73-407e-4596-b8f4-f4729c7477e8": {
+      "type": "two-boxes",
+      "blocks": {
+        "template--19298910830916__b15a4c73-407e-4596-b8f4-f4729c7477e8-16896932965002fc55-0": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1794571.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "4c85b9ef-c3dc-4d8e-8408-ee5d617f8ab8": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1794568.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "235b058e-c585-484a-8741-18bd03ba94e6": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1794570.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "db3ac0be-e417-404f-809d-f11c4fb9edf7": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1794569.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19298910830916__b15a4c73-407e-4596-b8f4-f4729c7477e8-16896932965002fc55-0",
+        "4c85b9ef-c3dc-4d8e-8408-ee5d617f8ab8",
+        "235b058e-c585-484a-8741-18bd03ba94e6",
+        "db3ac0be-e417-404f-809d-f11c4fb9edf7"
+      ],
+      "settings": {}
+    },
+    "73c3be06-a89e-4cb7-8a08-ba2feb0c9d6a": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "FUNKY SHOP",
+        "heading_position": "left",
+        "text": "<p>TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA TESTO PROVA<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "fc7d4d27-0d7a-4939-bf56-c0af71d78891": {
+      "type": "hero-banner",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify:\/\/shop_images\/1794576.jpg",
+        "left_text": "",
+        "right_text": "",
+        "link": ""
+      }
+    },
+    "bfcc9227-6323-4de8-87da-6c64d753ee70": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "heading_position": "left",
+        "text": "<p>Corso di Porta Ticinese 70<\/p><p>20123 Milano MI<\/p><p>Phone: +39 375 586 1889<\/p><p><\/p><p><strong>MONDAY CLOSED<\/strong><\/p><p>Tuesday - Saturday 11 - 1:30 PM \/ 2:30 PM – 7:30 PM <\/p><p>Sunday 2:30 PM – 7:30 PM <\/p>",
+        "text_size": "medium"
+      }
+    },
+    "505e0fc7-41be-42b9-bc52-d85649149ed4": {
+      "type": "two-boxes",
+      "blocks": {
+        "template--19298910830916__505e0fc7-41be-42b9-bc52-d85649149ed4-1689693478bcc8963d-0": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1794578.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "b7a38a62-7a1e-432e-8de5-d934d29b9ddf": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1794577.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "e3074911-a831-4b7e-9a54-3ad573790ca1": {
+          "type": "boxes",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "3596cbb2-0b03-47d5-b69b-7dce123ea4c9": {
+          "type": "boxes",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19298910830916__505e0fc7-41be-42b9-bc52-d85649149ed4-1689693478bcc8963d-0",
+        "b7a38a62-7a1e-432e-8de5-d934d29b9ddf",
+        "e3074911-a831-4b7e-9a54-3ad573790ca1",
+        "3596cbb2-0b03-47d5-b69b-7dce123ea4c9"
+      ],
+      "settings": {}
+    },
+    "63f7d783-bd42-459d-bf0c-51e07f635e31": {
+      "type": "lazy-slide",
+      "settings": {
+        "text": "FUNKIN' AROUND SINCE 1982",
+        "font_size": 60,
+        "font_size_mob": 25,
+        "padding": 30,
+        "padding_mob": 40,
+        "border_top": "no",
+        "border_bottom": "no"
+      }
+    },
+    "0adaffcb-03e4-4713-aa3f-f898da4bf043": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "section_title": "Dopo 15 anni vogliamo riproporre il brand storico mantenendo intatta la filosofia originale. Amicizia, passione e innovazione sono colonne portanti che contraddistinguono lo spirito Funky, assieme ovviamente ad un po’ di sana cazzonaggine.",
+        "heading_position": "left",
+        "text": "<h4><\/h4><p>Nonostante quest’ultimo aspetto, quando si tratta di tavole facciamo sul serio, i prodotti che offriamo sono il frutto di un lavoro di progettazione minuzioso, seguito da una ricerca dei migliori materiali e tecnologie, in seguito lavorati artigianalmente nella Funky factory. Gli atleti del nostro team poi non se ne stanno certo zitti quando c’è da cambiare qualcosa che reputano sia migliorabile, e quindi sono parte fondamentale nel processo di sviluppo di ogni modello di tavola Funky.<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "d771deae-e98b-4ee1-bf62-6dc467e440ab": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-10-2012_001.jpg",
+        "image_position": "center center",
+        "video_link": "https:\/\/www.youtube.com\/watch?v=Owvq1AWgh1Y&ab_channel=FunkySnowboards",
+        "show_overlay": true,
+        "style": "background",
+        "height": "medium",
+        "video_title": "",
+        "text_size": "medium"
+      }
+    },
+    "9a209484-4c88-44f6-b1a9-02fc4c788d1a": {
+      "type": "space",
+      "settings": {
+        "space_px": 15
+      }
+    }
+  },
+  "order": [
+    "main",
+    "12630755-214c-454c-b8ad-59c79fd265a0",
+    "bc968b9e-f027-4344-9c59-ccdcc3406452",
+    "92591e81-ab96-424a-b85b-aead2cbc2a41",
+    "5dacde3c-8949-4ad6-981f-3276b84f4c5c",
+    "ff121352-8cf9-4839-93bd-305b94831dcb",
+    "4d4495e5-e65f-4bf7-a86b-601b5d789df9",
+    "0cdbee18-b6e2-458c-88ab-931c604fccff",
+    "ef62426b-660a-4dcf-8e30-173180b7475e",
+    "96e16bf9-f8b0-4ccd-9de4-ed4cba61e4e2",
+    "e0fd0b77-2314-4cde-b2fe-8a534cb38c4e",
+    "80db7dc3-2ade-4b6e-b9f8-ae707d05b4ae",
+    "fe3eaefa-8629-4bc5-86ca-cb9e3f45bd2a",
+    "b02f0afb-66e5-43bb-a51b-b004a6cfd42c",
+    "9d1a38c6-1a46-4941-8e58-bb71411db2a9",
+    "2fb9bb61-d6ae-45e8-b468-b02d7b6017dd",
+    "b15a4c73-407e-4596-b8f4-f4729c7477e8",
+    "73c3be06-a89e-4cb7-8a08-ba2feb0c9d6a",
+    "fc7d4d27-0d7a-4939-bf56-c0af71d78891",
+    "bfcc9227-6323-4de8-87da-6c64d753ee70",
+    "505e0fc7-41be-42b9-bc52-d85649149ed4",
+    "63f7d783-bd42-459d-bf0c-51e07f635e31",
+    "0adaffcb-03e4-4713-aa3f-f898da4bf043",
+    "d771deae-e98b-4ee1-bf62-6dc467e440ab",
+    "9a209484-4c88-44f6-b1a9-02fc4c788d1a"
+  ]
+}

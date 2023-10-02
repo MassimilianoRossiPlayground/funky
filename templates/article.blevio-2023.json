@@ -1,0 +1,249 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": true,
+        "blog_show_date": true,
+        "show_share_buttons": true,
+        "show_title": false,
+        "show_show_events": false
+      }
+    },
+    "1d3dfa60-f7bb-407e-b95e-c69d4a302d0d": {
+      "type": "hero-banner",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify:\/\/shop_images\/RODEO-BANNER.jpg",
+        "image_mob": "shopify:\/\/shop_images\/banner-mobile.jpg",
+        "left_text": "",
+        "right_text": "",
+        "link": ""
+      }
+    },
+    "6c930958-e13c-4e35-9407-43d6492f85a7": {
+      "type": "lazy-slide",
+      "settings": {
+        "text": "SABATO 22 LUGLIO",
+        "font_size": 45,
+        "font_size_mob": 45,
+        "padding": 15,
+        "padding_mob": 15,
+        "border_top": "no",
+        "border_bottom": "no"
+      }
+    },
+    "e934af53-18b8-4fcf-807e-05a99ed49c42": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "FUNKY DONUTS RODEO",
+        "heading_position": "left",
+        "text": "<ul><li><strong>Quando<\/strong> : Sabato 22 luglio dalle h 12.00 alle h 00.00<\/li><\/ul><p><\/p><ul><li><strong>Dove<\/strong> : Private Club Blevio, sul Lago di Como<\/li><\/ul><p><\/p><ul><li><strong>Cosa<\/strong> : Donuts Rodeo + 12 ore di musica (food and beverage alldaylong)!<\/li><\/ul><p><\/p><ul><li><strong>Come <\/strong>: prendendo il ticket in fretta perché abbiamo un numero limitato di ingressi e non vogliamo amici che rimangono fuori  <\/li><\/ul><p><\/p><ul><li><strong>Perché <\/strong>: lo sai.. e se te lo devo spiegare significa che non hai idea di che figata stiamo parlando ;)<\/li><\/ul>",
+        "text_size": "medium"
+      }
+    },
+    "a779d2f0-9ece-4d49-a1e9-6d826277c479": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "section_title": "EARLY BIRD TICKETS",
+        "heading_position": "center",
+        "text": "",
+        "text_size": "medium"
+      }
+    },
+    "8dd57aab-c918-4cea-b31a-b453dc438e50": {
+      "type": "buttons",
+      "disabled": true,
+      "blocks": {
+        "template--19178842620228__8dd57aab-c918-4cea-b31a-b453dc438e50-1687944361210dd683-0": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "PARTY TICKET",
+            "btn_link": "shopify:\/\/products\/donuts-rodeo-22-luglio",
+            "btn_selected": true,
+            "blank": true,
+            "modal": false,
+            "btn_black": false
+          }
+        },
+        "72831ef6-1a15-4c44-9832-7e438fa1ee9f": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "PARTY + CONTEST TICKET",
+            "btn_link": "shopify:\/\/products\/contest-donuts-rodeo",
+            "btn_selected": true,
+            "blank": true,
+            "modal": false,
+            "btn_black": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19178842620228__8dd57aab-c918-4cea-b31a-b453dc438e50-1687944361210dd683-0",
+        "72831ef6-1a15-4c44-9832-7e438fa1ee9f"
+      ],
+      "settings": {}
+    },
+    "57d9b2b3-3f75-4b32-a188-721cd8f3ccde": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "heading_position": "left",
+        "text": "<p>Ebbene si, è tornato il <strong>Funky Donuts Rodeo<\/strong>, nonostante l’inflazioni galoppi, la nostalgia di tempi passati voglia riesumare i tempi della guerra fredda, noi rimaniamo pacifisti e l’unica guerra che facciamo, la facciamo a bordo di ciambelle gonfiabili a suon di bombe dimenticate su vinili di altri tempi.<\/p><p>Ci vediamo al nostro giaciglio estivo preferito: il <a href=\"https:\/\/www.google.com\/maps\/place\/Wakeboard+Lake+Como\/@45.8356826,9.097357,15z\/data=!4m6!3m5!1s0x47869dede7eb1547:0xe5e5478c63b7f8fd!8m2!3d45.8356826!4d9.097357!16s%2Fg%2F11b7stk_1_?entry=ttu\" target=\"_blank\" title=\"https:\/\/www.google.com\/maps\/place\/Wakeboard+Lake+Como\/@45.8356826,9.097357,15z\/data=!4m6!3m5!1s0x47869dede7eb1547:0xe5e5478c63b7f8fd!8m2!3d45.8356826!4d9.097357!16s%2Fg%2F11b7stk_1_?entry=ttu\">Wakeboard Lake Como, Blevio<\/a>. E la cosa che ci piace di più di questo posto del cuore (oltre ai folletti che ci lavorano) sono le barche che frullano e la musica che ti scioglie come le meduse sui moli.  <\/p>",
+        "text_size": "medium"
+      }
+    },
+    "cf9c7902-9d20-4cb9-9ab2-a81625f28a9e": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "2 stage, 12 ore di musica e 6 dj",
+        "heading_position": "left",
+        "text": "<p>In onore della ricorrenza e della passione per la numerologia, la Sesta edizione celebrerà il Belpaese con una Line Up composta da antiche leggende e futuri preferiti.<\/p><p>Tornano dopo anni di assenza dovute a peripezie intorno al globo terracqueo gli <a href=\"https:\/\/www.instagram.com\/eternallovechannel\/?hl=it\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/eternallovechannel\/?hl=it\"><strong>Eternal Love<\/strong><\/a><strong> <\/strong>che con la loro selecta di italianate scalderanno il lago come una vasca da bagno.<\/p><p>A seguire <a href=\"https:\/\/www.instagram.com\/massimosanti\/?hl=it\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/massimosanti\/?hl=it\"><strong>Massimo Santi<\/strong><\/a>, personalità oscura, instancabile ricercatore, celebre autore della Serenissima, maniaco del dettaglio; la sua passione rimane la pista e non vediamo l’ora di metterlo alla prova.<\/p><p>Dolce come una ciliegia matura, direttamente dalla Dora, un uomo dai molteplici talenti e appellativi: conosciuto come Mystical People su RadioBandaLarga o semplicemente <a href=\"https:\/\/www.instagram.com\/tommy_lanza\/?hl=it\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/tommy_lanza\/?hl=it\"><strong>Tango<\/strong><\/a>, Tommy Lanza saprà saziare il vostro appetito di qualità.<\/p><p>A chiudere <a href=\"https:\/\/www.instagram.com\/yuroflex\/?hl=it\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/yuroflex\/?hl=it\"><strong>YUROflex<\/strong><\/a>, dalla premiata cantina FlexyHauss, un mangiatore di dischi professionista come solo il Veneto vero ci sa fornire, selezionatore di vibes ballerine dai ritmi premiati. In poche parole: più piacevole di un bicchiere di Cabernet.<\/p><p>In veste rituale a celebrare apertura e chiusura il <strong>Cunter Curraint<\/strong> (<a href=\"https:\/\/www.instagram.com\/the_last_rino\/?hl=it\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/the_last_rino\/?hl=it\">Cesare<\/a> & <a href=\"https:\/\/www.instagram.com\/eliofumagalli\/?hl=it\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/eliofumagalli\/?hl=it\">Elio<\/a>) nel loro alias da acqua dolce.<\/p><p>2 stage, 12 ore di musica e 6 dj; se volete dare i numeri vi aspettiamo!<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "5ac6fcd6-4c40-4ea7-921f-81367b0c7db7": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "IL DONUTS RODEO",
+        "heading_position": "left",
+        "text": "<p>Inizio h12. Quindi a letto presto il venerdì!  <\/p><p>Sport tramandato nei secoli dei secoli dall’Antica Roma, consiste in una sfida tra impavidi che a bordo di donuts gonfiabili trainati da una barca “pazza”, si danno battaglia affinchè uno dei due molla e cosi via fin che ne rimarrà solo uno. <\/p><p>In palio: gloria pesante, ricchi premi e cotillon.  <\/p><p>Iscrizione aperta a tutti, 2 Categorie (M e W), per gli eroi che vogliono partecipare ricordatevi di prendere il ticket Party + Contest<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "55afa9ad-d66d-4ebd-ac5b-77b25275154f": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "INFO UTILI :",
+        "heading_position": "left",
+        "text": "<p>Sabato 22 luglio dalle h 12.00 alle h 00.00<\/p><p><a href=\"https:\/\/www.google.com\/maps\/place\/Wakeboard+Lake+Como\/@45.8356826,9.097357,15z\/data=!4m6!3m5!1s0x47869dede7eb1547:0xe5e5478c63b7f8fd!8m2!3d45.8356826!4d9.097357!16s%2Fg%2F11b7stk_1_?entry=ttu\" target=\"_blank\" title=\"https:\/\/www.google.com\/maps\/place\/Wakeboard+Lake+Como\/@45.8356826,9.097357,15z\/data=!4m6!3m5!1s0x47869dede7eb1547:0xe5e5478c63b7f8fd!8m2!3d45.8356826!4d9.097357!16s%2Fg%2F11b7stk_1_?entry=ttu\">Wakeboard Lake Como, Blevio<\/a><br\/><em>Frazione Girola, 22020 Blevio CO<\/em><\/p><p><strong>Numero ingressi totale limitato a 200 ticket<\/strong><\/p><p><strong>PREZZI :<\/strong><\/p><p>(essendo un club privato il ticket è obbligatorio per l’ingresso)<\/p><p>15€ Early Birds -&gt; sold out<\/p><p>20€ Standard Ticket -&gt; sold out<\/p><p><strong>30€ Late ticket -&gt; now available<\/strong><\/p><p>(move fast spend less)<\/p><p>+ 15€ iscrizione al <strong>DOUNTS RODEO CONTEST  <\/strong><\/p><p>*se sei un socio del club l’ingresso è gratuito mentre per partecipare al Contest mandaci una mail a <a href=\"mailto:info@funkysnowboards.com\">info@funkysnowboards.com<\/a> che ti manderemo il link per l’iscrizione. <\/p><p>Per ulteriori info provate a scriverci su whatsapp +39 375 586 1889 oppure su <a href=\"https:\/\/www.instagram.com\/funkysnowboards\/?hl=it\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/funkysnowboards\/?hl=it\">IG<\/a>, se sarete fortunati qualcuno vi risponderà!  <\/p>",
+        "text_size": "medium"
+      }
+    },
+    "57cd88c2-8ab3-4702-ab3f-8c410c7ff58b": {
+      "type": "buttons",
+      "disabled": true,
+      "blocks": {
+        "template--19178842620228__57cd88c2-8ab3-4702-ab3f-8c410c7ff58b-16879674894ecba7bd-0": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "PARTY TICKET",
+            "btn_link": "shopify:\/\/products\/donuts-rodeo-22-luglio",
+            "btn_selected": true,
+            "blank": true,
+            "modal": false,
+            "btn_black": false
+          }
+        },
+        "80c40d87-007d-41b4-9ed5-6c24e7f36346": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "btn_text": "PARTY + CONTEST TICKET",
+            "btn_link": "shopify:\/\/products\/contest-donuts-rodeo",
+            "btn_selected": true,
+            "blank": true,
+            "modal": false,
+            "btn_black": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19178842620228__57cd88c2-8ab3-4702-ab3f-8c410c7ff58b-16879674894ecba7bd-0",
+        "80c40d87-007d-41b4-9ed5-6c24e7f36346"
+      ],
+      "settings": {}
+    },
+    "123d604f-a753-480c-bd23-5757e8d61dee": {
+      "type": "two-boxes-slider",
+      "disabled": true,
+      "blocks": {
+        "template--19178842620228__123d604f-a753-480c-bd23-5757e8d61dee-1688052355c91d632f-0": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foto-1.jpg"
+          }
+        },
+        "d8ee2d25-3435-4bd4-a53c-2cf7ae3ff6cd": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foto-2.jpg"
+          }
+        },
+        "3a11ca9c-1f4f-4f96-87fc-6a918d0e0b89": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foto-3.jpg"
+          }
+        },
+        "2a09f401-c693-4693-ad86-cc2ceccdc578": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foto-4.jpg"
+          }
+        },
+        "c43cedc8-adf0-4ee8-a3f3-a57756ac25e4": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foto-5.jpg"
+          }
+        },
+        "663a95b5-01a7-4419-8b0e-2009aec27675": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foto-6.jpg"
+          }
+        },
+        "8896f39d-8a3a-487d-838f-c8e219f2e7f1": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foto-7.jpg"
+          }
+        },
+        "f439acea-c4c8-426b-834e-aff28d484223": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foto-8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--19178842620228__123d604f-a753-480c-bd23-5757e8d61dee-1688052355c91d632f-0",
+        "d8ee2d25-3435-4bd4-a53c-2cf7ae3ff6cd",
+        "3a11ca9c-1f4f-4f96-87fc-6a918d0e0b89",
+        "2a09f401-c693-4693-ad86-cc2ceccdc578",
+        "c43cedc8-adf0-4ee8-a3f3-a57756ac25e4",
+        "663a95b5-01a7-4419-8b0e-2009aec27675",
+        "8896f39d-8a3a-487d-838f-c8e219f2e7f1",
+        "f439acea-c4c8-426b-834e-aff28d484223"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "text": "",
+        "text_left": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1d3dfa60-f7bb-407e-b95e-c69d4a302d0d",
+    "6c930958-e13c-4e35-9407-43d6492f85a7",
+    "e934af53-18b8-4fcf-807e-05a99ed49c42",
+    "a779d2f0-9ece-4d49-a1e9-6d826277c479",
+    "8dd57aab-c918-4cea-b31a-b453dc438e50",
+    "57d9b2b3-3f75-4b32-a188-721cd8f3ccde",
+    "cf9c7902-9d20-4cb9-9ab2-a81625f28a9e",
+    "5ac6fcd6-4c40-4ea7-921f-81367b0c7db7",
+    "55afa9ad-d66d-4ebd-ac5b-77b25275154f",
+    "57cd88c2-8ab3-4702-ab3f-8c410c7ff58b",
+    "123d604f-a753-480c-bd23-5757e8d61dee"
+  ]
+}

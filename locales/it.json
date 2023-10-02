@@ -72,11 +72,11 @@
       }
     },
     "newsletter_form": {
-      "newsletter_email": "Iscriviti alla nostra newsletter per essere il primo a ricevere promozioni senza senso!",
-      "newsletter_email_secondary": "Iscriviti alla nostra newsletter per essere il primo a ricevere promozioni senza senso!",
+      "newsletter_email": "Unisciti alla Funky Family e ricevi subito il 15% di sconto sul tuo primo ordine!",
+      "newsletter_email_secondary": "Sono d’accordo a ricevere e-mail riguardanti promozioni pazze sui prodotti Funky (capita raramente ma capita).",
       "email_placeholder": "EMAIL",
-      "confirmation": "Grazie per l'iscrizione!",
-      "submit": "SUBSCRIBE"
+      "confirmation": "Grazie per esserti iscritto, controlla la tua email per il codice sconto!",
+      "submit": "UNISCITI"
     },
     "filters": {
       "show_more": "Mostra di più",
@@ -343,7 +343,7 @@
       "product_description": "Quest’area è per descrivere i dettagli del tuo prodotto. Qui puoi descrivere l'aspetto, il look e lo stile del prodotto ai tuoi clienti. Aggiungi dettagli sul colore, sui materiali utilizzati, sulle misure e su dove è stato creato.",
       "collection_title": "Nome della tua collezione",
       "blog_title": "Titolo del tuo post",
-      "blog_excerpt": "Il tuo negozio non ha ancora pubblicato nessun post sul blog. Un blog può essere utilizzato per parlare del lancio di nuovi prodotti, dare suggerimenti o altre notizie che desideri condividere con i tuoi clienti. Dai un’occhiata al blog di ecommerce di Shopify per farti ispirare e per trovare idee e consigli relativi al tuo negozio e blog.",
+      "blog_excerpt": "",
       "blog_author": "Nome dell'autore",
       "no_content": "Attualmente questa sezione non contiene nessun contenuto. Aggiungi contenuto a questa sezione utilizzando la barra laterale."
     }
@@ -428,7 +428,7 @@
         "sold_out_label": "SOLD OUT!"
       },
       "marketing": {
-        "accept_marketing_checkbox_label": "Iscriviti alla nostra newsletter per essere il primo a ricevere promozioni senza senso!"
+        "accept_marketing_checkbox_label": "Iscriviti alla nostra newsletter e ricevi subito il 15% di sconto sul tuo primo ordine!"
       }
     },
     "filters": {

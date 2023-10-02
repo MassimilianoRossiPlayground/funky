@@ -6,7 +6,7 @@
         "show_quantity_selector": false,
         "show_vendor": false,
         "enable_payment_button": true,
-        "label_text": "",
+        "label_text": "<p>Biglietto di accesso al Funky Donuts Rodeo, i biglietti sono nominali, se acquistate più biglietti o il biglietto non è per la persona che lo sta acquistando non preoccupatevi, a pochi giorni dall'evento riceverete una mail con le istruzioni in cui vi chiederemo i nomi esatti da mettere in lista. Stay beef!<\/p>",
         "more_info": false,
         "show_share_buttons": true,
         "media_size": "medium",

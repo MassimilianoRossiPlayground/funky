@@ -292,6 +292,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     left: -23px;
 }
 .product-single-pdp__desk-images img {
+    max-width: 546px;
+    width: 100%;
     margin: 0 auto;
     display: block;
     cursor: url("https://cdn.shopify.com/s/files/1/0517/7412/8293/files/cursor.png?v=1679061615") 25 15, auto;

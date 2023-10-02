@@ -3,41 +3,66 @@
 <script src="{{ 'filter-bar.js' | asset_url }}" defer="defer"></script>
 
 {%- assign max_height = 250 -%}
+{%- assign is_empty_collection = false -%}
+
+{%- if collection.all_products_count == 0 -%}
+  {%- assign is_empty_collection = true -%}
+{%- endif -%}
 
 {% comment %} {%- assign limit = 4 | times: 8 -%} {% endcomment %}
 {%- assign limit = 9999 -%}
 
-{% paginate collection.products by limit %}
+{% if is_empty_collection %}
 
-  <div data-section-id="{{ section.id }}" data-section-type="collection-template">
-    <header class="collection-header">
+  <style>
+    .collection-description-parallax {
+      display: none;
+    }
+  </style>
 
-      {% include 'filter-bar', filter_collection: collection, current_tags:current_tags, origin: "internal" %}
-
-    </header>
-
-    {% comment %} <div class="page-width" id="Collection"> {% endcomment %}
-    <div id="Collection">
-
-        <div class="collection-list collection-list--{{limit}}">
-          {% for product in collection.products %}
-              {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor, index: forloop.index %}
-          {% endfor %}
-        </div>
-
-      {% if is_empty_collection %}
-        <div class="grid__item small--text-center">
-          <p class="text-center">{{ 'collections.general.no_matches' | t }}</p>
-        </div>
-      {% endif %}
-
-      {%- if paginate.pages > 0 and limit < 9998 -%}
-        {% include 'pagination', paginate: paginate %}
-      {%- endif -%}
-      
-    </div>
+  <div class="grid__item small--text-center no-products">
+    <p class="text-center">{{ 'collections.general.no_matches' | t }}</p>
   </div>
 
-{% endpaginate %}
+{% else %}
+
+  {% paginate collection.products by limit %}
+
+    <div data-section-id="{{ section.id }}" data-section-type="collection-template">
+      <header class="collection-header">
+
+        {% include 'filter-bar', filter_collection: collection, current_tags:current_tags, origin: "internal" %}
+
+      </header>
+
+      {% comment %} <div class="page-width" id="Collection"> {% endcomment %}
+      <div id="Collection">
+
+          <div class="collection-list collection-list--{{limit}}">
+            {% for product in collection.products %}
+                {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor, index: forloop.index %}
+            {% endfor %}
+          </div>
 
 
+
+        {%- if paginate.pages > 0 and limit < 9998 -%}
+          {% include 'pagination', paginate: paginate %}
+        {%- endif -%}
+        
+      </div>
+    </div>
+
+  {% endpaginate %}
+
+{% endif %}
+
+
+
+
+
+{% style %}
+.no-products {
+  margin: 300px 0;
+}
+{% endstyle %}

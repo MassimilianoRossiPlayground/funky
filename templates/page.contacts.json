@@ -39,13 +39,12 @@
       "settings": {
         "full_width": false,
         "section_title": "",
-        "text": "<p>Volete condividere con noi le vostre idee ed esperienze riguardanti lo snowboard? Volete anche solo farci sapere cosa ne pensate di Barbara D'urso o quali sono le vostre ricette preferite? Ecco non fatelo qua, scriveteci solo per cose serie gente, che qua stiamo cercando di lavorare. A meno che non si tratti di video di gattini, per quelli abbiamo sempre tempo.<\/p><p>Mail: <a href=\"mailto:info@funkysnowboards.com\" title=\"mailto:info@funkysnowboards.com\">info@funkysnowboards.com<\/a><\/p>",
+        "text": "<p>Volete condividere con noi le vostre idee ed esperienze riguardanti lo snowboard? Volete anche solo farci sapere cosa ne pensate di Barbara D'urso o quali sono le vostre ricette preferite? Ecco non fatelo qua, scriveteci solo per cose serie gente, che qua stiamo cercando di lavorare. A meno che non si tratti di video di gattini, per quelli abbiamo sempre tempo.<\/p>",
         "text_size": "medium"
       }
     },
     "cad68afa-7499-45e4-9653-eae9613d82a7": {
       "type": "contacts",
-      "disabled": true,
       "settings": {
         "hidden_text": "contact funky"
       }
@@ -55,7 +54,7 @@
       "settings": {
         "full_width": false,
         "section_title": "",
-        "text": "<p>SE PROPRIO DOVETE POTETE ANCHE TROVARCI A QUESTI INDIRIZZO:<\/p><p>Via Molino delle Armi, 15<\/p><p>20123  Milano MI<\/p><p>Phone: +39 375 586 1889<\/p><p><\/p>",
+        "text": "<p>SE PROPRIO DOVETE POTETE ANCHE TROVARCI A QUESTI INDIRIZZO:<\/p><p>Via Molino delle Armi, 15<\/p><p>20123  Milano MI<\/p><p>Phone: +39 375 586 1889<\/p><p>Mail: <a href=\"mailto:info@funkysnowboards.com\" title=\"mailto:info@funkysnowboards.com\">info@funkysnowboards.com<\/a><\/p>",
         "text_size": "medium"
       }
     }

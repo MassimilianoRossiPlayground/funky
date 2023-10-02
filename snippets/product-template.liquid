@@ -59,12 +59,13 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             {% for media in product.media %}
-              {%- assign img_url = media | img_url: '1024x' -%}
+              {%- assign img_url = media | img_url: '1092x' -%}
+              {%- assign img_url__zoom = media | img_url: 'master' -%}
               {%- assign img_url__attr = media | img_url -%}
               <div class="swiper-slide" 
                 attr-img-url="{{img_url__attr}}" 
                 attr-num="{{ forloop.index0 }}" >
-                <img src="{{ img_url }}" alt="{{ product.title }}">
+                <img src="{{ img_url }}" data-image-zoom="{{ img_url__zoom }}" alt="{{ product.title }}">
               </div>
             {% endfor %}
           </div>

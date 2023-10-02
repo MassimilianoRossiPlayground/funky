@@ -1,0 +1,389 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": false,
+        "show_share_buttons": false,
+        "show_title": false,
+        "show_show_events": false
+      }
+    },
+    "7caea46c-718b-4b46-b547-3e6550b6137c": {
+      "type": "paragraph",
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 40,
+        "text": "<p>THE GUARDIAN 8TH EDITION. APRIL 23RD. MOTTOLINO SNOWPARK, LIVIGNO. ONCE AGAIN THE ANCIENT SPIRIT OF SNOWBOARDING IS SAFE, AND THE RING FORGED BY FUNKY SNOWBOARDS IS IN THE HANDS OF THE NEW GUARDIAN.<\/p>",
+        "link_text": "",
+        "link_url": "",
+        "border_bottom": false
+      }
+    },
+    "0cd86a8c-f474-4ac1-a374-21a000f084ef": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-04-12_alle_11.50_1.jpg",
+        "image_position": "center center",
+        "video_link": "https:\/\/youtu.be\/Rs-xuWXXcEQ",
+        "show_overlay": true,
+        "style": "background",
+        "height": "medium",
+        "video_title": "",
+        "text_size": "medium"
+      }
+    },
+    "654659cf-c059-4ca0-a7a0-3c4f05d6c3a0": {
+      "type": "custom-html",
+      "settings": {
+        "text": "<iframe width=\"100%\" height=\"650\" src=\"https:\/\/www.youtube.com\/embed\/Rs-xuWXXcEQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "iframe_mob_height": 270
+      }
+    },
+    "5427c290-5e34-418d-8b65-9ecc585b56ac": {
+      "type": "space",
+      "settings": {
+        "space_px": 30
+      }
+    },
+    "66a1ba9c-b85c-4c9c-9717-61286d1ddb28": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>\"Ai valorosi guerrieri  che hanno risposto alla chiamata, affrontando le sfide della montagna e le intemperie del cielo.  A voi che Avete gareggiato con ardore, urlato contro il firmamento, scacciando via le nuvole cariche di freddo e ghiaccio, danzato fino all'alba per celebrare l'antico patto di fratellanza. La vostra energia ha riscaldato l'aria e acceso il fuoco dello spirito dello snowboard. A voi , miei cari guerrieri, mentre il sole tramonta dietro le vette e le ombre si allungano sulla valle, mi rivolgo a con gratitudine e orgoglio. La vostra presenza, la vostra passione e il vostro spirito hanno rinnovato l'energia che alimenta lo snowboard, garantendo la sua sopravvivenza per un altro anno. E dunque, con il cuore colmo di riconoscenza, vi dico: anche quest'anno lo spirito dello snowboard è salvo.<br\/>Firmato, Lo spirito dell'anello.\"<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "5fc6bb5e-b69e-447b-9d6b-ef000c909c7d": {
+      "type": "two-boxes",
+      "blocks": {
+        "template--18950505038148__5fc6bb5e-b69e-447b-9d6b-ef000c909c7d-168416269043ff9acf-0": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/24.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "b59b9bb6-2049-408a-90f5-a1880e3c1531": {
+          "type": "boxes",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8_42de254a-c860-4ac1-bacc-2e06e54a2a4c.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "01e57fd9-9a5d-41e9-a868-c5541291be91": {
+          "type": "boxes",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        },
+        "10a35735-d9f3-4ff1-b7f2-ccb677d21b2b": {
+          "type": "boxes",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_bf8626e6-6094-4765-8e7a-1d066c02b7c8.jpg",
+            "title": "",
+            "slug": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18950505038148__5fc6bb5e-b69e-447b-9d6b-ef000c909c7d-168416269043ff9acf-0",
+        "b59b9bb6-2049-408a-90f5-a1880e3c1531",
+        "01e57fd9-9a5d-41e9-a868-c5541291be91",
+        "10a35735-d9f3-4ff1-b7f2-ccb677d21b2b"
+      ],
+      "settings": {
+        "padding_top": 30
+      }
+    },
+    "df562db1-e59d-467e-889e-3ec6cf373c0c": {
+      "type": "paragraph",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "text": "<p>IT IS FAIR TO SAY, THAT THE 8TH EDITION OF ‘THE GUARDIAN’ WAS A GREAT SUCCESS, AGAIN. IT TOOK US A WHILE TO RECOVER FROM THIS ENERGETIC SEASON ENDER IN LIVIGNO.<\/p>",
+        "link_text": "",
+        "link_url": "",
+        "border_bottom": false
+      }
+    },
+    "7794b09f-e5b1-4c28-8fde-4600b5f5b66a": {
+      "type": "two-boxes-slider",
+      "blocks": {
+        "20628c7f-5ea8-4e54-938d-7dbfa61296e5": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_8d88cf1c-44ed-462b-9d42-fbb4433bfb29.jpg"
+          }
+        },
+        "b66716e4-26a3-443c-94d1-87aefc19acde": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9_b88a0801-ed6a-4ac6-b56c-573bdbebf9c3.jpg"
+          }
+        },
+        "c6aa2f96-b9c9-4d68-8e66-9d0315c20740": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_7f8970f3-9224-45b1-9f10-956f9c58ea61.jpg"
+          }
+        },
+        "cd11b1ed-2e16-4d96-85fd-d91c74fb8663": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/17_ccf8faee-c8a8-48f9-b1e4-0717e452502b.jpg"
+          }
+        },
+        "381846f4-b7d2-4db4-87bc-8c3fe5555601": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/21.jpg"
+          }
+        },
+        "5e7544ec-8c84-4f28-8625-1bcf4560b7bf": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_85bae0fd-a288-463b-90a0-fec47b2bcda3.jpg"
+          }
+        },
+        "c1805dc2-ce4c-448b-9dbc-04485a4ac40c": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16.jpg"
+          }
+        },
+        "d7cf2ac1-a72f-44c2-bac3-e4679a102681": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/13.jpg"
+          }
+        },
+        "0e621b02-2dde-49aa-a0f3-982602ec159e": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/19_7897f4e4-5791-4539-a629-ca3d3b12b2ed.jpg"
+          }
+        },
+        "d4460497-a934-49c5-b33e-39b57d7b48d0": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/14.jpg"
+          }
+        },
+        "19b12f9b-0b39-4f14-bfe2-f8fe08e024bb": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_8f5bb339-2b1a-44b7-8666-4a43c05761d0.jpg"
+          }
+        },
+        "9b1e9751-7956-4f4e-96c1-25feea35467f": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_c5a67988-cb50-4671-9390-1acbd96f9447.jpg"
+          }
+        },
+        "ac19be9a-5901-4493-9b2d-2859d062daae": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_3eaaf2d3-2b7f-445e-a568-4bb9140e1fab.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "20628c7f-5ea8-4e54-938d-7dbfa61296e5",
+        "b66716e4-26a3-443c-94d1-87aefc19acde",
+        "c6aa2f96-b9c9-4d68-8e66-9d0315c20740",
+        "cd11b1ed-2e16-4d96-85fd-d91c74fb8663",
+        "381846f4-b7d2-4db4-87bc-8c3fe5555601",
+        "5e7544ec-8c84-4f28-8625-1bcf4560b7bf",
+        "c1805dc2-ce4c-448b-9dbc-04485a4ac40c",
+        "d7cf2ac1-a72f-44c2-bac3-e4679a102681",
+        "0e621b02-2dde-49aa-a0f3-982602ec159e",
+        "d4460497-a934-49c5-b33e-39b57d7b48d0",
+        "19b12f9b-0b39-4f14-bfe2-f8fe08e024bb",
+        "9b1e9751-7956-4f4e-96c1-25feea35467f",
+        "ac19be9a-5901-4493-9b2d-2859d062daae"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 30,
+        "text": "<p>The new guardian of the ring is none other than <strong>Nicolas Huber<\/strong> aka Hubercop. He was waiting for this victory since many years.<br\/><br\/>The madness continued with a spectacular 1h jam session on the hip & quarter pipe with special guest like, Yungdoli, Ethan Morgan, Queralt Castellet, Moritz Amsues & more the show was definitely on fire. <br\/><br\/>The battle was on and everybody sent it as much as they could, many riders disappeared behind the quarterpipe.<br\/><br\/>A big shoutout to the winners of the different categories of the contest:<br\/><br\/>Best Male:<br\/><strong>Alberto Maffei<\/strong><br\/><br\/>Best Female: <br\/><strong>Fanny<\/strong><br\/><br\/>Biggest Air: <br\/><strong>Merlin Bettin<\/strong><br\/><br\/>Best Trick: <br\/><strong>Nicolas Huber<\/strong><br\/><br\/>Best Grom: <br\/><strong>Walter Panzeri<\/strong><br\/><br\/>The entire show was accompaigned by continious DJ sets, a live epic concert with the Stunt Pilots in between the sessions, good food and delicious aperol spritz. Real Italian vibes.  <\/p>",
+        "text_left": true
+      }
+    },
+    "94b7a8d1-30f2-4ca4-8ba0-530cc6decce9": {
+      "type": "two-boxes-slider",
+      "blocks": {
+        "template--18950505038148__94b7a8d1-30f2-4ca4-8ba0-530cc6decce9-1684246899bd38cc36-0": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/22_8104f66f-2e70-417c-9658-c42fdb5100fc.jpg"
+          }
+        },
+        "0cbcda35-1889-4262-819f-ef1223818239": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/15.jpg"
+          }
+        },
+        "72c5dbe6-e20d-42e8-8fd7-8f990c79ccb5": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/18.jpg"
+          }
+        },
+        "fcea01a3-6a3d-4d2d-8127-366c632f989f": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/12.jpg"
+          }
+        },
+        "f66e1358-7c68-4e92-a3da-6d9093034ff4": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/23_7e93398d-1547-438e-ac59-d9dc7a99f0fb.jpg"
+          }
+        },
+        "8d3d8e4e-32e4-4448-83bc-b4d0ff2d5a3a": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20_cd19aa6f-0973-471a-a432-ea139f902f19.jpg"
+          }
+        },
+        "7c212fc9-5159-419b-8630-f3c3f6ed145c": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_809d000c-87f7-4926-b480-36d2bfa8a3cc.jpg"
+          }
+        },
+        "7e45e2e8-e2e4-4591-a8b9-f80fc102154b": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ww.jpg"
+          }
+        },
+        "6ddb26ad-0af8-4e6f-8e9c-ea12577c9cc2": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11_adc29f51-fd2f-4ce4-8905-ab4b68f11101.jpg"
+          }
+        },
+        "1e540682-9da5-41bd-b9bf-063b253214e4": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7_c848f12d-8944-45fd-83ea-0d6aa11ae4f9.jpg"
+          }
+        },
+        "8cfb11c6-b233-4a6d-b838-0bdc39b45013": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_4449dee7-0775-4897-ab3e-0d2834ee3e67.jpg"
+          }
+        },
+        "f36b362f-ffca-4d99-9378-011067f02e44": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_e8920508-7065-428d-bc1a-5065022944b0.jpg"
+          }
+        },
+        "f21fe795-7148-4f07-88ec-adadff98e613": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Good-Tee-White-L_R.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--18950505038148__94b7a8d1-30f2-4ca4-8ba0-530cc6decce9-1684246899bd38cc36-0",
+        "0cbcda35-1889-4262-819f-ef1223818239",
+        "72c5dbe6-e20d-42e8-8fd7-8f990c79ccb5",
+        "fcea01a3-6a3d-4d2d-8127-366c632f989f",
+        "f66e1358-7c68-4e92-a3da-6d9093034ff4",
+        "8d3d8e4e-32e4-4448-83bc-b4d0ff2d5a3a",
+        "7c212fc9-5159-419b-8630-f3c3f6ed145c",
+        "7e45e2e8-e2e4-4591-a8b9-f80fc102154b",
+        "6ddb26ad-0af8-4e6f-8e9c-ea12577c9cc2",
+        "1e540682-9da5-41bd-b9bf-063b253214e4",
+        "8cfb11c6-b233-4a6d-b838-0bdc39b45013",
+        "f36b362f-ffca-4d99-9378-011067f02e44",
+        "f21fe795-7148-4f07-88ec-adadff98e613"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 30,
+        "text": "<p>Like at every Funky event everything ends with an atomic party lasting until early morning hours. <br\/><br\/>With an international DJ lineup the notorious Miky’s pub was boiling like it never was before. Ask Ethan Morgan what happened if you want to know what you shouldn’t know.<br\/><br\/>Thanks to everybody that made this edition once again one for the books.<br\/><br\/>SEE YOU NEXT YEAR!!!<br\/>xxx<br\/>Funky Snowboards Family<br\/><br\/>Special thanks to:<br\/><br\/><strong>Monster Energy<\/strong><br\/><br\/><strong>Union Bindings<\/strong><br\/><br\/><strong>Mottolino Snowpark & Livigno<\/strong><br\/><br\/>to support this event for the love of snowboarding.<br\/><br\/>Video Credits: <br\/><strong>Surface Studio<\/strong><br\/><\/p>",
+        "text_left": false
+      }
+    },
+    "a8cb0112-4354-4646-92af-482e99bb699f": {
+      "type": "space",
+      "settings": {
+        "space_px": 30
+      }
+    },
+    "78834297-7c4d-4988-b84c-7f3e1783ed08": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>Not in the photos above? Don't despair, below you have the link to download all the photos of the event, if you search well maybe you will find yourself, otherwise you can go ahead and despair because it means that you are a ghost trapped between the realm of the living and that of the dead and you cannot appear on film.<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "33bccd01-3b03-4f77-9d5c-ef35558a615e": {
+      "type": "buttons",
+      "blocks": {
+        "template--18950505038148__33bccd01-3b03-4f77-9d5c-ef35558a615e-1684163270b903b7e8-0": {
+          "type": "buttons",
+          "settings": {
+            "btn_text": "DOWNLOAD ALL THE EVENT PHOTOS",
+            "btn_link": "https:\/\/drive.google.com\/drive\/folders\/1EUZqqhi-FTtwINVLf3obPHJ7CjZNWWDo",
+            "btn_selected": true,
+            "blank": true,
+            "modal": false,
+            "btn_black": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18950505038148__33bccd01-3b03-4f77-9d5c-ef35558a615e-1684163270b903b7e8-0"
+      ],
+      "settings": {}
+    },
+    "2febf94e-02cc-453f-b4b6-d9985049e368": {
+      "type": "space",
+      "settings": {
+        "space_px": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7caea46c-718b-4b46-b547-3e6550b6137c",
+    "0cd86a8c-f474-4ac1-a374-21a000f084ef",
+    "654659cf-c059-4ca0-a7a0-3c4f05d6c3a0",
+    "5427c290-5e34-418d-8b65-9ecc585b56ac",
+    "66a1ba9c-b85c-4c9c-9717-61286d1ddb28",
+    "5fc6bb5e-b69e-447b-9d6b-ef000c909c7d",
+    "df562db1-e59d-467e-889e-3ec6cf373c0c",
+    "7794b09f-e5b1-4c28-8fde-4600b5f5b66a",
+    "94b7a8d1-30f2-4ca4-8ba0-530cc6decce9",
+    "a8cb0112-4354-4646-92af-482e99bb699f",
+    "78834297-7c4d-4988-b84c-7f3e1783ed08",
+    "33bccd01-3b03-4f77-9d5c-ef35558a615e",
+    "2febf94e-02cc-453f-b4b6-d9985049e368"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": false,
+        "show_share_buttons": false,
+        "show_title": false,
+        "show_show_events": false
+      }
+    },
+    "c5647a56-34c0-47bb-995a-51cffc41d383": {
+      "type": "paragraph",
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 40,
+        "text": "<p>THE GUARDIAN 2ND EDITION. APRIL 25TH 2016.<\/p>",
+        "link_text": "",
+        "link_url": "",
+        "border_bottom": false
+      }
+    },
+    "8fdf1392-762f-4bb3-8615-68ba4c6f089e": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "text": "",
+        "iframe_mob_height": 0
+      }
+    },
+    "0c09311c-d4e3-4eb0-a9e7-515526e2f4af": {
+      "type": "youtube",
+      "settings": {
+        "id_youtube": "u8K18cX3OBE",
+        "iframe_mob_height": 300
+      }
+    },
+    "6af992c4-3593-4bee-8268-1234c6d77a0e": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "image_position": "center center",
+        "video_link": "https:\/\/www.youtube.com\/watch?v=u8K18cX3OBE&t=117s&ab_channel=FunkySnowboards",
+        "show_overlay": true,
+        "style": "image_with_play",
+        "height": "medium",
+        "video_title": "",
+        "text_size": "medium"
+      }
+    },
+    "4e7bdc57-5d20-4976-bad0-6db8a780a52d": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>Ho visto Salmoni rosa indossare dolcevita con stampe natalizie e risalire il percorso per andare in baita a bersi una Ciobar. Ho visto orsi polari alzare il termostato delle loro tane e rimanere tutto il giorno seduti su sedie di vimini giocando a indovina chi. Ho visto gli estranei oltre la barriera arrivare al carosello 3000 salvo fare dietro front urlando “ma chi ce lo fa fare.” Non so se la mia mente delusa si rifugiava in pittoresche allucinazioni o il mondo stava realmente girando al contrario fatto sta che il tempo faceva talmente cagare che non saprei nemmeno dire se quei 140 meravigliosi eroi iscritti alla gara erano reali o frutto anch’essi dell’immaginazione. <\/p>",
+        "text_size": "medium"
+      }
+    },
+    "26efdb26-64dd-49d6-a21f-90898ac36e8a": {
+      "type": "two-boxes-slider",
+      "blocks": {
+        "template--19065127797060__26efdb26-64dd-49d6-a21f-90898ac36e8a-168605764393fb76ef-0": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MG_8390.jpg"
+          }
+        },
+        "ea25cd76-5372-45fc-8d12-01b727992145": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MG_8510_1.jpg"
+          }
+        },
+        "3a84cbef-5377-4a2f-bb17-62209700fcd9": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_8291.jpg"
+          }
+        },
+        "5fa35834-7be9-4a5a-8dd3-6e5b28ec8c52": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MG_8304_1.jpg"
+          }
+        },
+        "fc50bfd1-a41f-43c1-9c45-4a70006f4c32": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MG_8355.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--19065127797060__26efdb26-64dd-49d6-a21f-90898ac36e8a-168605764393fb76ef-0",
+        "ea25cd76-5372-45fc-8d12-01b727992145",
+        "3a84cbef-5377-4a2f-bb17-62209700fcd9",
+        "5fa35834-7be9-4a5a-8dd3-6e5b28ec8c52",
+        "fc50bfd1-a41f-43c1-9c45-4a70006f4c32"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 30,
+        "text": "<p>Skiers e snowboarders a braccetto per un giorno a dividersi equamente gli schiaffi del meteo e quelli dei mostri a difesa del percorso la cui           insensatezza era solo pari al coraggio degli aspiranti guardiani e alla loro voglia di sconfiggere sia il tempo cronometrico che quello metereologico. Perché il the guardian non é il classico banale evento di fine anno. E' qualcosa di più, è l'occasione per chi intende la montagna e gli sport su essa praticata in un certo modo. Per quelli che se ne fregano e non si prendono mai troppo sul serio. Per quelli che stare insieme e fare casino é ancora la cosa più importante. Il sole si sarà pure preso una giornata di ferie quel giorno eppure la gente esultava stappando bottiglie di birra che il freddo incollava alle dita. La musica pompava, le salamelle saltavano sulla griglia e le labbra si aprivano in sorrisi che lasciavano scoperti denti bianchi come il           cielo dietro di loro.<\/p>",
+        "text_left": false
+      }
+    },
+    "3621fa1b-860f-4ef8-bdc5-466f23822c0e": {
+      "type": "two-boxes-slider",
+      "blocks": {
+        "template--19065127797060__3621fa1b-860f-4ef8-bdc5-466f23822c0e-168605764393fb76ef-0": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MG_8580.jpg"
+          }
+        },
+        "bac5f232-3a2e-4a06-bbe4-fa002c9572b0": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MG_8568.jpg"
+          }
+        },
+        "6b070259-310c-492e-a92c-99d6dc8fc7fd": {
+          "type": "slides",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MG_8558_1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--19065127797060__3621fa1b-860f-4ef8-bdc5-466f23822c0e-168605764393fb76ef-0",
+        "bac5f232-3a2e-4a06-bbe4-fa002c9572b0",
+        "6b070259-310c-492e-a92c-99d6dc8fc7fd"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 30,
+        "text": "<p>Lo spirito dello Snowboard era salvo anche quest'anno, soprattutto quest'anno. E dopo le epiche gesta pomeridiane, la festa é partita in un'esplosione atomica di polvere di mais fosforescente. Tanto che il traffico aereo sopra Livigno é stato interrotto a tempo inderminato come nelle peggiori eruzioni islandesi. Le uniche cose con il permesso di decollare erano gli spritz, che volavano sopra le teste ormai completamente rosa della gente e detonavano con il loro carico alcolico nelle gole arse dalle risate per la vicina gara di break dance. In questo leggendario bordello anche gli anelli trovano i mignoli giusti da indossare, sancendo tutti i vincitori in ogni categoria. I quali vengono giustamente festeggiati dal pubblico in sala con una compilation di schiaffi e           vaporizzati dall’ estintore con onde energetiche fluo in mezzo alla faccia. <\/p>",
+        "text_left": true
+      }
+    },
+    "cbde344c-a83b-437d-94bd-7725dfa3acb2": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>L’ aria ormai resa irrespirabile dalle polveri sottili costringe tutti ad una breve ritirata ma dal centinaio di \"ci vediamo dopo\" che erano, ben 400 persone si salutano di nuovo per la festa conclusiva al Marcos pub. Da qui in avanti le immagini che scorrono nella mia mente tornano a confondersi con le allucinazioni dell’inizio ma questa volta so esattamente perchè..... Braulio. Ad ogni modo la gente saltava e pogava sotto la console, qualcuno limonava e i salmoni e gli orsi polari cercavano di imbucarsi alla festa chiedendo scusa per non essere venuti sin dall’inizio.<\/p>",
+        "text_size": "medium"
+      }
+    },
+    "5650a19e-20dc-4cb7-a06e-8158b297094b": {
+      "type": "paragraph",
+      "settings": {
+        "text": "<p>Il the Guardian 2015 va in archivio con qualche rimpianto a causa del tempo infame, ma con la grande consapevolezza che il nostro modo di vivere lo snowboard riesce sempre a           vincere su tutto. Grazie a tutti voi che credete in questo progetto e non vi fermate di fronte a niente pur di fare un po' di meritato e sano bordello!!  See you next year!!<\/p>",
+        "link_text": "",
+        "link_url": "",
+        "border_bottom": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c5647a56-34c0-47bb-995a-51cffc41d383",
+    "8fdf1392-762f-4bb3-8615-68ba4c6f089e",
+    "0c09311c-d4e3-4eb0-a9e7-515526e2f4af",
+    "6af992c4-3593-4bee-8268-1234c6d77a0e",
+    "4e7bdc57-5d20-4976-bad0-6db8a780a52d",
+    "26efdb26-64dd-49d6-a21f-90898ac36e8a",
+    "3621fa1b-860f-4ef8-bdc5-466f23822c0e",
+    "cbde344c-a83b-437d-94bd-7725dfa3acb2",
+    "5650a19e-20dc-4cb7-a06e-8158b297094b"
+  ]
+}
