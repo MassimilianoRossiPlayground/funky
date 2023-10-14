@@ -374,6 +374,7 @@
   },
   "products": {
     "product": {
+      "rate": "Or 3 interest-free installments or {{ prod_price }} by",
       "regular_price": "Regular price",
       "sold_out": "Sold out",
       "unavailable": "Unavailable",

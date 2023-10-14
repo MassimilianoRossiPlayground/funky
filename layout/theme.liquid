@@ -194,11 +194,12 @@ https://www.googletagmanager.com/gtag/js?id=Tag_ID"></script>
 
   {% section 'header' %}
 
-  {% if page_handle == "collection" and template.suffix != "snowboards" %}
+  {% if page_handle == "collection" %}
 
     <div class="collection-description-parallax">
       <div class="page-width">
         <div class="section-header">
+          <h1 style="display:none">{{collection.title}}</h1>
           {% if collection.description != blank %}
             <div class="collection-description title-description">
               {{ collection.description }}

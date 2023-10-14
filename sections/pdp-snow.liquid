@@ -1,0 +1,363 @@
+{{ 'style.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'script.js' | asset_url }}" defer="defer"></script>
+
+<div class="f-snow">
+  <!-- cursor -->
+  <div class="c-cursor js-cursor">
+    <div class="c-cursor__line"></div>
+    <div class="c-cursor__line js-cursor-line"></div>
+  </div>
+  <!-- end cursor -->
+  <div class="f-snow__product">
+    <!-- product detail -->
+    {% comment %}
+      <div class="c-product-detail js-product-detail">
+          <!-- product actions-->
+          <div
+              class="c-product-actions js-product-actions c-product-detail__actions"
+          >
+              <div class="c-product-actions__price">
+                  <span class="c-text is-5">€549.00</span
+                  ><span class="c-text is-5 is-regular"
+                      >O tre rate da 183,00 € senza interessi</span
+                  >
+              </div>
+              <div class="c-product-actions__size-cart">
+                  <div class="c-product-actions__sizes">
+                      <button class="c-text c-line-button js-line-button">
+                          148</button
+                      ><button class="c-text c-line-button js-line-button">
+                          152</button
+                      ><button class="c-text c-line-button js-line-button">
+                          156MW</button
+                      ><button class="c-text c-line-button js-line-button">
+                          159MW
+                      </button>
+                  </div>
+                  <button class="c-text c-line-button js-line-button">
+                      size finder</button
+                  ><button
+                      class="c-text is-3 c-button js-button c-product-actions__add-to-cart"
+                  >
+                      add to cart
+                  </button>
+              </div>
+              <div class="c-product-actions__notes">
+                  <span class="c-text is-5 is-regular"
+                      >Spedizione gratuita in tutta Europa per ordini
+                      superiori a 50€. Ordini spediti entro 24h!</span
+                  ><span class="c-text is-5 is-regular">Resi gratuiti.</span
+                  ><span class="c-text is-5 is-regular"
+                      >Garanzia miglior prezzo.</span
+                  ><button class="c-text c-line-button js-line-button">
+                      more info
+                  </button>
+              </div>
+          </div>
+          <!-- end product actions--><!-- product slider-->
+          <div
+              class="c-product-slider js-product-slider c-product-detail__slider"
+          >
+              <div class="swiper">
+                  <button
+                      class="c-product-slider__prev js-product-slider-prev"
+                      type="button"
+                  >
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 40 40"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="m14.735 20 9.228 7.91 1.302-1.518L17.808 20l7.457-6.392-1.302-1.518L14.735 20Z"
+                          />
+                      </svg></button
+                  ><button
+                      class="c-product-slider__next js-product-slider-next"
+                      type="button"
+                  >
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 40 40"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="m25.265 20-9.228 7.91-1.302-1.518L22.192 20l-7.457-6.392 1.302-1.518L25.265 20Z"
+                          />
+                      </svg>
+                  </button>
+                  <div class="swiper-wrapper js-cursor-trigger">
+                      <div class="swiper-slide c-product-slider__item">
+                          <img
+                              src="https://www.funkysnowboards.com/cdn/shop/products/funky-skate-pink_1092x.jpg?v=1675760488"
+                              alt="alt"
+                          />
+                      </div>
+                      <div class="swiper-slide c-product-slider__item">
+                          <img
+                              src="https://www.funkysnowboards.com/cdn/shop/products/funky-grog-skate-pink-2_1092x.jpg?v=1675760489"
+                              alt="alt"
+                          />
+                      </div>
+                      <div class="swiper-slide c-product-slider__item">
+                          <img
+                              src="https://www.funkysnowboards.com/cdn/shop/products/funky-grog-skate-pink-3_1092x.jpg?v=1675760489"
+                              alt="alt"
+                          />
+                      </div>
+                      <div class="swiper-slide c-product-slider__item">
+                          <img
+                              src="https://www.funkysnowboards.com/cdn/shop/products/funky-grog-skate-pink-4_1092x.jpg?v=1675760489"
+                              alt="alt"
+                          />
+                      </div>
+                      <div class="swiper-slide c-product-slider__item">
+                          <img
+                              src="https://www.funkysnowboards.com/cdn/shop/products/funky-grog-skate-pink-5_1092x.jpg?v=1675760489"
+                              alt="alt"
+                          />
+                      </div>
+                  </div>
+              </div>
+              <div
+                  class="c-product-slider__pagination js-product-slider-pagination"
+              ></div>
+          </div>
+          <!-- end product slider--><!-- product description-->
+          <div
+              class="c-product-description js-product-description c-product-detail__description"
+          >
+              <span class="c-text is-3">DETAILS</span
+              ><span class="c-text is-2 c-product-description__title"
+                  >FUNKY SPRAY</span
+              ><span class="c-text is-5 is-higher c-product-description__text"
+                  >Una macchina da trick per rider che amano lo snowboard
+                  creativo. Funky Spray disponibile nelle misure 148,152,
+                  156MW e 159MW.<br /><br /><span
+                      class="c-text is-5 is-regular"
+                      >SHAPE TWIN</span
+                  >
+                  TIP<br /><span class="c-text is-5 is-regular">CAMBER</span>
+                  RFR<br /><span class="c-text is-5 is-regular">FLEX</span>
+                  5/10</span
+              ><button
+                  class="c-text c-line-button js-line-button is-idle c-product-description__made-in-italy"
+              >
+                  made in italy
+              </button>
+          </div>
+          <!-- end product description-->
+      </div>
+    {% endcomment %}
+    <!-- end product detail -->
+    <!-- description block -->
+
+    <div
+      class="u-p-inline u-p-block c-description-block js-description-block"
+    >
+      <!-- text block -->
+      <div class="c-text-block c-description-block__description">
+        <span class="c-text is-3">DESCRIPTION</span><span class="c-text is-1 c-text-block__title">{{product.title}}</span>
+        <!-- collapsed text -->
+        <div
+          class="c-collapsed-text js-collapsed-text c-text-block__paragraph"
+        >
+          <div class="c-text is-4 js-collapsed-text-short"
+            >{{ product.metafields.accentuate.description_long.html | truncatewords: 45, "..." }} <button class="c-text c-line-button js-line-button is-nocase is-bigger js-collapsed-text-more">Leggi di più</button></div>
+          <div class="c-text is-4 c-collapsed-text__hide js-collapsed-text-long">{{ product.metafields.accentuate.description_long.html }} <button class="c-text c-line-button js-line-button is-nocase is-bigger c-collapsed-text__hide js-collapsed-text-less" >Leggi di meno</button></div>
+        </div>
+        <!-- end collapsed text -->
+      </div>
+      <!-- end text block -->
+      <!-- rating list -->
+      <div class="c-rating-list">
+        <!-- rating bar -->
+        <div class="c-rating-bar js-rating-bar" style="--step: {{ product.metafields.accentuate.range_park }}">
+          <div class="c-rating-bar__top">
+            <span class="c-text is-3">PARK</span><span class="c-text is-3 c-rating-bar__number">{{ product.metafields.accentuate.range_park }}</span>
+          </div>
+          <div class="c-rating-bar__steps">
+
+            {% include "bar-level", range_level: product.metafields.accentuate.range_park %}
+            
+          </div>
+        </div>
+        <!-- end rating bar -->
+        <!-- rating bar -->
+        <div class="c-rating-bar js-rating-bar" style="--step: {{ product.metafields.accentuate.range_resort }}">
+          <div class="c-rating-bar__top">
+            <span class="c-text is-3">RESORT</span><span class="c-text is-3 c-rating-bar__number">{{ product.metafields.accentuate.range_resort }}</span>
+          </div>
+          <div class="c-rating-bar__steps">
+
+            {% include "bar-level", range_level: product.metafields.accentuate.range_resort %}
+
+          </div>
+        </div>
+        <!-- end rating bar -->
+        <!-- rating bar -->
+        <div class="c-rating-bar js-rating-bar" style="--step: {{ product.metafields.accentuate.range_powder }}">
+          <div class="c-rating-bar__top">
+            <span class="c-text is-3">POWDER</span><span class="c-text is-3 c-rating-bar__number">{{ product.metafields.accentuate.range_powder }}</span>
+          </div>
+          <div class="c-rating-bar__steps">
+
+            {% include "bar-level", range_level: product.metafields.accentuate.range_powder %}
+
+          </div>
+        </div>
+        <!-- end rating bar -->
+      </div>
+      <!-- end rating list -->
+      <!-- rating list -->
+      <div class="c-rating-list">
+        <!-- rating bar -->
+        <div class="c-rating-bar js-rating-bar" style="--step: {{ product.metafields.accentuate.range_flex_twin }}">
+          <div class="c-rating-bar__top">
+            <span class="c-text is-3">FLEX</span><span class="c-text is-3 c-rating-bar__number">{{ product.metafields.accentuate.range_flex_twin }}</span>
+          </div>
+          <div class="c-rating-bar__steps">
+
+            {% include "bar-level", range_level: product.metafields.accentuate.range_flex_twin %}
+            
+          </div>
+        </div>
+        <!-- end rating bar -->
+        <span
+          class="c-text is-4 c-rating-list__text"
+          >{{ product.metafields.accentuate.flex_description.html }}</span
+        >
+      </div>
+      <!-- end rating list -->
+    </div>
+    <!-- end description block -->
+    <!-- anatomy block -->
+    <div class="c-anatomy-block js-anatomy-block">
+      <div class="u-p-block c-anatomy-block__item">
+        <!-- text block -->
+        <div class="c-text-block">
+          <span class="c-text is-3">SHAPE</span><span class="c-text is-1 c-text-block__title">{{ product.metafields.accentuate.shape_title }}</span
+          ><span class="c-text is-4 c-text-block__paragraph"
+            >{{ product.metafields.accentuate.shape_description.html }}</span
+          >
+        </div>
+        <!-- end text block -->
+        {% if product.metafields.accentuate.shape_image != blank %}
+        <img src="{{ product.metafields.accentuate.shape_image }}" alt="{{ product.metafields.accentuate.shape_title | strip_html }}">
+        {% endif %}
+      </div>
+      <div class="u-p-block c-anatomy-block__item">
+        <!-- text block -->
+        <div class="c-text-block">
+          <span class="c-text is-3">PROFILE</span><span class="c-text is-1 c-text-block__title">{{ product.metafields.accentuate.camber_title }}</span
+          ><span class="c-text is-4 c-text-block__paragraph"
+            >{{ product.metafields.accentuate.camber_description.html }}</span
+          >
+        </div>
+        <!-- end text block -->
+        {% if product.metafields.accentuate.camber_image != blank %}
+        <img src="{{ product.metafields.accentuate.camber_image }}" alt="{{ product.metafields.accentuate.camber_title | strip_html }}">
+        {% endif %}
+      </div>
+    </div>
+    <!-- end anatomy block -->
+
+
+    <!-- size chart-->
+    <div class="u-p-block u-p-inline c-size-chart js-size-chart"><span class="c-text is-3">size chart</span>
+        <div class="swiper c-size-chart__swiper">
+            <div class="swiper-wrapper c-size-chart__wrapper">
+                <div class="swiper-slide c-size-chart__table">
+                  {{ product.metafields.accentuate.size_chart_html }}
+                </div>
+            </div>
+            <div class="swiper-scrollbar c-size-chart__scrollbar js-size-chart-scrollbar"></div>
+        </div>
+    </div>
+    <!-- end size chart-->
+
+    {% if product.metafields.accentuate.feature_title[0] %}
+    <!-- feature list -->
+    <div class="u-p-block u-p-inline c-feature-list js-feature-list">
+      <span class="c-text is-3">features</span>
+      <div class="c-feature-list__wrapper">
+
+        {% for snowboard_features in product.metafields.accentuate.feature_title %} 
+            <!-- feature -->
+            <div class="c-feature js-feature c-feature--{{forloop.index0}} {% if forloop.index0 == 0 %}is-active{% endif %}">
+                <button class="c-feature__btn js-feature-btn" type="button">
+                <span class="c-text is-3">{{ product.metafields.accentuate.feature_title[forloop.index0] }}</span
+                ><span class="c-feature__plus js-feature-plus"><span {% if forloop.index0 == 0 %}style="transform: translate(-50%, -50%) rotate(630deg); translate: none; rotate: none; scale: none;"{% endif %}></span></span>
+                </button>
+                <div class="c-feature__content js-feature-content" {% if forloop.index0 == 0 %}style="height: auto"{% endif %}>
+                <div class="c-feature__content-wrapper">
+                    <span class="c-text is-4"
+                    >{{ product.metafields.accentuate.feature_description[forloop.index0].html }}</span>
+                    {% if product.metafields.accentuate.feature_image[forloop.index0] != blank %}
+                    <img src="{{ product.metafields.accentuate.feature_image[forloop.index0] }}" alt="{{ product.metafields.accentuate.feature_title[forloop.index0] | strip_html }}">
+                    {% endif %}
+                </div>
+                </div>
+            </div>
+            <!-- end feature -->
+        {% endfor %} 
+
+      </div>
+    </div>
+    <!-- end feature list -->
+  {% endif %}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "PDP Snow",
+  "presets": [
+    {
+      "name": "PDP Snow"
+    }
+  ]
+}
+{% endschema %}
+
+
+{% style %}
+
+.f-snow .c-rating-bar__step.has-bar:after {
+    right: -1px;
+    left: unset;
+}
+.f-snow .c-text.is-4 {
+    font-family: 'HelveticaNeue';
+}
+.f-snow .c-line-button.is-bigger {
+    font-family: 'HelveticaNeue-Medium';
+}
+.price__paypal {
+    font-size: 12px;
+}
+.c-size-chart__table td {
+    font-family: 'HelveticaNeue';
+}
+.c-size-chart__table th {
+    font-family: 'HelveticaNeue-Medium';
+}
+.f-snow .c-size-chart__table tbody tr:nth-child(1) {
+    border-top: none;
+}
+.f-snow .c-size-chart__table tbody tr:nth-child(1):hover {
+  background-color: unset;
+}
+.f-snow .c-size-chart__table tbody tr>th,
+.f-snow .c-size-chart__table tbody tr>td {
+  width: 200px;
+}
+.f-snow .c-size-chart__table tbody tr>th:nth-child(1),
+.f-snow .c-size-chart__table tbody tr>td:nth-child(1) {
+  width: 250px;
+}
+
+{% endstyle %}

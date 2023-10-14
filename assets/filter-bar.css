@@ -7,6 +7,7 @@
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     background: #f5f5f5;
+    box-sizing: border-box;
 }
 .filter-bar.hidden {
     visibility: hidden;
@@ -80,6 +81,8 @@
     position: fixed;
     top: 99px;
     z-index: 15;
+    border-top: none;
+    padding-top: 0;
 }
 .filters-toolbar__item-child {
     display: flex;
@@ -103,6 +106,14 @@
     border: 1px solid #000;
 }
 
+@media screen and (max-width: 1200px) {
+    .filter-bar__tags a {
+        margin-right: 0px;
+    }
+    .filter-bar__tags .tag-single--last {
+        margin-right: 30px;
+    }
+}
 @media screen and (max-width: 768px) {
 
     .filter-bar.filter-bar--outside {
@@ -113,9 +124,8 @@
         flex-direction: column;
         justify-content: start;
         align-items: flex-start;
-        height: 50px;
         transition-duration: 0.3s;
-        padding: 20px 0;
+        padding: 10px 0;
     }
     .filter-bar.open {
         height: unset;
@@ -153,7 +163,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 20px;
         width: 100%;
     }
     .filter-bar .tag-single,
@@ -165,6 +174,9 @@
     .filter-bar.open .tag-all {
         opacity: 1;
         z-index: unset;
+    }
+    .filter-bar__mob-bar__action.no-action {
+        pointer-events: none;
     }
     .filter-bar__mob-bar__action {
         font-family: "HelveticaNeue-Medium";
@@ -184,6 +196,12 @@
         margin-left: 20px;
         margin-bottom: 10px;
         width: 100%;
+        font-size: 14px;
+        display: flex;
+        gap: 8px;    
+    }
+    .filter-bar__mob-bar__breadcrumbs a {
+        font-size: 14px;
     }
     .collection-product-count {
         display: unset;

@@ -374,6 +374,7 @@
   },
   "products": {
     "product": {
+      "rate": "O tre rate da {{ prod_price }} senza interessi",
       "regular_price": "Prezzo di listino",
       "sold_out": "SOLD OUT!",
       "unavailable": "Non disponibile",

@@ -2745,7 +2745,7 @@ hr {
 
 @media only screen and (max-width: 749px) {
   .template-product .main-content {
-    padding-top: 22px; }
+    padding-top: 0; }
   .product-single__media-group {
     position: relative; }
   .thumbnails-wrapper {

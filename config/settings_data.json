@@ -257,7 +257,7 @@
       "1596b1f4-3ce3-46f0-aeca-17b55f07b1dc": {
         "type": "lazy-slide",
         "settings": {
-          "text": "EXTRAPOSITIVA",
+          "text": "PREISTORIA",
           "font_size": 100,
           "font_size_mob": 90,
           "padding": 20,
@@ -273,60 +273,60 @@
           "254b60cd-8478-430a-8766-d2dd618ac260": {
             "type": "product_block",
             "settings": {
-              "product_id": "funky-propro-hoodie-sand"
-            }
-          },
-          "5e9d49b4-974b-4e40-b7c6-b99222db4778": {
-            "type": "product_block",
-            "settings": {
-              "product_id": "funky-short-beanie-purple"
-            }
-          },
-          "0f4c9add-0e0f-453e-80a7-41640bbb4f3c": {
-            "type": "product_block",
-            "settings": {
-              "product_id": "funky-good-tee-white"
-            }
-          },
-          "b56dfeed-6017-4170-8aa7-b7674311f3af": {
-            "type": "product_block",
-            "settings": {
-              "product_id": "ciao-socks-liliac"
+              "product_id": "funky-no-bad-days-hoodie-brown"
             }
           },
           "0351c488-088c-4734-8a6a-e1c57d6c3296": {
             "type": "product_block",
             "settings": {
-              "product_id": "funky-yeti-shirt-khaki"
+              "product_id": "funky-ultra-corduroy-shirt-orchid"
+            }
+          },
+          "0f4c9add-0e0f-453e-80a7-41640bbb4f3c": {
+            "type": "product_block",
+            "settings": {
+              "product_id": "funky-no-bad-days-tee-black"
             }
           },
           "f0870271-1f1a-4cdd-9c0f-17ac837fb0db": {
             "type": "product_block",
             "settings": {
-              "product_id": "funky-yeti-vest-khaki"
+              "product_id": "funky-ultra-corduroy-trousers-orchid"
+            }
+          },
+          "5e9d49b4-974b-4e40-b7c6-b99222db4778": {
+            "type": "product_block",
+            "settings": {
+              "product_id": "anti-workwear-padded-jacket"
             }
           },
           "4aaec4ba-b648-43c8-b348-57b7965c1bd3": {
             "type": "product_block",
             "settings": {
-              "product_id": "funky-yeti-shorts-khaki"
+              "product_id": "funky-oval-logo-tee-white"
+            }
+          },
+          "b56dfeed-6017-4170-8aa7-b7674311f3af": {
+            "type": "product_block",
+            "settings": {
+              "product_id": "funky-antiworkwear-trousers-caramel"
             }
           },
           "ff26041f-f8e9-4171-9a49-ed51b8f4df69": {
             "type": "product_block",
             "settings": {
-              "product_id": "funky-yeti-outdoot-hat"
+              "product_id": "funky-tribe-socks-khaki"
             }
           }
         },
         "block_order": [
           "254b60cd-8478-430a-8766-d2dd618ac260",
-          "5e9d49b4-974b-4e40-b7c6-b99222db4778",
-          "0f4c9add-0e0f-453e-80a7-41640bbb4f3c",
-          "b56dfeed-6017-4170-8aa7-b7674311f3af",
           "0351c488-088c-4734-8a6a-e1c57d6c3296",
+          "0f4c9add-0e0f-453e-80a7-41640bbb4f3c",
           "f0870271-1f1a-4cdd-9c0f-17ac837fb0db",
+          "5e9d49b4-974b-4e40-b7c6-b99222db4778",
           "4aaec4ba-b648-43c8-b348-57b7965c1bd3",
+          "b56dfeed-6017-4170-8aa7-b7674311f3af",
           "ff26041f-f8e9-4171-9a49-ed51b8f4df69"
         ],
         "settings": {

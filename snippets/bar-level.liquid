@@ -1,0 +1,11 @@
+{% assign range = range_level | plus: 0 %}
+
+{% for i in (1..10) %}
+  {% if i < range %}
+    <div class="c-rating-bar__step is-active"></div>
+  {% elsif i == range %}
+    <div class="c-rating-bar__step is-active has-bar {% if range == 10 %}has-bar-end{% endif %}"></div>
+  {% else %}
+    <div class="c-rating-bar__step"></div>
+  {% endif %}
+{% endfor %}

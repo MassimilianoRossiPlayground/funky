@@ -3,44 +3,50 @@
 {% assign collection_title = filter_collection.title | downcase %}
 {% assign collection_url = filter_collection.url %}
 {% assign page_handle = request.page_type | handle %}
-<span style="display:none">cc:{{current_tags}}</span>
+{% assign current_tags_list = current_tags | downcase %}
+
+{% if page_handle == "product" %}
+
+  {% assign tags_list_sort = product.tags %}
+
+  {% for tag in tags_list_sort limit: 10 %}
+    {% if tag != filter_collection.title %}
+      {% assign tag_handle = tag | downcase | replace: ' ', '-' %}
+      {%- assign new_url = filter_collection.url | append: "/" | append: tag_handle -%}
+      {% capture bread_tag %}
+        > <a href="{{ new_url }}"><span>{{ tag | downcase }}</span></a>
+      {%- endcapture -%}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+
+
 <div class="filter-bar filter-bar--{{origin}}">
   <div class="filter-bar__mob-bar filter-bar__mob-bar--{{page_handle}}">
-    <div class="filter-bar__mob-bar__breadcrumbs"><a class="breadcrumb-home" href="/">home</a> > <a href="{{collection_url}}">{{ collection_title }}</a> | <span class="collection-product-count">{{ 'collections.general.items_with_count' | t: count: filter_collection.products_count }}</span></div>
+    <div class="filter-bar__mob-bar__breadcrumbs">
+      <a class="breadcrumb-home" href="/">home</a> > <a href="{{ collection_url }}">{{ collection_title }}</a> {% if current_tags != blank %} <span class="tag-bread"> > <strong  style="padding-left: 5px;font-size: 14px;">{{ current_tags[0] | downcase }} </strong> </span>{% endif %} {% if bread_tag != blank %} {{bread_tag}} {% endif %}
+    </div>
 
     {% if page_handle == "collection" %}
 
-      <div class="filter-bar__mob-bar__action">
-        <span>categories </span> 
-        <span class="plus">+</span>
-        <span class="dash hide">-</span>
-      </div>
-      <div class="filter-bar__mob-bar__curtag">
-        {% if current_tags == blank %}
-          <span class="span-link">all</span>
-        {% else %}
-          <span class="span-link">{{current_tags}}</span>
-        {% endif %}
-      </div>
-
-    {% else %}
-
-      <div class="filter-bar__tags__mob">
-        {% assign tags_list_sort = product.tags %}
-        {% for tag in tags_list_sort limit: 10 %}
-          {% if tag != filter_collection.title %}
-            {% assign tag_handle = tag | downcase | replace: ' ', '-' %}
-            {%- assign new_url = filter_collection.url | append: "/" | append: tag_handle -%}
-            <a href="{{ new_url }}" class="tag-single-mob {% if current_tags contains tag %}selected{% endif %}"><span class="span-link">{{ tag }}</span></a>
-          {% endif %}
-        {% endfor %}
-      </div>
+      {% if template.suffix == "snowboards" %}
+        <div class="filter-bar__mob-bar__action no-action">
+          <span>category </span>
+        </div>
+      {% else %}
+        <div class="filter-bar__mob-bar__action">
+          <span>categories </span>
+          <span class="plus">+</span>
+          <span class="dash hide">-</span> 
+        </div>
+      {% endif %}
 
     {% endif %}
 
   </div>
 
-  <div class="filter-bar__breadcrumbs"><a href="/">home</a> > <a href="{{collection_url}}">{{ collection_title }}</a> | <span class="collection-product-count">{{ 'collections.general.items_with_count' | t: count: filter_collection.products_count }}</span></div>
+  <div class="filter-bar__breadcrumbs"><a href="/">home</a> > <a href="{{collection_url}}">{{ collection_title }}</a> {% if current_tags != blank %} <span class="tag-bread"> > <strong  style="padding-left: 5px;font-size: 14px;">{{ current_tags[0] | downcase }} </strong> </span>{% endif %}  {% if bread_tag != blank %} {{bread_tag}} {% endif %}</div>
   
   {% if page_handle == "collection" %}
     <div class="filter-bar__tags">
@@ -51,41 +57,24 @@
 
       {% if collection_title == "apparel" %}
         {% assign tags_list_sort = "tees,sweats,tops,bottoms,headwear,socks,accessories" | split: "," %}
+      {% comment %} {% elsif collection_title == "sale" %}
+        {% assign tags_list_sort = "S,M,L,XL,XXL" | split: "," %} {% endcomment %}
       {% else %}
         {% assign tags_list_sort = filter_collection.all_tags %}
       {% endif %}
-      
-      <div style="display:none">
-        {% for tag in filter_collection.all_tags %}
-          <span>{{tag}}</span>
-        {% endfor %}
-      </div>
+
       {% for tag in tags_list_sort limit: 10 %}
 
         {% if tag != filter_collection.title %}
           {% comment %} {%- assign new_url = tag | link_to_tag: tag | split: 'href="' | last | split: '"' | first -%} {% endcomment %}
           {% assign tag_handle = tag | downcase | replace: ' ', '-' %}
           {%- assign new_url = filter_collection.url | append: "/" | append: tag_handle -%}
-          <a href="{{ new_url }}" class="tag-single {% if current_tags contains tag %}selected{% endif %}"><span class="span-link">{{ tag }}</span></a>
+          <a href="{{ new_url }}" class="tag-single {% if forloop.last %}tag-single--last{% endif %} {% if current_tags_list contains tag %}selected{% endif %}"><span class="span-link">{{ tag }}</span></a>
         {% endif %}
         
       {% endfor %}
     </div>
 
-  {% else %}
-     <div class="filter-bar__tags">
-      {% assign tags_list_sort = product.tags %}
-      
-      {% for tag in tags_list_sort limit: 10 %}
-
-        {% if tag != filter_collection.title %}
-          {% assign tag_handle = tag | downcase | replace: ' ', '-' %}
-          {%- assign new_url = filter_collection.url | append: "/" | append: tag_handle -%}
-          <a href="{{ new_url }}" class="tag-single {% if current_tags contains tag %}selected{% endif %}"><span class="span-link">{{ tag }}</span></a>
-        {% endif %}
-        
-      {% endfor %}
-    </div>
   {% endif %}
 
 

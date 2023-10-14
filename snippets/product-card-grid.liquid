@@ -6,9 +6,19 @@
     {% assign class_compare = "compare-price" %}
 {% endif %}
 
+{% comment %} {% if product.variants.size > 0 %}
+    {% for variant_check in product.variants %} 
+        {% if variant_check.available %}
+        {% endif %}
+    {% endfor %}
+{% endif %} {% endcomment %}
+
 <a class="products-single-card" href="{{ product.url }}" index="{{index}}">
     <img class="products-single-card__image" src="{{ product.featured_image | img_url: '720x' }}" alt="best seller silverskin">
     <div class="products-single-card__content">
+
+        <h5 class="products-single-card__content__title medium"><span class="span-link medium">{{ product.title }}</span></h5>
+        
         <div class="products-single-card__content__price">
             {% if product.compare_at_price %}
                 <span class="crossed">{{ product.compare_at_price | money }}</span> 
@@ -40,7 +50,7 @@
         {% endif %}
         
         </div>
-        <h5 class="products-single-card__content__title medium"><span class="span-link medium">{{ product.title }}</span></h5>
+
     </div>
     {% if soldout %}
         <span class="products-single-card__label products-single-card__label--soldout">sold out!</span>

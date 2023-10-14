@@ -86,7 +86,14 @@
         <span>{{ 'products.product.sold_out' | t }}</span>
       </span> {% endcomment %}
     </div>
+
   </div>
+
+  {% if template.suffix == 'snowboards' %}
+    {% assign prod_price = product.price | divided_by: 3 | money %}
+    <div class="price__paypal" style="margin-top: 15px;">{{ 'products.product.rate' | t: prod_price: prod_price }} | <img style="display:inline;vertical-align: unset;" width="55px" src="{{ 'paypal-logo-bn.png' | asset_url }}" alt="Paypal Funky"></div>
+  {% endif %}
+
   <div class="price__unit">
     <dt>
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>

@@ -76,11 +76,15 @@ header.collection-header.fixed {
         margin-bottom: 5px;
     }
     .title-description {
-        font-size: 24px;
+        font-size: 16px;
         font-family: 'HelveticaNeue';
         font-weight: 400;
     }
     .collection-description {
-        padding: 0 15px;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .collection-description p {
+        padding-left: 0 !important;
     }
 }
